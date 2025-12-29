@@ -1,0 +1,1 @@
+select SERVICE_LINE,DEPARTMENT_ID from ANALYTICS.TRANSFORM.DepartmentMapping where SERVICE_LINE='Dental';

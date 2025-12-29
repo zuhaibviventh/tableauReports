@@ -1,0 +1,165 @@
+/* javelin.ochin.org */
+/* Purpose: To provide the list of patients to BH providers who haven't been 
+            seen in last 6 months or more 
+*/
+
+SET NOCOUNT ON;
+SET ANSI_WARNINGS OFF;
+
+IF OBJECT_ID('tempdb..#visit_info') IS NOT NULL DROP TABLE #visit_info;
+SELECT pev.PAT_ID,
+       CAST(pev.CONTACT_DATE AS DATE) AS LAST_OFFICE_VISIT,
+       SUBSTRING(dep.DEPT_ABBREVIATION, 3, 2) AS STATE,
+       ser.PROV_NAME,
+       CASE WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'MK' THEN 'MILWAUKEE'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'KN' THEN 'KENOSHA'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'GB' THEN 'GREEN BAY'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'WS' THEN 'WAUSAU'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'AP' THEN 'APPLETON'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'EC' THEN 'EAU CLAIRE'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'LC' THEN 'LACROSSE'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'MD' THEN 'MADISON'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'BL' THEN 'BELOIT'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'BI' THEN 'BILLING'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'SL' THEN 'ST LOUIS'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'KC' THEN 'KANSAS CITY'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'DN' THEN 'DENVER'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'AS' THEN 'AUSTIN'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'CG' THEN 'CHICAGO'
+           ELSE 'ERROR'
+       END AS CITY,
+       CASE WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'MN' THEN 'MAIN LOCATION'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'DR' THEN 'D&R'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'KE' THEN 'KEENEN'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'UC' THEN 'UNIVERSITY OF COLORADO'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'ON' THEN 'AUSTIN MAIN'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'TW' THEN 'AUSTIN OTHER'
+           ELSE 'ERROR'
+       END AS SITE,
+       CASE WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'MD' THEN 'MEDICAL'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'DT' THEN 'DENTAL'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'CM' THEN 'CASE MANAGEMENT'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'RX' THEN 'PHARMACY'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'AD' THEN 'BEHAVIORAL'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'PY' THEN 'BEHAVIORAL'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'BH' THEN 'BEHAVIORAL'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'MH' THEN 'BEHAVIORAL'
+           ELSE 'ERROR'
+       END AS LOS
+INTO #visit_info
+FROM Clarity.dbo.PAT_ENC_VIEW pev
+    INNER JOIN Clarity.dbo.CLARITY_DEP_VIEW dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
+    INNER JOIN Clarity.dbo.CLARITY_SER_VIEW ser ON ser.PROV_ID = pev.VISIT_PROV_ID
+WHERE pev.CONTACT_DATE > DATEADD(MONTH, -60, GETDATE()) --Longer lookback for pts not seen in a long time
+      AND pev.APPT_STATUS_C IN ( 2, 6 );
+
+
+IF OBJECT_ID('tempdb..#bh_patients') IS NOT NULL DROP TABLE #bh_patients;
+WITH
+    bh_patients_helper AS (
+        SELECT #visit_info.PAT_ID,
+               #visit_info.LAST_OFFICE_VISIT,
+               #visit_info.STATE,
+               #visit_info.PROV_NAME,
+               #visit_info.CITY,
+               #visit_info.SITE,
+               ROW_NUMBER() OVER (PARTITION BY #visit_info.PAT_ID
+ORDER BY #visit_info.LAST_OFFICE_VISIT DESC) AS ROW_NUM_DESC
+        FROM #visit_info
+        WHERE LOS = 'BEHAVIORAL'
+    )
+SELECT * INTO #bh_patients FROM bh_patients_helper WHERE bh_patients_helper.ROW_NUM_DESC = 1;
+
+
+IF OBJECT_ID('tempdb..#mh_patients') IS NOT NULL DROP TABLE #mh_patients;
+SELECT p.PAT_ID,
+       p.PAT_NAME,
+       id.IDENTITY_ID AS MRN,
+       CAST(pev.CONTACT_DATE AS DATE) AS 'Last Visit',
+       ser.PROV_NAME,
+       ser.PROV_ID,
+       ROW_NUMBER() OVER (PARTITION BY pev.PAT_ID ORDER BY pev.CONTACT_DATE DESC) AS ROW_NUM_DESC
+INTO #mh_patients
+FROM CLARITY.dbo.pat_enc_VIEW pev
+    INNER JOIN Clarity.dbo.PATIENT_VIEW AS p ON p.PAT_ID = pev.PAT_ID
+    INNER JOIN Clarity.dbo.IDENTITY_ID_VIEW AS id ON id.PAT_ID = p.PAT_ID
+    INNER JOIN Clarity.dbo.clarity_ser ser ON ser.PROV_ID = pev.VISIT_PROV_ID
+    INNER JOIN Clarity.dbo.EPISODE_LINK_VIEW AS elv ON elv.PAT_ENC_CSN_ID = pev.PAT_ENC_CSN_ID
+    INNER JOIN Clarity.dbo.EPISODE_VIEW AS ev ON elv.EPISODE_ID = ev.EPISODE_ID
+    INNER JOIN Clarity.dbo.CLARITY_DEP_VIEW AS dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
+WHERE pev.APPT_STATUS_C IN ( 2, 6 )
+      AND ev.SUM_BLK_TYPE_ID = 221
+      AND ev.STATUS_C = 1
+      AND SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) IN ( 'AD', 'PY', 'MH', 'BH' )
+      AND ser.PROVIDER_TYPE_C NOT IN ( '164', '136', '129' );
+
+
+IF OBJECT_ID('tempdb..#final_cohort') IS NOT NULL DROP TABLE #final_cohort;
+WITH
+    mh_bh_cohort AS (
+        SELECT #bh_patients.PAT_ID,
+               #bh_patients.STATE,
+               #bh_patients.PROV_NAME,
+               #bh_patients.CITY,
+               #bh_patients.SITE,
+               #mh_patients.PAT_NAME,
+               #mh_patients.MRN,
+               CAST(#mh_patients.[Last Visit] AS DATE) AS LAST_VISIT,
+               DATEDIFF(MONTH, [Last Visit], CURRENT_TIMESTAMP) AS MONTHS_SINCE_SEEN,
+               #mh_patients.PROV_NAME AS LAST_VISIT_PROVIDER,
+               #mh_patients.PROV_ID AS LAST_VISIT_PROVIDER_ID
+        FROM #bh_patients
+            INNER JOIN #mh_patients ON #bh_patients.PAT_ID = #mh_patients.PAT_ID
+        WHERE #mh_patients.ROW_NUM_DESC = 1
+    ),
+    mh_care_team AS (
+        SELECT ct.PAT_ID,
+               ser.PROV_NAME AS MH_THERAPIST,
+               ser.PROV_ID
+        FROM Clarity.dbo.PAT_PCP_VIEW ct --ZC_TRTMT_TEAM_REL (shows RELATIONSHIP_C)
+            INNER JOIN Clarity.dbo.CLARITY_SER_VIEW ser ON ct.PCP_PROV_ID = ser.PROV_ID
+        WHERE ct.TERM_DATE IS NULL
+              AND ct.DELETED_YN = 'N' --sometimes people delete the provider instead of terming them
+              AND ser.PROVIDER_TYPE_C IN ( '171', '117', '134', '10', '110', '177', '175', '227' )
+    )
+SELECT mh_bh_cohort.PAT_ID,
+       mh_bh_cohort.STATE,
+       mh_bh_cohort.PROV_NAME,
+       mh_bh_cohort.CITY,
+       mh_bh_cohort.SITE,
+       mh_bh_cohort.PAT_NAME,
+       mh_bh_cohort.MRN,
+       mh_bh_cohort.LAST_VISIT,
+       mh_bh_cohort.MONTHS_SINCE_SEEN,
+       mh_bh_cohort.LAST_VISIT_PROVIDER,
+       CASE WHEN CLARITY_DEP.DEPARTMENT_ID IS NOT NULL THEN CAST(PAT_ENC.CONTACT_DATE AS DATE)
+           ELSE NULL
+       END AS NEXT_VISIT_DATE,
+       CLARITY_DEP.DEPARTMENT_NAME AS NEXT_VISIT_DEPARTMENT,
+       CASE WHEN mh_bh_cohort.LAST_VISIT_PROVIDER_ID = mh_care_team.PROV_ID THEN 'Y'
+           ELSE 'N'
+       END AS LAST_VISIT_PROVIDER_IN_CARE_TEAM_YN,
+       ROW_NUMBER() OVER (PARTITION BY mh_bh_cohort.PAT_ID ORDER BY PAT_ENC.CONTACT_DATE DESC) AS ROW_NUM_DESC
+INTO #final_cohort
+FROM mh_bh_cohort
+    LEFT JOIN CLARITY.dbo.PAT_ENC_VIEW AS PAT_ENC ON mh_bh_cohort.PAT_ID = PAT_ENC.PAT_ID
+                                                     AND PAT_ENC.APPT_STATUS_C = 1
+                                                     AND PAT_ENC.CONTACT_DATE > CURRENT_TIMESTAMP
+    LEFT JOIN CLARITY.dbo.CLARITY_DEP_VIEW AS CLARITY_DEP ON PAT_ENC.DEPARTMENT_ID = CLARITY_DEP.DEPARTMENT_ID
+                                                             AND SUBSTRING(CLARITY_DEP.DEPT_ABBREVIATION, 9, 2) IN ( 'AD', 'PY', 'MH', 'BH' )
+    LEFT JOIN mh_care_team ON mh_bh_cohort.PAT_ID = mh_care_team.PAT_ID;
+
+
+SELECT #final_cohort.MRN,
+       #final_cohort.PAT_NAME,
+       #final_cohort.CITY,
+       #final_cohort.STATE,
+       #final_cohort.PROV_NAME,
+       #final_cohort.LAST_VISIT,
+       #final_cohort.MONTHS_SINCE_SEEN,
+       #final_cohort.LAST_VISIT_PROVIDER,
+       #final_cohort.NEXT_VISIT_DATE,
+       #final_cohort.NEXT_VISIT_DEPARTMENT,
+       #final_cohort.LAST_VISIT_PROVIDER_IN_CARE_TEAM_YN
+FROM #final_cohort
+WHERE #final_cohort.ROW_NUM_DESC = 1;

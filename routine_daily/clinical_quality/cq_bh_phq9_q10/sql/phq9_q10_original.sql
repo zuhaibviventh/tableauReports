@@ -1,0 +1,248 @@
+
+/*
+
+**********************************************************************************************
+
+ *****   GENERAL INFO   *****
+
+ Object Name:	
+ Create Date:	12/16/2019
+ Created By:	ARCW\Sharmaj
+ System:		SQL-MKE-DEV-001
+ Requested By:	
+
+ Purpose:		
+
+ Description: Normalize missing question 10 to 0 when PHQ9_SUM is 0 and exclude missing Q10 when SUM is <> 0.
+ 
+  BOE Folder Path: SA64 > 
+
+
+ *****  Modification History *****
+
+ Change Date:		Changed By:			Change Description:
+ ------------		-------------		---------------------------------------------------
+ 1/29/2023			Mitch				Including BH Episodes closed in the last 12 months
+ 1/29/2023			Mitch				Removing 90 and 180-day lookback periods for BH providers
+
+**********************************************************************************************
+
+ */
+
+SELECT TOP 1000000000
+	p.PAT_ID
+
+INTO #pop
+
+FROM 
+	Clarity.dbo.PATIENT_VIEW p
+	INNER JOIN Clarity.dbo.PAT_ENC_VIEW pev ON p.PAT_ID = pev.PAT_ID
+	INNER JOIN Clarity.dbo.ANALYTICS.TRANSFORM.DepartmentMapping dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
+	INNER JOIN Clarity.dbo.PROBLEM_LIST_VIEW plv ON pev.PAT_ID = plv.PAT_ID
+	INNER JOIN Clarity.dbo.CLARITY_EDG edg ON plv.DX_ID = edg.DX_ID
+	INNER JOIN Clarity.dbo.EDG_CURRENT_ICD10 icd10 ON edg.DX_ID = icd10.DX_ID
+	INNER JOIN Clarity.dbo.IDENTITY_ID_VIEW id ON p.PAT_ID = id.PAT_ID
+				
+WHERE 
+	pev.CONTACT_DATE > DATEADD(MONTH, -12, GETDATE()) ----------------Active Medical
+	AND p.CUR_PCP_PROV_ID LIKE '64%'
+	AND pev.APPT_PRC_ID NOT IN ('345', '346', '428', '505', '506') --Excluding PrEP to catch mis-coded pts
+	AND pev.LOS_PRIME_PROC_ID IN (7945, 7946, 7947, 7948, 7949, 7951, 7952, 7953, 7954, 7970, 7971, 7972,  7973, 7974, 8047, 8048, 8049, 8050, 8051, 8052, 8053, 8054, 8055, 8056)
+	AND pev.APPT_STATUS_C IN (2, 6)
+	AND SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'MD'
+	AND icd10.code IN ('B20', 'Z21') --HIV and Asymptomatic HIV
+	AND plv.RESOLVED_DATE IS NULL --Active Dx
+	AND plv.PROBLEM_STATUS_C = 1 --Active Dx
+
+		--------------
+	UNION
+SELECT TOP 1000000000
+	p.PAT_ID 
+
+FROM 
+	Clarity.dbo.PATIENT_VIEW p
+	INNER JOIN Clarity.dbo.PAT_ENC_VIEW pev ON p.PAT_ID = pev.PAT_ID
+	LEFT JOIN Clarity.dbo.EPISODE_LINK_VIEW elv ON pev.PAT_ENC_CSN_ID = elv.PAT_ENC_CSN_ID
+	LEFT JOIN Clarity.dbo.EPISODE_VIEW ev ON p.PAT_ID = ev.PAT_LINK_ID
+	LEFT JOIN Clarity.dbo.CLARITY_SER_VIEW serm ON pev.VISIT_PROV_ID = serm.PROV_ID
+
+WHERE 
+	pev.APPT_STATUS_C IN  (2, 6)
+	AND ev.SUM_BLK_TYPE_ID = 221
+	AND (ev.END_DATE IS NULL
+		OR ev.END_DATE > DATEADD(MONTH, -12, GETDATE()))
+	AND pev.CONTACT_DATE >= DATEADD(MONTH, -12, GETDATE())	
+					 
+
+;
+
+SELECT TOP 1000000000   
+	 pev.PAT_ID
+	 ,id.IDENTITY_ID MRN
+	 ,p.PAT_NAME
+	 ,dep.DEPARTMENT_NAME
+	 ,SUBSTRING(dep.DEPT_ABBREVIATION, 3, 2) 'STATE'
+	 ,ser.PROV_NAME PCP
+	,CASE
+		WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'MK' THEN 'MILWAUKEE'
+		WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'KN' THEN 'KENOSHA'
+		WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'GB' THEN 'GREEN BAY'
+		WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'WS' THEN 'WAUSAU'
+		WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'AP' THEN 'APPLETON'
+		WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'EC' THEN 'EAU CLAIRE'
+		WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'LC' THEN 'LACROSSE'
+		WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'MD' THEN 'MADISON'
+		WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'BL' THEN 'BELOIT'
+		WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'BI' THEN 'BILLING'
+		WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'SL' THEN 'ST LOUIS'
+		WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'DN' THEN 'DENVER'
+		WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'AS' THEN 'AUSTIN'
+		WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'KC' THEN 'KANSAS CITY'
+		ELSE SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2)
+	END AS CITY
+	,meas.RECORDED_TIME Recorded_time
+	,MAX(CASE WHEN meas.FLO_MEAS_ID = '1031' THEN	meas.MEAS_VALUE END) PHQ9_Q1
+	,MAX(CASE WHEN meas.FLO_MEAS_ID = '1032' THEN	meas.MEAS_VALUE END) PHQ9_Q2
+	,MAX(CASE WHEN meas.FLO_MEAS_ID = '1033' THEN	meas.MEAS_VALUE END) PHQ9_Q3
+	,MAX(CASE WHEN meas.FLO_MEAS_ID = '1034' THEN	meas.MEAS_VALUE END) PHQ9_Q4
+	,MAX(CASE WHEN meas.FLO_MEAS_ID = '1035' THEN	meas.MEAS_VALUE END) PHQ9_Q5
+	,MAX(CASE WHEN meas.FLO_MEAS_ID = '1036' THEN	meas.MEAS_VALUE END) PHQ9_Q6
+	,MAX(CASE WHEN meas.FLO_MEAS_ID = '1037' THEN	meas.MEAS_VALUE END) PHQ9_Q7
+	,MAX(CASE WHEN meas.FLO_MEAS_ID = '1038' THEN	meas.MEAS_VALUE END) PHQ9_Q8
+	,MAX(CASE WHEN meas.FLO_MEAS_ID = '1039' THEN	meas.MEAS_VALUE END) PHQ9_Q9
+	,MAX(CASE WHEN meas.FLO_MEAS_ID IN ('1043','1044') THEN	meas.MEAS_VALUE END) PHQ9_SUM
+	,MAX(CASE WHEN meas.FLO_MEAS_ID = '1042' THEN	meas.MEAS_VALUE END) PHQ9_Q10
+	,ROW_NUMBER() OVER (PARTITION BY pev.PAT_ID ORDER BY meas.RECORDED_TIME DESC) AS ROW_NUM_DESC
+
+INTO #a
+			
+FROM 
+	 Clarity.dbo.PAT_ENC_VIEW pev
+	 INNER JOIN #pop pop ON pop.PAT_ID = pev.PAT_ID
+	 INNER JOIN Clarity.dbo.IDENTITY_ID_VIEW id ON pev.PAT_ID = id.PAT_ID
+	 INNER JOIN Clarity.dbo.PATIENT_VIEW p ON p.PAT_ID = id.PAT_ID 
+	 LEFT JOIN Clarity.dbo.CLARITY_SER_VIEW ser ON p.CUR_PCP_PROV_ID = ser.PROV_ID
+	 INNER JOIN Clarity.dbo.ANALYTICS.TRANSFORM.DepartmentMapping dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
+	 INNER JOIN Clarity.dbo.IP_FLWSHT_REC_VIEW ifrv ON p.PAT_ID = ifrv.PAT_ID
+	 INNER JOIN Clarity.dbo.IP_FLWSHT_MEAS_VIEW meas ON ifrv.FSD_ID = meas.FSD_ID 
+				
+	
+WHERE
+	meas.RECORDED_TIME > DATEADD(MONTH, -12, GETDATE()) --Rolling 12 months
+	AND MEAS.FLO_MEAS_ID IN ('1031','1032','1033','1034','1035','1036','1037','1038','1039','1042', '1043', '1044')
+
+GROUP BY
+	 pev.PAT_ID
+	 ,id.IDENTITY_ID 
+	 ,p.PAT_NAME
+	 ,ser.PROV_NAME 
+	,meas.RECORDED_TIME
+	,dep.DEPARTMENT_NAME
+	,ser.PROV_NAME
+	,SUBSTRING(dep.DEPT_ABBREVIATION, 3, 2)
+	,SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2)
+;
+
+SELECT TOP 1000000000
+	a.PAT_ID
+	,a.MRN
+	,a.PAT_NAME
+	,a.DEPARTMENT_NAME
+	,a.STATE
+	,a.CITY
+	,a.PCP
+	,a.Recorded_time
+	,a.PHQ9_Q1
+	,a.PHQ9_Q2
+	,a.PHQ9_Q3
+	,a.PHQ9_Q4
+	,a.PHQ9_Q5
+	,a.PHQ9_Q6
+	,a.PHQ9_Q7
+	,a.PHQ9_Q8
+	,a.PHQ9_Q9
+	,a.PHQ9_SUM
+	,a.PHQ9_Q10
+	,CASE 
+		WHEN a.PHQ9_Q10 IS NULL AND a.PHQ9_SUM <> '0' THEN 999
+		WHEN a.PHQ9_Q10 IS NULL AND a.PHQ9_SUM = '0' THEN 0
+		WHEN a.PHQ9_Q10 = 'Not difficult at all' THEN 0
+		WHEN a.PHQ9_Q10 = 'Somewhat difficult' THEN 1
+		WHEN a.PHQ9_Q10 = 'Very difficult' THEN 2
+		WHEN a.PHQ9_Q10 = 'Extremely difficult' THEN 3
+	END AS Q10_SCORE
+
+INTO	#b
+
+FROM 
+	#a a
+	
+
+WHERE
+	a.ROW_NUM_DESC = 1
+
+;
+SELECT TOP 1000000000
+	b.PAT_ID
+	,b.MRN
+	,b.PAT_NAME
+	,b.DEPARTMENT_NAME
+	,b.STATE
+	,b.CITY
+	,b.PCP
+	,MAX(CASE
+		WHEN ser.PROVIDER_TYPE_C IN ('136', '164', '129') THEN ser.PROV_NAME
+	END) AS 'PSYCHIATRY'
+	,MAX(CASE
+		WHEN ser.PROVIDER_TYPE_C NOT IN ('136', '164', '129') THEN ser.PROV_NAME
+	END) AS 'MH_TEAM_MEMBER'
+	,b.Recorded_time
+	,b.PHQ9_Q1
+	,b.PHQ9_Q2
+	,b.PHQ9_Q3
+	,b.PHQ9_Q4
+	,b.PHQ9_Q5
+	,b.PHQ9_Q6
+	,b.PHQ9_Q7
+	,b.PHQ9_Q8
+	,b.PHQ9_Q9
+	,b.PHQ9_SUM
+	,b.Q10_Score
+	,CASE WHEN	b.Q10_SCORE IN (0, 1) THEN 'MET'
+		  WHEN b.Q10_SCORE IN (2, 3) THEN 'NOT MET'
+	END MET_YN
+
+FROM #b b
+	LEFT JOIN Clarity.dbo.PAT_PCP_VIEW ct ON b.PAT_ID = ct.PAT_ID
+				AND ct.RELATIONSHIP_C IN ('1', '3') 
+				AND ct.TERM_DATE IS NULL
+	LEFT JOIN Clarity.dbo.CLARITY_SER_VIEW ser ON ser.PROV_ID = ct.PCP_PROV_ID
+
+WHERE
+	b.Q10_SCORE IN (0, 1, 2, 3)
+
+GROUP BY 
+b.PAT_ID
+	,b.MRN
+	,b.PAT_NAME
+	,b.DEPARTMENT_NAME
+	,b.STATE
+	,b.CITY
+	,b.PCP
+	,b.Recorded_time
+	,b.PHQ9_Q1
+	,b.PHQ9_Q2
+	,b.PHQ9_Q3
+	,b.PHQ9_Q4
+	,b.PHQ9_Q5
+	,b.PHQ9_Q6
+	,b.PHQ9_Q7
+	,b.PHQ9_Q8
+	,b.PHQ9_Q9
+	,b.PHQ9_SUM
+	,b.Q10_Score
+
+;
+DROP TABLE #a
+DROP TABLE #b
+DROP TABLE #pop

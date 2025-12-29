@@ -1,0 +1,61 @@
+/**
+ * ANL-MKE-SVR-100
+ **/
+
+SET NOCOUNT ON;
+SET ANSI_WARNINGS OFF;
+
+
+IF OBJECT_ID('tempdb..#prep') IS NOT NULL DROP TABLE #prep;
+SELECT DISTINCT flag.PATIENT_ID,
+                'PrEP' AS 'PATIENT TYPE'
+INTO #prep
+FROM Clarity.dbo.PATIENT_FYI_FLAGS_VIEW flag
+WHERE flag.ACTIVE_C = 1
+      AND flag.PAT_FLAG_TYPE_C = '640005'; --PrEP
+
+
+SELECT id.IDENTITY_ID MRN,
+       p.PAT_NAME PATIENT,
+       omv.DESCRIPTION 'Rx Name',
+       omv.ORDERING_DATE 'Order Date',
+       rp.PHARMACY_NAME 'Pharmacy Name',
+       dep.DEPARTMENT_NAME 'Department',
+       ser.PROV_NAME 'Ordering Provider',
+       CASE WHEN omv.PHARMACY_ID IN ( 86875, 58682, 77912, 98993 ) THEN 'Vivent Pharmacy'
+           WHEN rp.PHARMACY_NAME LIKE '%VIVENT PHARMACY%' THEN 'Vivent Pharmacy'
+           ELSE 'Other Pharmacy'
+       END 'Pharmacy',
+       CASE WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'MK' THEN 'MILWUAKEE'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'KN' THEN 'KENOSHA'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'GB' THEN 'GREEN BAY'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'WS' THEN 'WAUSAU'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'AP' THEN 'APPLETON'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'EC' THEN 'EAU CLAIRE'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'LC' THEN 'LACROSSE'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'MD' THEN 'MADISON'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'BL' THEN 'BELOIT'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'BI' THEN 'BILLING'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'SL' THEN 'ST LOUIS'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'DN' THEN 'DENVER'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'AS' THEN 'AUSTIN'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'KC' THEN 'KANSAS CITY'
+           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'CG' THEN 'CHICAGO'
+           ELSE 'New Site'
+       END AS 'Site',
+       SUBSTRING(dep.DEPT_ABBREVIATION, 3, 2) 'STATE',
+       IIF(prep.[PATIENT TYPE] = 'PrEP', 'PrEP', 'HIV') AS 'PATIENT TYPE',
+       GETDATE() AS UPDATE_DTTM
+FROM Clarity.dbo.ORDER_MED_VIEW omv
+    INNER JOIN Clarity.dbo.IDENTITY_ID_VIEW id ON omv.PAT_ID = id.PAT_ID
+    INNER JOIN Clarity.dbo.CLARITY_MEDICATION med ON omv.MEDICATION_ID = med.MEDICATION_ID
+    INNER JOIN Clarity.dbo.INDICATIONS_OF_USE ios ON med.MEDICATION_ID = ios.MEDICATION_ID
+    INNER JOIN Clarity.dbo.PATIENT_VIEW p ON omv.PAT_ID = p.PAT_ID
+    LEFT JOIN Clarity.dbo.RX_PHR rp ON omv.PHARMACY_ID = rp.PHARMACY_ID
+    LEFT JOIN Clarity.dbo.CLARITY_SER_VIEW ser ON omv.AUTHRZING_PROV_ID = ser.PROV_ID
+    LEFT JOIN Clarity.dbo.CLARITY_DEP_VIEW dep ON omv.LOGIN_DEP_ID = dep.DEPARTMENT_ID
+    LEFT JOIN #prep prep ON omv.PAT_ID = prep.PATIENT_ID
+WHERE YEAR(omv.ORDERING_DATE) > 2015
+      AND ios.INDICATIONS_USE_ID IN ( 138, 3032, 4472 ) --HIV infection, HIV infection pre-exposure prophylaxis, prevention of HIV infection after exposure
+      AND SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'MD' --Medical Visits Only
+      AND omv.PHARMACY_ID IS NOT NULL;

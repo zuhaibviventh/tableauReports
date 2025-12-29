@@ -1,0 +1,209 @@
+SET NOCOUNT ON
+;
+SET ANSI_WARNINGS OFF
+;
+
+IF OBJECT_ID ('tempdb..#Attribution1') IS NOT NULL
+    DROP TABLE #Attribution1
+;
+SELECT
+    pev.PAT_ID
+  , pev.CONTACT_DATE LAST_OFFICE_VISIT
+  , SUBSTRING (dep.DEPT_ABBREVIATION, 3, 2) 'STATE'
+  , CASE SUBSTRING (dep.DEPT_ABBREVIATION, 5, 2)
+        WHEN 'MK' THEN 'MILWAUKEE'
+        WHEN 'KN' THEN 'KENOSHA'
+        WHEN 'GB' THEN 'GREEN BAY'
+        WHEN 'WS' THEN 'WAUSAU'
+        WHEN 'AP' THEN 'APPLETON'
+        WHEN 'EC' THEN 'EAU CLAIRE'
+        WHEN 'LC' THEN 'LACROSSE'
+        WHEN 'MD' THEN 'MADISON'
+        WHEN 'BL' THEN 'BELOIT'
+        WHEN 'BI' THEN 'BILLING'
+        WHEN 'SL' THEN 'ST LOUIS'
+        WHEN 'DN' THEN 'DENVER'
+        WHEN 'AS' THEN 'AUSTIN'
+        WHEN 'KC' THEN 'KANSAS CITY'
+        WHEN 'CG' THEN 'CHICAGO'
+        ELSE SUBSTRING (dep.DEPT_ABBREVIATION, 5, 2)
+    END AS CITY
+  , CASE SUBSTRING (dep.DEPT_ABBREVIATION, 7, 2)
+        WHEN 'MN' THEN 'MAIN LOCATION'
+        WHEN 'DR' THEN 'D&R'
+        WHEN 'KE' THEN 'KEENEN'
+        WHEN 'UC' THEN 'UNIVERSITY OF COLORADO'
+        WHEN 'ON' THEN 'AUSTIN MAIN'
+        WHEN 'TW' THEN 'AUSTIN OTHER'
+        ELSE 'ERROR'
+    END AS 'SITE'
+  , CASE SUBSTRING (dep.DEPT_ABBREVIATION, 9, 2)
+        WHEN 'MD' THEN 'MEDICAL'
+        WHEN 'DT' THEN 'DENTAL'
+        WHEN 'CM' THEN 'CASE MANAGEMENT'
+        WHEN 'RX' THEN 'PHARMACY'
+        WHEN 'AD' THEN 'BEHAVIORAL'
+        WHEN 'PY' THEN 'BEHAVIORAL'
+        WHEN 'BH' THEN 'BEHAVIORAL'
+        WHEN 'MH' THEN 'BEHAVIORAL'
+        ELSE 'ERROR'
+    END AS 'LOS'
+INTO
+    #Attribution1
+FROM
+    CLARITY.dbo.PAT_ENC_VIEW pev
+    INNER JOIN CLARITY.dbo.CLARITY_DEP_VIEW dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
+WHERE
+    pev.CONTACT_DATE > DATEADD (MONTH, -12, GETDATE ())
+    AND pev.APPT_STATUS_C IN ( 2, 6 )
+;
+
+IF OBJECT_ID ('tempdb..#Attribution2') IS NOT NULL
+    DROP TABLE #Attribution2
+;
+SELECT
+    a1.PAT_ID
+  , a1.STATE
+  , a1.CITY
+  , a1.SITE
+  , a1.LOS
+  , ROW_NUMBER () OVER (PARTITION BY a1.PAT_ID ORDER BY a1.LAST_OFFICE_VISIT DESC) AS ROW_NUM_DESC
+INTO
+    #Attribution2
+FROM
+    #Attribution1 a1
+WHERE
+    a1.LOS = 'DENTAL'
+;
+
+IF OBJECT_ID ('tempdb..#Attribution3') IS NOT NULL
+    DROP TABLE #Attribution3
+;
+SELECT
+    a2.PAT_ID
+  , a2.LOS
+  , a2.CITY
+  , a2.STATE
+  , ROW_NUMBER () OVER (PARTITION BY a2.PAT_ID ORDER BY PAT_ENC.CONTACT_DATE DESC) AS ROW_NUM_DESC
+INTO
+    #Attribution3
+FROM
+    #Attribution2 a2
+    INNER JOIN CLARITY.dbo.EPISODE_VIEW ev ON ev.PAT_LINK_ID = a2.PAT_ID
+    INNER JOIN CLARITY.dbo.ORDER_PROC_VIEW AS ORDER_PROC ON a2.PAT_ID = ORDER_PROC.PAT_ID
+    INNER JOIN CLARITY.dbo.CLARITY_EAP AS CLARITY_EAP ON ORDER_PROC.PROC_ID = CLARITY_EAP.PROC_ID
+    INNER JOIN CLARITY.dbo.PAT_ENC_VIEW AS PAT_ENC ON ORDER_PROC.PAT_ENC_CSN_ID = PAT_ENC.PAT_ENC_CSN_ID
+    INNER JOIN CLARITY.dbo.CLARITY_SER_VIEW AS CLARITY_SER ON PAT_ENC.VISIT_PROV_ID = CLARITY_SER.PROV_ID
+WHERE
+    a2.ROW_NUM_DESC = 1
+    AND CLARITY_SER.PROVIDER_TYPE_C = '108' -- Dentist
+    AND ev.SUM_BLK_TYPE_ID = 45
+    AND ev.STATUS_C = 1
+    AND DATEDIFF (MONTH, PAT_ENC.CONTACT_DATE, GETDATE ()) <= 12
+    AND CLARITY_EAP.PROC_CODE IN ( 'TX130', 'TX630', 'D0120', 'D0150', 'D0180', 'D0160', 'D0170', 'D0190' )
+;
+
+-- =================================================================
+-- REPLACED BLOCK: Build #dental_treatment_plan capturing PERFORMING_PROV_ID
+-- =================================================================
+IF OBJECT_ID ('tempdb..#dental_treatment_plan') IS NOT NULL
+    DROP TABLE #dental_treatment_plan
+;
+WITH treatment_plan_visits AS (
+    SELECT
+        pev.PAT_ID
+      , t64.PERFORMING_PROV_ID            -- << capture TP provider ID
+      , t64.ORIG_SERVICE_DATE
+      , t64.TDL_ID
+      , ROW_NUMBER() OVER (
+            PARTITION BY pev.PAT_ID
+            ORDER BY t64.ORIG_SERVICE_DATE DESC, t64.TDL_ID DESC
+        ) AS rn
+    FROM CLARITY.dbo.CLARITY_TDL_TRAN_64_VIEW t64
+    INNER JOIN CLARITY.dbo.PAT_ENC_VIEW pev
+        ON pev.PAT_ENC_CSN_ID = t64.PAT_ENC_CSN_ID
+    WHERE
+        t64.CPT_CODE IN ( 'DTPLIN', 'DTXPLU' )
+        AND DATEDIFF (MONTH, t64.ORIG_SERVICE_DATE, GETDATE ()) <= 12
+        AND t64.DETAIL_TYPE = 1
+)
+SELECT
+    t.PAT_ID
+  , CAST('Y' AS CHAR(1)) AS [Treatment Plan]
+  , t.PERFORMING_PROV_ID                 -- keep source column name
+INTO
+    #dental_treatment_plan
+FROM
+    treatment_plan_visits t
+WHERE
+    t.rn = 1
+;
+
+WITH svis
+AS (SELECT
+        pev.PAT_ID
+      , CONVERT (NVARCHAR(30), pev.CONTACT_DATE, 101) AS 'Next Any Appt'
+      , ser.PROV_NAME 'Next Appt Prov'
+      , ROW_NUMBER () OVER (PARTITION BY pev.PAT_ID ORDER BY pev.CONTACT_DATE ASC) AS ROW_NUM_ASC
+    FROM
+        CLARITY.dbo.PAT_ENC_VIEW pev
+        INNER JOIN CLARITY.dbo.CLARITY_SER_VIEW ser ON pev.VISIT_PROV_ID = ser.PROV_ID
+    WHERE
+        pev.APPT_STATUS_C = 1  --Scheduled
+)
+, spvis
+AS (SELECT
+        pev.PAT_ID
+      , CONVERT (NVARCHAR(30), pev.CONTACT_DATE, 101) AS 'Next Dental Appt'
+      , ser.PROV_NAME 'Next Dental Appt Prov'
+      , ROW_NUMBER () OVER (PARTITION BY pev.PAT_ID ORDER BY pev.CONTACT_DATE ASC) AS ROW_NUM_ASC
+    FROM
+        CLARITY.dbo.PAT_ENC_VIEW pev
+        INNER JOIN CLARITY.dbo.CLARITY_DEP_VIEW dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
+        INNER JOIN CLARITY.dbo.CLARITY_SER_VIEW ser ON pev.VISIT_PROV_ID = ser.PROV_ID
+    WHERE
+        pev.APPT_STATUS_C = 1 -- Scheduled
+        AND SUBSTRING (dep.DEPT_ABBREVIATION, 9, 2) = 'DT'
+)
+SELECT
+    IDENTITY_ID.IDENTITY_ID AS MRN
+  , PATIENT.PAT_NAME
+  , COALESCE (#dental_treatment_plan.[Treatment Plan], 'N') AS [Has Treatment Plan]
+  , CASE
+        WHEN #dental_treatment_plan.PAT_ID IS NOT NULL THEN 'Met'
+        ELSE 'Not Met'
+    END AS OUTCOME
+
+  
+
+  , #Attribution3.CITY
+  , #Attribution3.STATE
+  , CAST (svis.[Next Any Appt] AS DATE) AS 'Next Any Appt'
+  , svis.[Next Appt Prov]
+  , CAST (spvis.[Next Dental Appt] AS DATE) AS 'Next Dental Appt'
+  , spvis.[Next Dental Appt Prov]
+  -- << NEW: expose TP provider ID + Name
+  --, #dental_treatment_plan.PERFORMING_PROV_ID
+  , tp_perf.PROV_NAME AS PROV_NAME_PERFORMING
+FROM
+    #Attribution3
+    INNER JOIN CLARITY.dbo.PATIENT_VIEW AS PATIENT
+        ON #Attribution3.PAT_ID = PATIENT.PAT_ID
+    INNER JOIN CLARITY.dbo.IDENTITY_ID_VIEW AS IDENTITY_ID
+        ON #Attribution3.PAT_ID = IDENTITY_ID.PAT_ID
+    LEFT JOIN #dental_treatment_plan
+        ON #Attribution3.PAT_ID = #dental_treatment_plan.PAT_ID
+
+    -- NEW: resolve the provider name for PERFORMING_PROV_ID
+    LEFT JOIN CLARITY.dbo.CLARITY_SER_VIEW tp_perf
+        ON tp_perf.PROV_ID = #dental_treatment_plan.PERFORMING_PROV_ID
+
+    LEFT JOIN svis
+        ON PATIENT.PAT_ID = svis.PAT_ID
+       AND svis.ROW_NUM_ASC = 1
+    LEFT JOIN spvis
+        ON PATIENT.PAT_ID = spvis.PAT_ID
+       AND spvis.ROW_NUM_ASC = 1
+WHERE
+    ROW_NUM_DESC = 1
+;
