@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<body style = "font-size: 24px">
+    <p>Dear {patient_name}'s Care Team,</p>
+    <p>
+        *******<b style="color: #ff0000">ACTION NEEDED</b>********<br>
+        Please Reply All to this email to let the Viral Load Rapid Response Team know if you:
+
+            <ul>
+                <li>Want any assistance with any patient on your list below, or</li>
+                <li>Do not want any assistance at this time</li>
+            </ul>
+
+        Please respond by Noon on Wednesday<br>
+        *******************************
+    </p>
+    <p>
+        Below is the detail on one of your patients who was previously virally 
+        suppressed, but their lab draw last week showed that they are now unsuppressed.<br>
+        <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:24px;
+          overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:24px;
+          font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
+        .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+        .tg .tg-0lax{text-align:left;vertical-align:top}
+        </style>
+        <table class="tg">
+        <thead>
+          <tr>
+            <th class="tg-amwm" colspan="2">Patient Information</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-1wig">MRN ID</td>
+            <td class="tg-0lax">{identity_id}</td>
+          </tr>
+          <tr>
+            <td class="tg-1wig">Patient Name</td>
+            <td class="tg-0lax">{patient_name}</td>
+          </tr>
+          <tr>
+            <td class="tg-1wig">Last Viral Load</td>
+            <td class="tg-0lax">{last_vls}</td>
+          </tr>
+          <tr>
+            <td class="tg-1wig">Date of Last Viral Load</td>
+            <td class="tg-0lax">{last_vls_date}</td>
+          </tr>
+          <tr>
+            <td class="tg-1wig">Previous Viral Load</td>
+            <td class="tg-0lax">{previous_vls}</td>
+          </tr>
+          <tr>
+            <td class="tg-1wig">Date of Previous Viral Load</td>
+            <td class="tg-0lax">{previous_vls_date}</td>
+          </tr>
+          <tr>
+            <td class="tg-1wig">Months in between labs</td>
+            <td class="tg-0lax">months_between_labs</td>
+          </tr>
+        </tbody>
+        </table>
+    </p>
+    <p>Their next visit is on <b>{next_visit} with {next_visit_provider}</b>.</p>
+    <p>
+        The Viral Load Rapid Response Team consists of 
+        <ul>
+            <li>Janaki Shah (jashah@mcw.edu)</li>
+            <li>Hailey Keeser (hailey.keeser@viventhealth.org)</li>
+            <li>Amie Gordon (amie.gordon@viventhealth.org)</li>
+            <li>Katie Andaloro (katie.andaloro@viventhealth.org)</li>
+        </ul>
+        and they are available to assist you if you would like any help on this.
+    </p>
+    <b>
+        If you do not want any involvement, your response saying so will close 
+        this out with the Viral Load Rapid Response Team.
+    </b>
+    <p>
+        If you request the Viral Load Rapid Response Team’s assistance, the 
+        following will happen:
+        <ol>
+            <li>
+                A note will be added to the patient’s chart detailing their ARV 
+                fill dates for the past six months (if they fill at ARCW’s pharmacy)
+            </li>
+            <li>
+                At 1:00 PM each Wednesday, the Viral Load Rapid Response Team 
+                will meet to discuss cases. This team will be looking in Epic, QS1 
+                and Provide Enterprise to gather as much information as possible 
+                about the patient’s situation, and relevant information from Provide 
+                will be added to the patient’s chart in Epic.
+                <ul>
+                    <li>
+                        If your email asking for the team’s involvement contains 
+                        details about the situation (which is not required, but 
+                        may save time), the team will use that information to 
+                        formulate an action plan.
+                    </li>
+                    <li>
+                        If no details were included in your response, the team 
+                        will reach out to the provider and/or nurse to gather 
+                        information about the case then work on an action plan.
+                    </li>
+                    <li>
+                        Action plans may involve members of the care team, other 
+                        social services staff, or others depending on the 
+                        specifics of each case.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                The action plan and actions that follow will be documented in 
+                the patient’s chart.
+            </li>
+        </ol>
+        <p>
+            The team will work with you on cases until you consider each case 
+            resolved.
+        </p>
+
+        <p>
+            Best, <br>
+            Benzon
+        </p>
+        <p>
+            <b>Benzon Carlitos Salazar</b> <br>
+            <em>Health Informatics Data Analyst</em> <br> 
+            <em>He/Him/His</em> <br>
+        </p>
+        <p>
+            Telephone: (414) 223-6822 ext. 6822 <br>
+            Mobile Phone: (262) 339-7772 <br>
+            Toll Free: (800) 359-9272 <br>
+        </p>
+    </p>
+</body>
+</html>

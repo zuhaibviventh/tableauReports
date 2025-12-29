@@ -1,0 +1,6 @@
+Patient_Id,Patient_DOB,Patient_Address_City,Patient_Address_State,Patient_Address_Zipcode,Patient_Address_County,Patient_Sex_at_Birth,Patient_Gender_Identity,Patient_Race,Patient_Ethnicity,Vaccine_Provider,Vaccine_Provider_Site,Vaccine_Provider_Site_Zipcode,Vaccine_Provider_Site_County,Vaccination_Date,Dose_Number,Vaccine_manufacturer,Vaccine_lot_number
+640056978,08/11/1996,Austin,TX,78753,TRAVIS,Male,Male,White,Prefer not to answer,Vivent Health,Vivent Health Austin,78752,Travis,09/09/2024,Dose 1,Jynneos,FDP00017
+640055021,12/01/1996,Cedar Park,TX,78613,WILLIAMSON,Male,Male,White,Prefer not to answer,Vivent Health,Vivent Health Austin,78752,Travis,09/09/2024,Dose 1,Jynneos,FDP0017
+640053057,05/24/1980,Austin,TX,78752,TRAVIS,Male,Male,White,Prefer not to answer,Vivent Health,Vivent Health Austin,78752,Travis,09/09/2024,Dose 2,Jynneos,FDP0017
+640047219,03/01/1991,PAIGE,TX,78659,BASTROP,Male,Male,White,Prefer not to answer,Vivent Health,Vivent Health Austin,78752,Travis,09/09/2024,Dose 1,Jynneos,FDP00017
+640052896,11/26/1998,Austin,TX,78751,TRAVIS,Male,Genderqueer,White,Prefer not to answer,Vivent Health,Vivent Health Austin,78752,Travis,09/09/2024,Dose 2,Jynneos,FDP00017

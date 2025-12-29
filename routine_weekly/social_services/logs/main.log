@@ -1,0 +1,512 @@
+2023-10-06 16:10:00,234 [INFO] Running Clinical Operations Daily ETL Workflow.
+2023-10-06 16:27:08,151 [INFO] Running Clinical Operations Daily ETL Workflow.
+2023-10-06 16:31:30,518 [INFO] Running Clinical Operations Daily ETL Workflow.
+2023-10-09 16:13:28,794 [INFO] Running Clinical Quality Daily ETL Workflow.
+2023-10-17 13:47:52,589 [INFO] Running Clinical Operations Daily ETL Workflow.
+2023-10-17 13:57:17,975 [INFO] Running Clinical Operations Daily ETL Workflow.
+2023-10-17 13:59:55,814 [INFO] Running Clinical Operations Daily ETL Workflow.
+2023-10-17 14:28:14,227 [INFO] Running Clinical Operations Daily ETL Workflow.
+2023-10-17 14:30:14,613 [INFO] Running Clinical Operations Daily ETL Workflow.
+2023-10-17 14:33:56,269 [INFO] Running Clinical Operations Daily ETL Workflow.
+2023-10-24 08:42:23,963 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-24 08:42:27,617 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-10-24 08:44:20,231 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-24 08:44:23,298 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-10-24 08:47:19,761 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-24 08:47:22,989 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-10-24 08:49:10,869 [INFO] Creating Hyper Table.
+2023-10-24 08:49:10,871 [ERROR] Incorrect connection keys: 'VL Status'
+2023-10-24 08:49:10,871 [INFO] Total run time is 107.8823s.
+2023-10-24 08:57:50,974 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-24 08:57:54,765 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-10-24 08:59:43,125 [INFO] Creating Hyper Table.
+2023-10-24 08:59:43,131 [ERROR] Incorrect connection keys: 'VL Status'
+2023-10-24 08:59:43,132 [INFO] Total run time is 108.3663s.
+2023-10-24 09:00:05,765 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-24 09:00:35,713 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-10-24 09:27:14,492 [INFO] Creating Hyper Table.
+2023-10-24 09:27:14,501 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/WIP - Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-10-24 10:27:59,015 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-24 10:28:02,659 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-10-24 10:31:07,847 [INFO] Creating Hyper Table.
+2023-10-24 10:31:07,849 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/WIP - Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-10-24 10:31:08,197 [INFO] Connection to Hyper file is closed.
+2023-10-24 10:31:08,197 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/WIP - Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-10-24 10:31:11,049 [INFO] Datasource published. Datasource ID: 4b5267ed-5664-437d-a38a-dd88d71e5f8e
+2023-10-24 10:31:11,192 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-10-24 10:31:11,193 [INFO] Total run time is 188.5329s.
+2023-10-24 10:42:38,032 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-24 10:42:41,226 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-10-24 10:44:30,443 [INFO] Creating Hyper Table.
+2023-10-24 10:44:30,447 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-10-24 10:44:30,771 [INFO] Connection to Hyper file is closed.
+2023-10-24 10:44:30,771 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-10-24 10:44:34,149 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-10-24 10:44:34,305 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-10-24 10:44:34,306 [INFO] Total run time is 113.0801s.
+2023-12-24 07:03:25,897 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-24 07:03:30,190 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2024-01-02 14:25:19,794 [INFO] Running Social Services Weekly ETL Workflow.
+2024-01-02 14:25:35,439 [INFO] Total run time is 13.2476s.
+2024-01-02 14:42:17,754 [INFO] Running Social Services Weekly ETL Workflow.
+2024-01-02 14:44:11,441 [INFO] Running Social Services Weekly ETL Workflow.
+2024-01-02 14:45:12,061 [INFO] Running Social Services Weekly ETL Workflow.
+2024-01-02 14:45:31,203 [INFO] Total run time is 16.7840s.
+2024-01-02 14:46:30,862 [INFO] Running Social Services Weekly ETL Workflow.
+2024-01-02 14:46:49,630 [INFO] Total run time is 16.3082s.
+2024-01-02 14:47:58,605 [INFO] Running Social Services Weekly ETL Workflow.
+2024-01-02 14:48:17,583 [INFO] Total run time is 16.6307s.
+2024-01-07 09:57:47,103 [INFO] Running Social Services Weekly ETL Workflow.
+2024-01-07 09:59:31,337 [INFO] Running Social Services Weekly ETL Workflow.
+2024-01-07 10:03:07,792 [INFO] Total run time is 212.7876s.
+2024-01-07 10:03:10,147 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-07 10:03:48,859 [INFO] Total run time is 37.4855s.
+2024-01-14 05:38:30,022 [INFO] Running Social Services Weekly ETL Workflow.
+2024-01-14 05:39:11,507 [INFO] Total run time is 38.3013s.
+2024-01-14 05:39:14,241 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-14 05:39:52,378 [INFO] Total run time is 36.5265s.
+2024-01-21 07:03:40,541 [INFO] Running Social Services Weekly ETL Workflow.
+2024-01-21 07:04:45,271 [INFO] Total run time is 59.9307s.
+2024-01-21 07:04:49,023 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-21 07:05:50,905 [INFO] Total run time is 58.0893s.
+2024-01-28 11:22:28,207 [INFO] Running Social Services Weekly ETL Workflow.
+2024-01-28 11:23:09,754 [INFO] Total run time is 37.8221s.
+2024-01-28 11:23:12,346 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-28 11:23:44,862 [INFO] Total run time is 29.8839s.
+2024-02-04 05:47:28,100 [INFO] Running Social Services Weekly ETL Workflow.
+2024-02-04 05:48:08,730 [INFO] Total run time is 38.0745s.
+2024-02-04 05:48:10,092 [INFO] Running Prevention Weekly ETL Workflow.
+2024-02-04 05:49:33,292 [INFO] Total run time is 81.6376s.
+2024-02-11 06:21:59,131 [INFO] Running Social Services Weekly ETL Workflow.
+2024-02-11 06:25:24,900 [INFO] Total run time is 203.4937s.
+2024-02-11 06:25:27,677 [INFO] Running Prevention Weekly ETL Workflow.
+2024-02-11 06:26:19,062 [INFO] Total run time is 50.2034s.
+2024-02-18 06:04:17,948 [INFO] Running Social Services Weekly ETL Workflow.
+2024-02-18 06:04:59,811 [INFO] Total run time is 37.0641s.
+2024-02-18 06:05:02,480 [INFO] Running Prevention Weekly ETL Workflow.
+2024-02-18 06:06:01,944 [INFO] Total run time is 57.4406s.
+2024-02-25 06:43:06,230 [INFO] Running Social Services Weekly ETL Workflow.
+2024-02-25 06:47:31,254 [INFO] Total run time is 261.5101s.
+2024-02-25 06:47:34,099 [INFO] Running Prevention Weekly ETL Workflow.
+2024-02-25 06:48:11,357 [INFO] Total run time is 35.3504s.
+2024-03-03 05:51:45,586 [INFO] Running Social Services Weekly ETL Workflow.
+2024-03-03 05:51:59,867 [INFO] Total run time is 9.3901s.
+2024-03-03 05:52:03,565 [INFO] Running Prevention Weekly ETL Workflow.
+2024-03-03 05:52:26,983 [INFO] Total run time is 21.4300s.
+2024-03-10 07:15:49,418 [INFO] Running Social Services Weekly ETL Workflow.
+2024-03-10 07:15:59,271 [INFO] Total run time is 6.1040s.
+2024-03-10 07:16:03,283 [INFO] Running Prevention Weekly ETL Workflow.
+2024-03-10 07:16:46,493 [INFO] Total run time is 39.3173s.
+2024-03-17 06:21:39,990 [INFO] Running Social Services Weekly ETL Workflow.
+2024-03-17 06:21:52,457 [INFO] Total run time is 8.2250s.
+2024-03-17 06:21:56,315 [INFO] Running Prevention Weekly ETL Workflow.
+2024-03-17 06:22:35,062 [INFO] Total run time is 37.0396s.
+2024-03-25 06:02:53,955 [INFO] Running Social Services Weekly ETL Workflow.
+2024-03-25 06:03:04,926 [INFO] Total run time is 5.7954s.
+2024-03-25 06:03:07,649 [INFO] Running Prevention Weekly ETL Workflow.
+2024-03-25 06:03:39,891 [INFO] Total run time is 30.3268s.
+2024-03-31 07:05:08,989 [INFO] Running Social Services Weekly ETL Workflow.
+2024-03-31 07:05:59,165 [INFO] Running Social Services Weekly ETL Workflow.
+2024-03-31 07:06:10,708 [INFO] Total run time is 7.9417s.
+2024-03-31 07:06:14,452 [INFO] Running Prevention Weekly ETL Workflow.
+2024-03-31 07:06:46,960 [INFO] Total run time is 30.9864s.
+2024-04-07 06:13:22,717 [INFO] Running Social Services Weekly ETL Workflow.
+2024-04-07 06:13:32,700 [INFO] Total run time is 6.4020s.
+2024-04-07 06:13:36,607 [INFO] Running Prevention Weekly ETL Workflow.
+2024-04-07 06:17:21,488 [INFO] Total run time is 221.5734s.
+2024-04-14 07:00:15,407 [INFO] Running Social Services Weekly ETL Workflow.
+2024-04-14 07:00:22,555 [INFO] Total run time is 4.1223s.
+2024-04-14 07:00:24,603 [INFO] Running Prevention Weekly ETL Workflow.
+2024-04-14 07:01:04,800 [INFO] Total run time is 35.7493s.
+2024-04-21 06:10:19,673 [INFO] Running Social Services Weekly ETL Workflow.
+2024-04-21 06:10:27,673 [INFO] Total run time is 5.1884s.
+2024-04-21 06:10:30,330 [INFO] Running Prevention Weekly ETL Workflow.
+2024-04-21 06:10:56,604 [INFO] Total run time is 24.8219s.
+2024-04-28 06:59:27,356 [INFO] Running Social Services Weekly ETL Workflow.
+2024-04-28 06:59:34,875 [INFO] Total run time is 4.8940s.
+2024-04-28 06:59:36,511 [INFO] Running Prevention Weekly ETL Workflow.
+2024-04-28 07:04:38,258 [INFO] Total run time is 300.4351s.
+2024-05-05 12:25:55,383 [INFO] Running Social Services Weekly ETL Workflow.
+2024-05-05 12:26:02,659 [INFO] Total run time is 4.9090s.
+2024-05-05 12:26:03,730 [INFO] Running Prevention Weekly ETL Workflow.
+2024-05-05 12:29:50,835 [INFO] Total run time is 225.9225s.
+2024-05-12 08:14:13,956 [INFO] Running Social Services Weekly ETL Workflow.
+2024-05-12 08:14:22,192 [INFO] Total run time is 5.5430s.
+2024-05-12 08:14:24,496 [INFO] Running Prevention Weekly ETL Workflow.
+2024-05-12 08:18:13,552 [INFO] Total run time is 226.5919s.
+2024-05-19 05:44:01,466 [INFO] Running Social Services Weekly ETL Workflow.
+2024-05-19 05:44:11,187 [INFO] Total run time is 5.9421s.
+2024-05-19 05:44:14,603 [INFO] Running Prevention Weekly ETL Workflow.
+2024-05-19 05:44:36,394 [INFO] Total run time is 19.7009s.
+2024-05-26 05:51:28,425 [INFO] Running Social Services Weekly ETL Workflow.
+2024-05-26 05:51:41,348 [INFO] Total run time is 7.0480s.
+2024-05-26 05:51:45,068 [INFO] Running Prevention Weekly ETL Workflow.
+2024-05-26 05:54:27,106 [INFO] Total run time is 160.1438s.
+2024-06-02 06:57:26,234 [INFO] Running Social Services Weekly ETL Workflow.
+2024-06-02 06:57:33,766 [INFO] Total run time is 4.6349s.
+2024-06-02 06:57:35,550 [INFO] Running Prevention Weekly ETL Workflow.
+2024-06-02 07:00:08,662 [INFO] Total run time is 150.1991s.
+2024-06-09 06:54:53,001 [INFO] Running Social Services Weekly ETL Workflow.
+2024-06-09 06:55:02,213 [INFO] Total run time is 6.1351s.
+2024-06-09 06:55:04,983 [INFO] Running Prevention Weekly ETL Workflow.
+2024-06-09 06:59:01,894 [INFO] Total run time is 235.2302s.
+2024-06-16 09:31:27,380 [INFO] Running Social Services Weekly ETL Workflow.
+2024-06-16 09:31:35,782 [INFO] Total run time is 5.2387s.
+2024-06-16 09:31:38,421 [INFO] Running Prevention Weekly ETL Workflow.
+2024-06-16 09:35:46,560 [INFO] Total run time is 246.3587s.
+2024-06-23 06:09:39,349 [INFO] Running Social Services Weekly ETL Workflow.
+2024-06-23 06:09:47,174 [INFO] Total run time is 4.5923s.
+2024-06-23 06:09:50,322 [INFO] Running Prevention Weekly ETL Workflow.
+2024-06-23 06:12:45,586 [INFO] Total run time is 173.1358s.
+2024-06-30 04:35:31,301 [INFO] Running Social Services Weekly ETL Workflow.
+2024-06-30 04:35:45,230 [INFO] Total run time is 7.9410s.
+2024-06-30 04:35:50,201 [INFO] Running Prevention Weekly ETL Workflow.
+2024-06-30 04:41:52,489 [INFO] Total run time is 359.4763s.
+2024-07-01 05:20:28,796 [INFO] Running Social Services Weekly ETL Workflow.
+2024-07-01 05:20:42,129 [INFO] Total run time is 8.4219s.
+2024-07-01 05:20:46,076 [INFO] Running Prevention Weekly ETL Workflow.
+2024-07-07 05:25:23,012 [INFO] Running Social Services Weekly ETL Workflow.
+2024-07-07 05:25:33,262 [INFO] Total run time is 5.9866s.
+2024-07-07 05:25:36,852 [INFO] Running Prevention Weekly ETL Workflow.
+2024-07-07 05:26:54,428 [INFO] Total run time is 75.1454s.
+2024-07-14 04:53:11,253 [INFO] Running Social Services Weekly ETL Workflow.
+2024-07-14 04:53:22,070 [INFO] Total run time is 5.9504s.
+2024-07-14 04:53:25,023 [INFO] Running Prevention Weekly ETL Workflow.
+2024-07-14 04:57:32,895 [INFO] Total run time is 244.6663s.
+2024-07-21 05:00:44,263 [INFO] Running Social Services Weekly ETL Workflow.
+2024-07-21 05:01:53,577 [INFO] Total run time is 65.9015s.
+2024-07-21 05:01:56,198 [INFO] Running Prevention Weekly ETL Workflow.
+2024-07-21 05:02:21,845 [INFO] Total run time is 23.1629s.
+2024-07-28 06:03:17,858 [INFO] Running Social Services Weekly ETL Workflow.
+2024-07-28 06:03:51,799 [INFO] Total run time is 30.8387s.
+2024-07-28 06:03:53,852 [INFO] Running Prevention Weekly ETL Workflow.
+2024-07-28 06:04:59,884 [INFO] Total run time is 63.9870s.
+2024-08-04 07:53:03,511 [INFO] Running Social Services Weekly ETL Workflow.
+2024-08-04 07:53:33,542 [INFO] Total run time is 28.1494s.
+2024-08-04 07:53:35,642 [INFO] Running Prevention Weekly ETL Workflow.
+2024-08-04 07:54:55,768 [INFO] Total run time is 78.2407s.
+2024-08-11 05:18:06,409 [INFO] Running Social Services Weekly ETL Workflow.
+2024-08-11 05:18:36,728 [INFO] Total run time is 27.2232s.
+2024-08-11 05:18:38,598 [INFO] Running Prevention Weekly ETL Workflow.
+2024-08-11 05:19:24,191 [INFO] Total run time is 43.8901s.
+2024-08-18 18:37:11,686 [INFO] Running Social Services Weekly ETL Workflow.
+2024-08-18 18:37:47,801 [INFO] Total run time is 32.9431s.
+2024-08-18 18:37:50,885 [INFO] Running Prevention Weekly ETL Workflow.
+2024-08-18 18:38:15,058 [INFO] Total run time is 21.5426s.
+2024-08-25 05:54:53,363 [INFO] Running Social Services Weekly ETL Workflow.
+2024-08-25 05:55:30,029 [INFO] Total run time is 33.3372s.
+2024-08-25 05:55:32,015 [INFO] Running Prevention Weekly ETL Workflow.
+2024-08-25 05:55:59,870 [INFO] Total run time is 25.4883s.
+2024-09-01 04:31:08,941 [INFO] Running Social Services Weekly ETL Workflow.
+2024-09-01 04:31:42,241 [INFO] Total run time is 29.9936s.
+2024-09-01 04:31:44,519 [INFO] Running Prevention Weekly ETL Workflow.
+2024-09-01 04:32:18,270 [INFO] Total run time is 31.6665s.
+2024-09-08 05:10:20,139 [INFO] Running Social Services Weekly ETL Workflow.
+2024-09-08 05:10:57,364 [INFO] Total run time is 32.9543s.
+2024-09-08 05:11:00,311 [INFO] Running Prevention Weekly ETL Workflow.
+2024-09-08 05:12:51,762 [INFO] Total run time is 108.6176s.
+2024-09-15 04:40:13,806 [INFO] Running Social Services Weekly ETL Workflow.
+2024-09-15 04:40:54,606 [INFO] Total run time is 37.7824s.
+2024-09-15 04:40:56,898 [INFO] Running Prevention Weekly ETL Workflow.
+2024-09-15 04:42:08,213 [INFO] Total run time is 68.4876s.
+2024-09-22 08:15:10,588 [INFO] Running Social Services Weekly ETL Workflow.
+2024-09-22 08:15:44,834 [INFO] Total run time is 31.7358s.
+2024-09-22 08:15:46,816 [INFO] Running Prevention Weekly ETL Workflow.
+2024-09-22 08:16:52,655 [INFO] Total run time is 63.3148s.
+2024-09-29 04:15:34,281 [INFO] Running Social Services Weekly ETL Workflow.
+2024-09-29 04:16:10,402 [INFO] Total run time is 31.9764s.
+2024-09-29 04:16:12,939 [INFO] Running Prevention Weekly ETL Workflow.
+2024-09-29 04:19:41,042 [INFO] Total run time is 205.4922s.
+2024-10-06 05:02:06,513 [INFO] Running Social Services Weekly ETL Workflow.
+2024-10-06 05:02:44,200 [INFO] Total run time is 34.7412s.
+2024-10-06 05:02:46,811 [INFO] Running Prevention Weekly ETL Workflow.
+2024-10-06 05:03:38,131 [INFO] Total run time is 48.7610s.
+2024-10-13 04:49:47,066 [INFO] Running Social Services Weekly ETL Workflow.
+2024-10-13 04:51:20,689 [INFO] Total run time is 88.1182s.
+2024-10-13 04:51:24,720 [INFO] Running Prevention Weekly ETL Workflow.
+2024-10-13 04:52:27,438 [INFO] Total run time is 60.1062s.
+2024-10-20 04:58:55,700 [INFO] Running Social Services Weekly ETL Workflow.
+2024-10-20 04:59:53,171 [INFO] Total run time is 51.1533s.
+2024-10-20 04:59:57,738 [INFO] Running Prevention Weekly ETL Workflow.
+2024-10-20 05:02:03,471 [INFO] Total run time is 123.5089s.
+2024-10-27 03:52:34,850 [INFO] Running Social Services Weekly ETL Workflow.
+2024-10-27 03:53:13,809 [INFO] Total run time is 33.0825s.
+2024-10-27 03:53:18,530 [INFO] Running Prevention Weekly ETL Workflow.
+2024-10-27 03:55:25,157 [INFO] Total run time is 123.7427s.
+2024-11-03 04:05:47,649 [INFO] Running Social Services Weekly ETL Workflow.
+2024-11-03 04:07:04,231 [INFO] Total run time is 70.8240s.
+2024-11-03 04:07:09,222 [INFO] Running Prevention Weekly ETL Workflow.
+2024-11-03 04:09:11,189 [INFO] Total run time is 118.9124s.
+2024-11-10 05:27:39,387 [INFO] Running Social Services Weekly ETL Workflow.
+2024-11-10 05:28:13,128 [INFO] Total run time is 31.3501s.
+2024-11-10 05:28:15,330 [INFO] Running Prevention Weekly ETL Workflow.
+2024-11-10 05:30:20,384 [INFO] Total run time is 122.9539s.
+2024-11-17 05:15:16,889 [INFO] Running Social Services Weekly ETL Workflow.
+2024-11-17 05:16:16,819 [INFO] Total run time is 57.4596s.
+2024-11-17 05:16:18,181 [INFO] Running Prevention Weekly ETL Workflow.
+2024-11-17 05:18:16,485 [INFO] Total run time is 116.6622s.
+2025-04-07 08:30:24,999 [INFO] Running Social Services Weekly ETL Workflow.
+2025-04-07 08:30:25,018 [ERROR] Config file was not found: [Errno 2] No such file or directory: 'C:\\routine_weekly/utils/config/config.json'
+2025-04-07 08:31:16,852 [INFO] Total run time is 51.8339s.
+2025-04-07 08:31:16,852 [ERROR] Config file was not found: [Errno 2] No such file or directory: 'C:\\routine_weekly/utils/config/config.json'
+2025-04-07 08:31:16,852 [INFO] Running Prevention Weekly ETL Workflow.
+2025-04-07 08:31:16,852 [ERROR] Config file was not found: [Errno 2] No such file or directory: 'C:\\routine_weekly/utils/config/config.json'
+2025-04-07 08:39:24,431 [INFO] Running Social Services Weekly ETL Workflow.
+2025-04-07 08:39:24,844 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-07 08:39:39,689 [INFO] Total run time is 14.8407s.
+2025-04-07 08:39:40,127 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-07 08:39:40,142 [INFO] Running Prevention Weekly ETL Workflow.
+2025-04-07 08:39:40,548 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-07 08:42:35,869 [INFO] Total run time is 175.3209s.
+2025-04-07 08:42:36,166 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-07 09:09:06,475 [INFO] Running Social Services Weekly ETL Workflow.
+2025-04-07 09:09:06,992 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-07 09:11:27,823 [INFO] Running Social Services Weekly ETL Workflow.
+2025-04-07 09:11:27,823 [INFO] Total run time is 0.0000s.
+2025-04-07 09:14:06,599 [INFO] Running Social Services Weekly ETL Workflow.
+2025-04-07 09:15:03,870 [INFO] Running Social Services Weekly ETL Workflow.
+2025-04-07 09:21:54,191 [INFO] Running Social Services Weekly ETL Workflow.
+2025-04-07 09:21:58,461 [INFO] Total run time is 4.2703s.
+2025-04-15 12:01:42,203 [INFO] Running Social Services Weekly ETL Workflow.
+2025-04-15 12:01:42,779 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-15 12:02:03,056 [INFO] Total run time is 20.2770s.
+2025-04-15 12:02:03,057 [INFO] Running Prevention Weekly ETL Workflow.
+2025-04-15 12:02:03,479 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-15 12:04:04,894 [INFO] Total run time is 121.4105s.
+2025-04-15 12:04:05,347 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-21 08:53:55,417 [INFO] Running Social Services Weekly ETL Workflow.
+2025-04-21 08:53:55,979 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-21 08:54:12,148 [INFO] Total run time is 16.1684s.
+2025-04-21 08:54:12,148 [INFO] Running Prevention Weekly ETL Workflow.
+2025-04-21 08:54:12,585 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-21 08:54:32,958 [INFO] Total run time is 20.3726s.
+2025-04-21 08:54:33,395 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-28 09:51:03,869 [INFO] Running Social Services Weekly ETL Workflow.
+2025-04-28 09:51:04,291 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-28 09:51:32,307 [INFO] Total run time is 28.0156s.
+2025-04-28 09:51:32,307 [INFO] Running Prevention Weekly ETL Workflow.
+2025-04-28 09:51:32,619 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-28 09:52:35,260 [INFO] Total run time is 62.6405s.
+2025-04-28 09:52:35,556 [ERROR] Config file was not found: Webhook Url is not updated
+2025-05-06 08:48:33,848 [INFO] Running Social Services Weekly ETL Workflow.
+2025-05-06 08:48:34,270 [ERROR] Config file was not found: Webhook Url is not updated
+2025-05-06 08:49:14,144 [INFO] Total run time is 39.8740s.
+2025-05-06 08:49:14,144 [INFO] Running Prevention Weekly ETL Workflow.
+2025-05-06 08:49:14,535 [ERROR] Config file was not found: Webhook Url is not updated
+2025-05-06 08:52:57,643 [INFO] Total run time is 223.1080s.
+2025-05-06 08:52:58,158 [ERROR] Config file was not found: Webhook Url is not updated
+2025-05-20 10:22:29,504 [INFO] Running Social Services Weekly ETL Workflow.
+2025-05-20 10:22:29,895 [ERROR] Config file was not found: Webhook Url is not updated
+2025-05-20 10:23:34,786 [INFO] Total run time is 64.8910s.
+2025-05-20 10:23:34,802 [INFO] Running Prevention Weekly ETL Workflow.
+2025-05-20 10:23:35,067 [ERROR] Config file was not found: Webhook Url is not updated
+2025-05-20 10:25:51,069 [INFO] Total run time is 136.0015s.
+2025-05-20 10:25:51,397 [ERROR] Config file was not found: Webhook Url is not updated
+2025-05-27 10:07:34,287 [INFO] Running Social Services Weekly ETL Workflow.
+2025-05-27 10:07:34,662 [ERROR] Config file was not found: Webhook Url is not updated
+2025-05-27 10:08:12,990 [INFO] Total run time is 38.3280s.
+2025-05-27 10:08:12,990 [INFO] Running Prevention Weekly ETL Workflow.
+2025-05-27 10:08:13,411 [ERROR] Config file was not found: Webhook Url is not updated
+2025-05-27 10:09:50,475 [INFO] Total run time is 97.0636s.
+2025-05-27 10:09:50,897 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-03 12:13:29,435 [INFO] Running Social Services Weekly ETL Workflow.
+2025-06-03 12:13:29,951 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-03 12:13:53,170 [INFO] Total run time is 23.2186s.
+2025-06-03 12:13:53,170 [INFO] Running Prevention Weekly ETL Workflow.
+2025-06-03 12:13:53,482 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-03 12:15:59,529 [INFO] Total run time is 126.0471s.
+2025-06-03 12:15:59,936 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-09 11:09:19,039 [INFO] Running Social Services Weekly ETL Workflow.
+2025-06-09 11:09:19,507 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-09 11:09:44,459 [INFO] Total run time is 24.9519s.
+2025-06-09 11:09:44,459 [INFO] Running Prevention Weekly ETL Workflow.
+2025-06-09 11:09:44,803 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-09 11:10:47,678 [INFO] Total run time is 62.8589s.
+2025-06-09 11:10:47,997 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-17 11:10:10,586 [INFO] Running Social Services Weekly ETL Workflow.
+2025-06-17 11:10:10,977 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-17 11:10:57,820 [INFO] Total run time is 46.8437s.
+2025-06-17 11:10:57,836 [INFO] Running Prevention Weekly ETL Workflow.
+2025-06-17 11:10:58,117 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-17 11:12:54,679 [INFO] Total run time is 116.5620s.
+2025-06-17 11:12:54,992 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-24 09:10:11,195 [INFO] Running Social Services Weekly ETL Workflow.
+2025-06-24 09:10:11,617 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-24 09:10:31,132 [INFO] Total run time is 19.5154s.
+2025-06-24 09:10:31,132 [INFO] Running Prevention Weekly ETL Workflow.
+2025-06-24 09:10:31,461 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-24 09:10:52,585 [INFO] Total run time is 21.1247s.
+2025-06-24 09:10:52,929 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-01 15:14:54,446 [INFO] Running Social Services Weekly ETL Workflow.
+2025-07-01 15:14:54,868 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-01 15:26:47,305 [INFO] Total run time is 712.4372s.
+2025-07-01 15:26:47,306 [INFO] Running Prevention Weekly ETL Workflow.
+2025-07-01 15:26:47,676 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-01 15:33:00,182 [INFO] Total run time is 372.5031s.
+2025-07-01 15:33:00,573 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-07 08:05:19,178 [INFO] Running Social Services Weekly ETL Workflow.
+2025-07-07 08:05:19,573 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-07 08:05:43,813 [INFO] Total run time is 24.2380s.
+2025-07-07 08:05:43,813 [INFO] Running Prevention Weekly ETL Workflow.
+2025-07-07 08:05:44,081 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-07 08:07:21,456 [INFO] Total run time is 97.3739s.
+2025-07-07 08:07:21,733 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-14 08:07:43,804 [INFO] Running Social Services Weekly ETL Workflow.
+2025-07-14 08:07:44,304 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-14 08:08:33,522 [INFO] Total run time is 49.2186s.
+2025-07-14 08:08:33,522 [INFO] Running Prevention Weekly ETL Workflow.
+2025-07-14 08:08:33,851 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-14 08:13:53,503 [INFO] Total run time is 319.6523s.
+2025-07-14 08:13:53,878 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-21 08:06:24,100 [INFO] Running Social Services Weekly ETL Workflow.
+2025-07-21 08:06:25,022 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-21 08:06:50,756 [INFO] Total run time is 25.7337s.
+2025-07-21 08:06:50,756 [INFO] Running Prevention Weekly ETL Workflow.
+2025-07-21 08:06:51,052 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-21 08:07:11,849 [INFO] Total run time is 20.7965s.
+2025-07-21 08:07:12,161 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-28 08:07:42,464 [INFO] Running Social Services Weekly ETL Workflow.
+2025-07-28 08:07:43,074 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-28 08:08:16,089 [INFO] Total run time is 32.9999s.
+2025-07-28 08:08:16,089 [INFO] Running Prevention Weekly ETL Workflow.
+2025-07-28 08:08:16,527 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-28 08:09:59,808 [INFO] Total run time is 103.2813s.
+2025-07-28 08:10:00,245 [ERROR] Config file was not found: Webhook Url is not updated
+2025-08-04 08:07:45,974 [INFO] Running Social Services Weekly ETL Workflow.
+2025-08-04 08:07:46,458 [ERROR] Config file was not found: Webhook Url is not updated
+2025-08-04 08:08:16,599 [INFO] Total run time is 30.1406s.
+2025-08-04 08:08:16,599 [INFO] Running Prevention Weekly ETL Workflow.
+2025-08-04 08:08:16,927 [ERROR] Config file was not found: Webhook Url is not updated
+2025-08-11 08:12:18,148 [INFO] Running Social Services Weekly ETL Workflow.
+2025-08-11 08:12:18,617 [ERROR] Config file was not found: Webhook Url is not updated
+2025-08-11 08:13:01,602 [INFO] Total run time is 42.9844s.
+2025-08-11 08:13:01,602 [INFO] Running Prevention Weekly ETL Workflow.
+2025-08-11 08:13:01,930 [ERROR] Config file was not found: Webhook Url is not updated
+2025-08-11 08:15:24,473 [INFO] Total run time is 142.5436s.
+2025-08-11 08:15:24,895 [ERROR] Config file was not found: Webhook Url is not updated
+2025-08-18 08:05:17,693 [INFO] Running Social Services Weekly ETL Workflow.
+2025-08-18 08:05:18,193 [ERROR] Config file was not found: Webhook Url is not updated
+2025-08-18 08:06:53,193 [INFO] Total run time is 94.9997s.
+2025-08-18 08:06:53,193 [INFO] Running Prevention Weekly ETL Workflow.
+2025-08-18 08:06:53,506 [ERROR] Config file was not found: Webhook Url is not updated
+2025-08-18 08:07:14,256 [INFO] Total run time is 20.7499s.
+2025-08-18 08:07:17,537 [ERROR] Config file was not found: Webhook Url is not updated
+2025-08-25 08:13:16,404 [INFO] Running Social Services Weekly ETL Workflow.
+2025-08-25 08:13:17,023 [ERROR] Config file was not found: Webhook Url is not updated
+2025-08-25 08:14:01,514 [INFO] Total run time is 44.4894s.
+2025-08-25 08:14:01,514 [INFO] Running Prevention Weekly ETL Workflow.
+2025-08-25 08:14:01,983 [ERROR] Config file was not found: Webhook Url is not updated
+2025-08-25 08:17:12,095 [INFO] Total run time is 190.1091s.
+2025-08-25 08:17:12,581 [ERROR] Config file was not found: Webhook Url is not updated
+2025-09-08 08:07:11,976 [INFO] Running Social Services Weekly ETL Workflow.
+2025-09-08 08:07:12,491 [ERROR] Config file was not found: Webhook Url is not updated
+2025-09-08 08:07:50,197 [INFO] Total run time is 37.7039s.
+2025-09-08 08:07:50,198 [INFO] Running Prevention Weekly ETL Workflow.
+2025-09-08 08:07:50,576 [ERROR] Config file was not found: Webhook Url is not updated
+2025-09-08 08:10:03,284 [INFO] Total run time is 132.7056s.
+2025-09-08 08:10:03,707 [ERROR] Config file was not found: Webhook Url is not updated
+2025-09-15 08:04:39,047 [INFO] Running Social Services Weekly ETL Workflow.
+2025-09-15 08:04:39,438 [ERROR] Config file was not found: Webhook Url is not updated
+2025-09-15 08:05:25,282 [INFO] Total run time is 45.8437s.
+2025-09-15 08:05:25,282 [INFO] Running Prevention Weekly ETL Workflow.
+2025-09-15 08:05:25,672 [ERROR] Config file was not found: Webhook Url is not updated
+2025-09-15 08:10:13,547 [INFO] Total run time is 287.8746s.
+2025-09-15 08:10:13,953 [ERROR] Config file was not found: Webhook Url is not updated
+2025-09-22 08:06:23,921 [INFO] Running Social Services Weekly ETL Workflow.
+2025-09-22 08:06:25,124 [ERROR] Config file was not found: Webhook Url is not updated
+2025-09-22 08:06:45,414 [INFO] Total run time is 20.2869s.
+2025-09-22 08:06:45,414 [INFO] Running Prevention Weekly ETL Workflow.
+2025-09-22 08:06:45,744 [ERROR] Config file was not found: Webhook Url is not updated
+2025-09-22 08:07:06,048 [INFO] Total run time is 20.3019s.
+2025-09-22 08:07:06,464 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-06 08:12:52,933 [INFO] Running Social Services Weekly ETL Workflow.
+2025-10-06 08:12:53,529 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-06 08:13:55,746 [INFO] Total run time is 62.2132s.
+2025-10-06 08:13:55,746 [INFO] Running Prevention Weekly ETL Workflow.
+2025-10-06 08:13:56,040 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-06 08:20:04,483 [INFO] Total run time is 368.4416s.
+2025-10-06 08:20:04,863 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-13 08:11:02,951 [INFO] Running Social Services Weekly ETL Workflow.
+2025-10-13 08:11:03,357 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-13 08:11:51,924 [INFO] Total run time is 48.5668s.
+2025-10-13 08:11:51,924 [INFO] Running Prevention Weekly ETL Workflow.
+2025-10-13 08:11:52,255 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-13 08:14:13,801 [INFO] Total run time is 141.5438s.
+2025-10-13 08:14:17,156 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-20 08:07:12,059 [INFO] Running Social Services Weekly ETL Workflow.
+2025-10-20 08:07:12,544 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-20 08:07:45,091 [INFO] Total run time is 32.5449s.
+2025-10-20 08:07:45,091 [INFO] Running Prevention Weekly ETL Workflow.
+2025-10-20 08:07:45,443 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-20 08:08:05,816 [INFO] Total run time is 20.3709s.
+2025-10-20 08:08:06,152 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-27 08:07:08,452 [INFO] Running Social Services Weekly ETL Workflow.
+2025-10-27 08:07:08,735 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-27 08:07:54,359 [INFO] Total run time is 45.6208s.
+2025-10-27 08:07:54,359 [INFO] Running Prevention Weekly ETL Workflow.
+2025-10-27 08:07:54,613 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-27 08:12:10,242 [INFO] Total run time is 255.6267s.
+2025-10-27 08:12:10,516 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-03 08:13:03,072 [INFO] Running Social Services Weekly ETL Workflow.
+2025-11-03 08:13:03,405 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-03 08:13:37,860 [INFO] Total run time is 34.4526s.
+2025-11-03 08:13:37,860 [INFO] Running Prevention Weekly ETL Workflow.
+2025-11-03 08:13:38,111 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-03 08:14:26,778 [INFO] Total run time is 48.6654s.
+2025-11-03 08:14:27,235 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-10 08:06:22,801 [INFO] Running Social Services Weekly ETL Workflow.
+2025-11-10 08:06:23,131 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-10 08:07:02,215 [INFO] Total run time is 39.0808s.
+2025-11-10 08:07:02,215 [INFO] Running Prevention Weekly ETL Workflow.
+2025-11-10 08:07:02,458 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-10 08:07:59,759 [INFO] Total run time is 57.2991s.
+2025-11-10 08:08:00,015 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-17 08:08:19,057 [INFO] Running Social Services Weekly ETL Workflow.
+2025-11-17 08:08:19,342 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-17 08:08:43,754 [INFO] Total run time is 24.4123s.
+2025-11-17 08:08:43,754 [INFO] Running Prevention Weekly ETL Workflow.
+2025-11-17 08:08:43,989 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-17 08:09:07,707 [INFO] Total run time is 23.7180s.
+2025-11-17 08:09:07,941 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-24 08:05:39,190 [INFO] Running Social Services Weekly ETL Workflow.
+2025-11-24 08:05:39,487 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-24 08:07:39,721 [INFO] Total run time is 120.2184s.
+2025-11-24 08:07:39,721 [INFO] Running Prevention Weekly ETL Workflow.
+2025-11-24 08:07:39,971 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-24 08:11:01,273 [INFO] Total run time is 201.3002s.
+2025-11-24 08:11:01,542 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-01 08:05:53,897 [INFO] Running Social Services Weekly ETL Workflow.
+2025-12-01 08:05:54,181 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-01 08:06:18,994 [INFO] Total run time is 24.8129s.
+2025-12-01 08:06:18,994 [INFO] Running Prevention Weekly ETL Workflow.
+2025-12-01 08:06:19,249 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-01 08:13:32,971 [INFO] Total run time is 433.7200s.
+2025-12-01 08:13:33,237 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-08 08:07:11,477 [INFO] Running Social Services Weekly ETL Workflow.
+2025-12-08 08:07:11,780 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-08 08:07:58,980 [INFO] Total run time is 47.1979s.
+2025-12-08 08:07:58,980 [INFO] Running Prevention Weekly ETL Workflow.
+2025-12-08 08:07:59,226 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-08 08:14:25,768 [INFO] Total run time is 386.5400s.
+2025-12-08 08:14:26,026 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-15 08:27:30,458 [INFO] Running Social Services Weekly ETL Workflow.
+2025-12-15 08:27:30,876 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-15 08:27:59,664 [INFO] Total run time is 28.7874s.
+2025-12-15 08:27:59,665 [INFO] Running Prevention Weekly ETL Workflow.
+2025-12-15 08:27:59,952 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-15 08:29:43,011 [INFO] Total run time is 103.0568s.
+2025-12-15 08:29:43,281 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-22 08:05:27,299 [INFO] Running Social Services Weekly ETL Workflow.
+2025-12-22 08:05:27,755 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-22 08:06:01,756 [INFO] Total run time is 33.9986s.
+2025-12-22 08:06:01,757 [INFO] Running Prevention Weekly ETL Workflow.
+2025-12-22 08:06:02,160 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-22 08:06:27,830 [INFO] Total run time is 25.6677s.
+2025-12-22 08:06:28,125 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-29 08:10:45,798 [INFO] Running Social Services Weekly ETL Workflow.
+2025-12-29 08:10:46,179 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-29 08:11:52,454 [INFO] Total run time is 66.2729s.
+2025-12-29 08:11:52,454 [INFO] Running Prevention Weekly ETL Workflow.
+2025-12-29 08:11:52,856 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-29 08:12:36,828 [INFO] Total run time is 43.9704s.
+2025-12-29 08:12:37,226 [ERROR] Config file was not found: Webhook Url is not updated

@@ -1,0 +1,529 @@
+2024-01-02 12:35:13,404 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-02 12:35:13,405 [ERROR] Config file was not found: [Errno 2] No such file or directory: 'C:\\Users\\mscoggins\\Vivent Health\\Share Drives - Health\\Health Informatics and Technology\\Project Management\\PE Routines\\routine_weekly\\prevention/config.json'. Exiting.
+2024-01-02 12:39:04,931 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-02 12:39:04,932 [ERROR] Config file was not found: [Errno 2] No such file or directory: 'C:\\Users\\mscoggins\\Vivent Health\\Share Drives - Health\\Health Informatics and Technology\\Project Management\\PE Routines\\routine_weekly\\prevention/utils/config/config.json'. Exiting.
+2024-01-02 12:39:42,663 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-02 12:39:42,664 [ERROR] Config file was not found: [Errno 2] No such file or directory: 'C:\\Users\\mscoggins\\Vivent Health\\Share Drives - Health\\Health Informatics and Technology\\Project Management\\PE Routines\\routine_weekly\\prevention\\config.json'. Exiting.
+2024-01-02 12:42:33,087 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-02 12:42:33,087 [ERROR] Config file was not found: [Errno 2] No such file or directory: 'C:\\Users\\mscoggins\\Vivent Health\\Share Drives - Health\\Health Informatics and Technology\\Project Management\\PE Routines\\routine_weekly\\prevention/config.json'. Exiting.
+2024-01-02 12:42:54,954 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-02 12:42:54,954 [ERROR] Config file was not found: [Errno 2] No such file or directory: 'C:\\Users\\mscoggins\\Vivent Health\\Share Drives - Health\\Health Informatics and Technology\\Project Management\\PE Routines\\routine_weekly\\prevention/config.json'. Exiting.
+2024-01-02 12:50:15,899 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-02 12:50:15,899 [ERROR] Config file was not found: [Errno 2] No such file or directory: 'C:\\Users\\mscoggins\\Vivent Health\\Share Drives - Health\\Health Informatics and Technology\\Project Management\\PE Routines\\routine_weekly\\prevention/utils/config/config.json'. Exiting.
+2024-01-02 12:54:25,098 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-02 12:54:25,099 [ERROR] Config file was not found: [Errno 2] No such file or directory: 'C:\\Users\\mscoggins\\Vivent Health\\Share Drives - Health\\Health Informatics and Technology\\Project Management\\PE Routines\\routine_weekly\\prevention/config.json'. Exiting.
+2024-01-02 12:55:40,006 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-02 12:59:43,744 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-02 12:59:43,744 [ERROR] Config file was not found: [Errno 2] No such file or directory: 'C:\\Users\\mscoggins\\Vivent Health\\Share Drives - Health\\Health Informatics and Technology\\Project Management\\PE Routines\\routine_weekly\\prevention/config.json'. Exiting.
+2024-01-02 13:03:18,049 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-02 13:04:14,590 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-02 13:04:42,078 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-02 13:05:13,534 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-02 13:16:30,823 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-02 13:16:38,182 [INFO] Sending email.
+2024-01-02 13:16:40,091 [INFO] WI HCV Tests Weekly Workflow email sent to Mitch Scoggins
+2024-01-02 13:16:40,144 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-02 13:35:16,281 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-02 13:35:23,462 [INFO] Sending email.
+2024-01-02 13:35:25,094 [INFO] WI HCV Tests Weekly Workflow email sent to Mitch Scoggins
+2024-01-02 13:35:25,140 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-02 13:43:48,355 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-02 13:43:55,687 [INFO] Sending email.
+2024-01-02 13:43:57,714 [INFO] WI HCV Tests Weekly Workflow email sent to Mitch Scoggins, M Scoggins
+2024-01-02 13:43:57,778 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-07 10:03:11,373 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-07 10:03:46,389 [INFO] Sending email.
+2024-01-07 10:03:48,807 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-01-07 10:03:48,859 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-14 05:39:15,850 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-14 05:39:50,704 [INFO] Sending email.
+2024-01-14 05:39:52,324 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-01-14 05:39:52,376 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-21 07:04:52,814 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-21 07:05:49,224 [INFO] Sending email.
+2024-01-21 07:05:50,853 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-01-21 07:05:50,904 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-28 11:23:14,979 [INFO] WI HCV Tests Weekly Workflow.
+2024-01-28 11:23:43,903 [INFO] Sending email.
+2024-01-28 11:23:44,802 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-01-28 11:23:44,861 [INFO] WI HCV Tests Weekly Workflow.
+2024-02-04 05:48:11,655 [INFO] WI HCV Tests Weekly Workflow.
+2024-02-04 05:49:32,147 [INFO] Sending email.
+2024-02-04 05:49:33,229 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-02-04 05:49:33,291 [INFO] WI HCV Tests Weekly Workflow.
+2024-02-11 06:25:28,858 [INFO] WI HCV Tests Weekly Workflow.
+2024-02-11 06:26:17,185 [INFO] Sending email.
+2024-02-11 06:26:19,003 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-02-11 06:26:19,061 [INFO] WI HCV Tests Weekly Workflow.
+2024-02-15 05:42:36,178 [INFO] WI HCV Tests Weekly Workflow.
+2024-02-15 05:49:26,386 [INFO] WI HCV Tests Weekly Workflow.
+2024-02-15 05:51:27,396 [INFO] WI HCV Tests Weekly Workflow.
+2024-02-15 05:51:55,683 [INFO] Sending email.
+2024-02-15 05:51:58,276 [INFO] WI HCV Tests Weekly Workflow email sent to Mitch Scoggins
+2024-02-15 05:51:58,328 [INFO] WI HCV Tests Weekly Workflow.
+2024-02-15 05:53:08,998 [INFO] WI HCV Tests Weekly Workflow.
+2024-02-15 05:53:37,008 [INFO] Sending email.
+2024-02-15 05:53:39,174 [INFO] WI HCV Tests Weekly Workflow email sent to Mitch Scoggins
+2024-02-15 05:53:39,226 [INFO] WI HCV Tests Weekly Workflow.
+2024-02-15 06:02:11,141 [INFO] WI HCV Tests Weekly Workflow.
+2024-02-15 06:05:44,660 [INFO] WI HCV Tests Weekly Workflow.
+2024-02-15 06:06:16,598 [INFO] Writing to Excel.
+2024-02-15 06:07:21,834 [INFO] WI HCV Tests Weekly Workflow.
+2024-02-15 06:08:05,733 [INFO] Writing to Excel.
+2024-02-15 06:08:05,863 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-02-15 06:08:05,864 [INFO] Sending email.
+2024-02-15 06:08:07,772 [INFO] WI HCV Tests Weekly Workflow email sent to Mitch Scoggins
+2024-02-15 06:08:07,773 [INFO] WI HCV Tests Weekly Workflow.
+2024-02-18 06:05:04,504 [INFO] WI HCV Tests Weekly Workflow.
+2024-02-18 06:05:59,845 [INFO] Writing to Excel.
+2024-02-18 06:06:00,104 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-02-18 06:06:00,105 [INFO] Sending email.
+2024-02-18 06:06:01,943 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-02-18 06:06:01,943 [INFO] WI HCV Tests Weekly Workflow.
+2024-02-25 06:47:36,006 [INFO] WI HCV Tests Weekly Workflow.
+2024-02-25 06:48:08,969 [INFO] Writing to Excel.
+2024-02-25 06:48:09,157 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-02-25 06:48:09,157 [INFO] Sending email.
+2024-02-25 06:48:11,356 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-02-25 06:48:11,357 [INFO] WI HCV Tests Weekly Workflow.
+2024-03-03 05:52:05,554 [INFO] WI HCV Tests Weekly Workflow.
+2024-03-03 05:52:23,546 [INFO] Writing to Excel.
+2024-03-03 05:52:23,791 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-03-03 05:52:23,792 [INFO] Sending email.
+2024-03-03 05:52:26,982 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-03-03 05:52:26,983 [INFO] WI HCV Tests Weekly Workflow.
+2024-03-10 07:16:07,176 [INFO] WI HCV Tests Weekly Workflow.
+2024-03-10 07:16:43,311 [INFO] Writing to Excel.
+2024-03-10 07:16:43,567 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-03-10 07:16:43,568 [INFO] Sending email.
+2024-03-10 07:16:46,492 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-03-10 07:16:46,493 [INFO] WI HCV Tests Weekly Workflow.
+2024-03-17 06:21:58,023 [INFO] WI HCV Tests Weekly Workflow.
+2024-03-17 06:22:30,980 [INFO] Writing to Excel.
+2024-03-17 06:22:31,177 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-03-17 06:22:31,179 [INFO] Sending email.
+2024-03-17 06:22:35,060 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-03-17 06:22:35,061 [INFO] WI HCV Tests Weekly Workflow.
+2024-03-25 06:03:09,564 [INFO] WI HCV Tests Weekly Workflow.
+2024-03-25 06:03:38,046 [INFO] Writing to Excel.
+2024-03-25 06:03:38,215 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-03-25 06:03:38,216 [INFO] Sending email.
+2024-03-25 06:03:39,890 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-03-25 06:03:39,891 [INFO] WI HCV Tests Weekly Workflow.
+2024-03-31 07:06:15,974 [INFO] WI HCV Tests Weekly Workflow.
+2024-03-31 07:06:42,813 [INFO] Writing to Excel.
+2024-03-31 07:06:42,930 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-03-31 07:06:42,931 [INFO] Sending email.
+2024-03-31 07:06:46,958 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-03-31 07:06:46,959 [INFO] WI HCV Tests Weekly Workflow.
+2024-04-07 06:13:39,915 [INFO] WI HCV Tests Weekly Workflow.
+2024-04-07 06:17:18,128 [INFO] Writing to Excel.
+2024-04-07 06:17:18,281 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-04-07 06:17:18,282 [INFO] Sending email.
+2024-04-07 06:17:21,487 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-04-07 06:17:21,487 [INFO] WI HCV Tests Weekly Workflow.
+2024-04-14 07:00:29,050 [INFO] WI HCV Tests Weekly Workflow.
+2024-04-14 07:01:03,458 [INFO] Writing to Excel.
+2024-04-14 07:01:03,679 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-04-14 07:01:03,680 [INFO] Sending email.
+2024-04-14 07:01:04,798 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-04-14 07:01:04,799 [INFO] WI HCV Tests Weekly Workflow.
+2024-04-21 06:10:31,782 [INFO] WI HCV Tests Weekly Workflow.
+2024-04-21 06:10:54,268 [INFO] Writing to Excel.
+2024-04-21 06:10:54,392 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-04-21 06:10:54,393 [INFO] Sending email.
+2024-04-21 06:10:56,603 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-04-21 06:10:56,603 [INFO] WI HCV Tests Weekly Workflow.
+2024-04-28 06:59:37,823 [INFO] WI HCV Tests Weekly Workflow.
+2024-04-28 07:04:36,100 [INFO] Writing to Excel.
+2024-04-28 07:04:36,201 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-04-28 07:04:36,202 [INFO] Sending email.
+2024-04-28 07:04:38,254 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-04-28 07:04:38,256 [INFO] WI HCV Tests Weekly Workflow.
+2024-05-05 12:26:04,913 [INFO] WI HCV Tests Weekly Workflow.
+2024-05-05 12:29:47,096 [INFO] Writing to Excel.
+2024-05-05 12:29:47,197 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-05-05 12:29:47,197 [INFO] Sending email.
+2024-05-05 12:29:50,831 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-05-05 12:29:50,833 [INFO] WI HCV Tests Weekly Workflow.
+2024-05-12 08:14:26,960 [INFO] WI HCV Tests Weekly Workflow.
+2024-05-12 08:18:11,172 [INFO] Writing to Excel.
+2024-05-12 08:18:11,341 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-05-12 08:18:11,342 [INFO] Sending email.
+2024-05-12 08:18:13,551 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-05-12 08:18:13,551 [INFO] WI HCV Tests Weekly Workflow.
+2024-05-19 05:44:16,693 [INFO] WI HCV Tests Weekly Workflow.
+2024-05-19 05:44:33,679 [INFO] Writing to Excel.
+2024-05-19 05:44:33,881 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-05-19 05:44:33,882 [INFO] Sending email.
+2024-05-19 05:44:36,392 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-05-19 05:44:36,393 [INFO] WI HCV Tests Weekly Workflow.
+2024-05-26 05:51:46,963 [INFO] WI HCV Tests Weekly Workflow.
+2024-05-26 05:54:24,675 [INFO] Writing to Excel.
+2024-05-26 05:54:24,892 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-05-26 05:54:24,893 [INFO] Sending email.
+2024-05-26 05:54:27,105 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-05-26 05:54:27,105 [INFO] WI HCV Tests Weekly Workflow.
+2024-06-02 06:57:38,463 [INFO] WI HCV Tests Weekly Workflow.
+2024-06-02 07:00:05,971 [INFO] Writing to Excel.
+2024-06-02 07:00:06,073 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-06-02 07:00:06,074 [INFO] Sending email.
+2024-06-02 07:00:08,661 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-06-02 07:00:08,662 [INFO] WI HCV Tests Weekly Workflow.
+2024-06-09 06:55:06,664 [INFO] WI HCV Tests Weekly Workflow.
+2024-06-09 06:58:58,765 [INFO] Writing to Excel.
+2024-06-09 06:58:58,866 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-06-09 06:58:58,867 [INFO] Sending email.
+2024-06-09 06:59:01,894 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-06-09 06:59:01,894 [INFO] WI HCV Tests Weekly Workflow.
+2024-06-16 09:31:40,202 [INFO] WI HCV Tests Weekly Workflow.
+2024-06-16 09:35:43,430 [INFO] Writing to Excel.
+2024-06-16 09:35:43,558 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-06-16 09:35:43,559 [INFO] Sending email.
+2024-06-16 09:35:46,559 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-06-16 09:35:46,559 [INFO] WI HCV Tests Weekly Workflow.
+2024-06-23 06:09:52,451 [INFO] WI HCV Tests Weekly Workflow.
+2024-06-23 06:12:43,570 [INFO] Writing to Excel.
+2024-06-23 06:12:43,682 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-06-23 06:12:43,682 [INFO] Sending email.
+2024-06-23 06:12:45,585 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-06-23 06:12:45,586 [INFO] WI HCV Tests Weekly Workflow.
+2024-06-30 04:35:53,012 [INFO] WI HCV Tests Weekly Workflow.
+2024-06-30 04:41:48,382 [INFO] Writing to Excel.
+2024-06-30 04:41:48,626 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-06-30 04:41:48,626 [INFO] Sending email.
+2024-06-30 04:41:52,487 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-06-30 04:41:52,488 [INFO] WI HCV Tests Weekly Workflow.
+2024-07-01 05:20:47,779 [INFO] WI HCV Tests Weekly Workflow.
+2024-07-07 05:25:39,283 [INFO] WI HCV Tests Weekly Workflow.
+2024-07-07 05:26:51,716 [INFO] Writing to Excel.
+2024-07-07 05:26:51,905 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-07-07 05:26:51,906 [INFO] Sending email.
+2024-07-07 05:26:54,426 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-07-07 05:26:54,427 [INFO] WI HCV Tests Weekly Workflow.
+2024-07-14 04:53:28,228 [INFO] WI HCV Tests Weekly Workflow.
+2024-07-14 04:57:30,718 [INFO] Writing to Excel.
+2024-07-14 04:57:30,996 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-07-14 04:57:30,997 [INFO] Sending email.
+2024-07-14 04:57:32,893 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-07-14 04:57:32,894 [INFO] WI HCV Tests Weekly Workflow.
+2024-07-21 05:01:58,683 [INFO] WI HCV Tests Weekly Workflow.
+2024-07-21 05:02:20,455 [INFO] Writing to Excel.
+2024-07-21 05:02:20,546 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-07-21 05:02:20,548 [INFO] Sending email.
+2024-07-21 05:02:21,843 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-07-21 05:02:21,844 [INFO] WI HCV Tests Weekly Workflow.
+2024-07-28 06:03:55,897 [INFO] WI HCV Tests Weekly Workflow.
+2024-07-28 06:04:57,957 [INFO] Writing to Excel.
+2024-07-28 06:04:58,025 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-07-28 06:04:58,026 [INFO] Sending email.
+2024-07-28 06:04:59,882 [INFO] WI HCV Tests Weekly Workflow email sent to Kristen Grimes
+2024-07-28 06:04:59,883 [INFO] WI HCV Tests Weekly Workflow.
+2024-08-04 07:53:37,528 [INFO] WI HCV Tests Weekly Workflow.
+2024-08-04 07:54:53,808 [INFO] Writing to Excel.
+2024-08-04 07:54:53,859 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-08-04 07:54:53,859 [INFO] Sending email.
+2024-08-04 07:54:55,766 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2024-08-04 07:54:55,767 [INFO] WI HCV Tests Weekly Workflow.
+2024-08-11 05:18:40,301 [INFO] WI HCV Tests Weekly Workflow.
+2024-08-11 05:19:22,066 [INFO] Writing to Excel.
+2024-08-11 05:19:22,121 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-08-11 05:19:22,122 [INFO] Sending email.
+2024-08-11 05:19:24,189 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2024-08-11 05:19:24,190 [INFO] WI HCV Tests Weekly Workflow.
+2024-08-18 18:37:53,515 [INFO] WI HCV Tests Weekly Workflow.
+2024-08-18 18:38:12,953 [INFO] Writing to Excel.
+2024-08-18 18:38:13,049 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-08-18 18:38:13,050 [INFO] Sending email.
+2024-08-18 18:38:15,056 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2024-08-18 18:38:15,057 [INFO] WI HCV Tests Weekly Workflow.
+2024-08-25 05:55:34,381 [INFO] WI HCV Tests Weekly Workflow.
+2024-08-25 05:55:57,877 [INFO] Writing to Excel.
+2024-08-25 05:55:57,928 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-08-25 05:55:57,929 [INFO] Sending email.
+2024-08-25 05:55:59,868 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2024-08-25 05:55:59,869 [INFO] WI HCV Tests Weekly Workflow.
+2024-09-01 04:31:46,603 [INFO] WI HCV Tests Weekly Workflow.
+2024-09-01 04:32:16,456 [INFO] Writing to Excel.
+2024-09-01 04:32:16,523 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-09-01 04:32:16,524 [INFO] Sending email.
+2024-09-01 04:32:18,268 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2024-09-01 04:32:18,269 [INFO] WI HCV Tests Weekly Workflow.
+2024-09-08 05:11:03,145 [INFO] WI HCV Tests Weekly Workflow.
+2024-09-08 05:12:43,707 [INFO] Writing to Excel.
+2024-09-08 05:12:43,809 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-09-08 05:12:43,810 [INFO] Sending email.
+2024-09-08 05:12:51,759 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2024-09-08 05:12:51,761 [INFO] WI HCV Tests Weekly Workflow.
+2024-09-15 04:40:59,726 [INFO] WI HCV Tests Weekly Workflow.
+2024-09-15 04:42:06,423 [INFO] Writing to Excel.
+2024-09-15 04:42:06,513 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-09-15 04:42:06,516 [INFO] Sending email.
+2024-09-15 04:42:08,210 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2024-09-15 04:42:08,211 [INFO] WI HCV Tests Weekly Workflow.
+2024-09-22 08:15:49,341 [INFO] WI HCV Tests Weekly Workflow.
+2024-09-22 08:16:50,570 [INFO] Writing to Excel.
+2024-09-22 08:16:50,616 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-09-22 08:16:50,617 [INFO] Sending email.
+2024-09-22 08:16:52,653 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2024-09-22 08:16:52,654 [INFO] WI HCV Tests Weekly Workflow.
+2024-09-29 04:16:15,550 [INFO] WI HCV Tests Weekly Workflow.
+2024-09-29 04:19:38,491 [INFO] Writing to Excel.
+2024-09-29 04:19:39,279 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-09-29 04:19:39,280 [INFO] Sending email.
+2024-09-29 04:19:41,040 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2024-09-29 04:19:41,040 [INFO] WI HCV Tests Weekly Workflow.
+2024-10-06 05:02:49,370 [INFO] WI HCV Tests Weekly Workflow.
+2024-10-06 05:03:36,265 [INFO] Writing to Excel.
+2024-10-06 05:03:36,340 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-10-06 05:03:36,341 [INFO] Sending email.
+2024-10-06 05:03:38,129 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2024-10-06 05:03:38,130 [INFO] WI HCV Tests Weekly Workflow.
+2024-10-13 04:51:27,332 [INFO] WI HCV Tests Weekly Workflow.
+2024-10-13 04:52:24,577 [INFO] Writing to Excel.
+2024-10-13 04:52:24,681 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-10-13 04:52:24,682 [INFO] Sending email.
+2024-10-13 04:52:27,436 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2024-10-13 04:52:27,437 [INFO] WI HCV Tests Weekly Workflow.
+2024-10-20 04:59:59,962 [INFO] WI HCV Tests Weekly Workflow.
+2024-10-20 05:01:59,453 [INFO] Writing to Excel.
+2024-10-20 05:01:59,563 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-10-20 05:01:59,566 [INFO] Sending email.
+2024-10-20 05:02:03,467 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2024-10-20 05:02:03,469 [INFO] WI HCV Tests Weekly Workflow.
+2024-10-27 03:53:21,415 [INFO] WI HCV Tests Weekly Workflow.
+2024-10-27 03:55:21,444 [INFO] Writing to Excel.
+2024-10-27 03:55:21,554 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-10-27 03:55:21,556 [INFO] Sending email.
+2024-10-27 03:55:25,155 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2024-10-27 03:55:25,156 [INFO] WI HCV Tests Weekly Workflow.
+2024-11-03 04:07:12,276 [INFO] WI HCV Tests Weekly Workflow.
+2024-11-03 04:09:07,919 [INFO] Writing to Excel.
+2024-11-03 04:09:08,063 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-11-03 04:09:08,067 [INFO] Sending email.
+2024-11-03 04:09:11,186 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2024-11-03 04:09:11,187 [INFO] WI HCV Tests Weekly Workflow.
+2024-11-10 05:28:17,431 [INFO] WI HCV Tests Weekly Workflow.
+2024-11-10 05:30:18,379 [INFO] Writing to Excel.
+2024-11-10 05:30:18,480 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-11-10 05:30:18,481 [INFO] Sending email.
+2024-11-10 05:30:20,382 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2024-11-10 05:30:20,383 [INFO] WI HCV Tests Weekly Workflow.
+2024-11-17 05:16:19,823 [INFO] WI HCV Tests Weekly Workflow.
+2024-11-17 05:18:13,473 [INFO] Writing to Excel.
+2024-11-17 05:18:13,523 [INFO] File saved in C:\Users\mscoggins\Vivent Health\Share Drives - Health\Health Informatics and Technology\Project Management\PE Routines\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2024-11-17 05:18:13,524 [INFO] Sending email.
+2024-11-17 05:18:16,483 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2024-11-17 05:18:16,484 [INFO] WI HCV Tests Weekly Workflow.
+2025-04-07 08:31:16,852 [INFO] WI HCV Tests Weekly Workflow.
+2025-04-07 08:39:40,548 [INFO] WI HCV Tests Weekly Workflow.
+2025-04-07 08:42:34,743 [INFO] Writing to Excel.
+2025-04-07 08:42:34,774 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-04-07 08:42:34,774 [INFO] Sending email.
+2025-04-07 08:42:35,869 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-04-07 08:42:35,869 [INFO] WI HCV Tests Weekly Workflow.
+2025-04-15 12:02:03,483 [INFO] WI HCV Tests Weekly Workflow.
+2025-04-15 12:04:03,347 [INFO] Writing to Excel.
+2025-04-15 12:04:03,378 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-04-15 12:04:03,378 [INFO] Sending email.
+2025-04-15 12:04:04,894 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-04-15 12:04:04,894 [INFO] WI HCV Tests Weekly Workflow.
+2025-04-21 08:54:12,585 [INFO] WI HCV Tests Weekly Workflow.
+2025-04-21 08:54:31,192 [INFO] Writing to Excel.
+2025-04-21 08:54:31,224 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-04-21 08:54:31,224 [INFO] Sending email.
+2025-04-21 08:54:32,958 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-04-21 08:54:32,958 [INFO] WI HCV Tests Weekly Workflow.
+2025-04-28 09:51:32,619 [INFO] WI HCV Tests Weekly Workflow.
+2025-04-28 09:52:32,463 [INFO] Writing to Excel.
+2025-04-28 09:52:32,494 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-04-28 09:52:32,494 [INFO] Sending email.
+2025-04-28 09:52:35,260 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-04-28 09:52:35,260 [INFO] WI HCV Tests Weekly Workflow.
+2025-05-06 08:49:14,535 [INFO] WI HCV Tests Weekly Workflow.
+2025-05-06 08:52:55,969 [INFO] Writing to Excel.
+2025-05-06 08:52:56,000 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-05-06 08:52:56,000 [INFO] Sending email.
+2025-05-06 08:52:57,643 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-05-06 08:52:57,643 [INFO] WI HCV Tests Weekly Workflow.
+2025-05-20 10:23:35,067 [INFO] WI HCV Tests Weekly Workflow.
+2025-05-20 10:25:49,381 [INFO] Writing to Excel.
+2025-05-20 10:25:49,397 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-05-20 10:25:49,397 [INFO] Sending email.
+2025-05-20 10:25:51,069 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-05-20 10:25:51,069 [INFO] WI HCV Tests Weekly Workflow.
+2025-05-27 10:08:13,411 [INFO] WI HCV Tests Weekly Workflow.
+2025-05-27 10:09:48,663 [INFO] Writing to Excel.
+2025-05-27 10:09:48,694 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-05-27 10:09:48,694 [INFO] Sending email.
+2025-05-27 10:09:50,475 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-05-27 10:09:50,475 [INFO] WI HCV Tests Weekly Workflow.
+2025-06-03 12:13:53,482 [INFO] WI HCV Tests Weekly Workflow.
+2025-06-03 12:15:57,670 [INFO] Writing to Excel.
+2025-06-03 12:15:57,701 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-06-03 12:15:57,701 [INFO] Sending email.
+2025-06-03 12:15:59,529 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-06-03 12:15:59,529 [INFO] WI HCV Tests Weekly Workflow.
+2025-06-09 11:09:44,819 [INFO] WI HCV Tests Weekly Workflow.
+2025-06-09 11:10:45,325 [INFO] Writing to Excel.
+2025-06-09 11:10:45,347 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-06-09 11:10:45,348 [INFO] Sending email.
+2025-06-09 11:10:47,677 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-06-09 11:10:47,677 [INFO] WI HCV Tests Weekly Workflow.
+2025-06-17 11:10:58,117 [INFO] WI HCV Tests Weekly Workflow.
+2025-06-17 11:12:53,023 [INFO] Writing to Excel.
+2025-06-17 11:12:53,054 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-06-17 11:12:53,054 [INFO] Sending email.
+2025-06-17 11:12:54,679 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-06-17 11:12:54,679 [INFO] WI HCV Tests Weekly Workflow.
+2025-06-24 09:10:31,461 [INFO] WI HCV Tests Weekly Workflow.
+2025-06-24 09:10:50,773 [INFO] Writing to Excel.
+2025-06-24 09:10:50,882 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-06-24 09:10:50,882 [INFO] Sending email.
+2025-06-24 09:10:52,585 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-06-24 09:10:52,585 [INFO] WI HCV Tests Weekly Workflow.
+2025-07-01 15:26:47,679 [INFO] WI HCV Tests Weekly Workflow.
+2025-07-01 15:32:59,010 [INFO] Writing to Excel.
+2025-07-01 15:32:59,119 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-07-01 15:32:59,119 [INFO] Sending email.
+2025-07-01 15:33:00,182 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-07-01 15:33:00,182 [INFO] WI HCV Tests Weekly Workflow.
+2025-07-07 08:05:44,082 [INFO] WI HCV Tests Weekly Workflow.
+2025-07-07 08:07:20,167 [INFO] Writing to Excel.
+2025-07-07 08:07:20,196 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-07-07 08:07:20,220 [INFO] Sending email.
+2025-07-07 08:07:21,455 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-07-07 08:07:21,455 [INFO] WI HCV Tests Weekly Workflow.
+2025-07-14 08:08:33,851 [INFO] WI HCV Tests Weekly Workflow.
+2025-07-14 08:13:51,956 [INFO] Writing to Excel.
+2025-07-14 08:13:51,987 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-07-14 08:13:51,987 [INFO] Sending email.
+2025-07-14 08:13:53,487 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-07-14 08:13:53,503 [INFO] WI HCV Tests Weekly Workflow.
+2025-07-21 08:06:51,052 [INFO] WI HCV Tests Weekly Workflow.
+2025-07-21 08:07:09,990 [INFO] Writing to Excel.
+2025-07-21 08:07:10,021 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-07-21 08:07:10,021 [INFO] Sending email.
+2025-07-21 08:07:11,849 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-07-21 08:07:11,849 [INFO] WI HCV Tests Weekly Workflow.
+2025-07-28 08:08:16,527 [INFO] WI HCV Tests Weekly Workflow.
+2025-07-28 08:09:57,949 [INFO] Writing to Excel.
+2025-07-28 08:09:57,980 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-07-28 08:09:57,980 [INFO] Sending email.
+2025-07-28 08:09:59,808 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-07-28 08:09:59,808 [INFO] WI HCV Tests Weekly Workflow.
+2025-08-04 08:08:16,927 [INFO] WI HCV Tests Weekly Workflow.
+2025-08-11 08:13:01,930 [INFO] WI HCV Tests Weekly Workflow.
+2025-08-11 08:15:22,692 [INFO] Writing to Excel.
+2025-08-11 08:15:22,723 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-08-11 08:15:22,723 [INFO] Sending email.
+2025-08-11 08:15:24,473 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-08-11 08:15:24,473 [INFO] WI HCV Tests Weekly Workflow.
+2025-08-18 08:06:53,506 [INFO] WI HCV Tests Weekly Workflow.
+2025-08-18 08:07:11,271 [INFO] Writing to Excel.
+2025-08-18 08:07:11,349 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-08-18 08:07:11,349 [INFO] Sending email.
+2025-08-18 08:07:14,256 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-08-18 08:07:14,256 [INFO] WI HCV Tests Weekly Workflow.
+2025-08-25 08:14:01,985 [INFO] WI HCV Tests Weekly Workflow.
+2025-08-25 08:17:08,773 [INFO] Writing to Excel.
+2025-08-25 08:17:08,809 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-08-25 08:17:08,810 [INFO] Sending email.
+2025-08-25 08:17:12,094 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-08-25 08:17:12,094 [INFO] WI HCV Tests Weekly Workflow.
+2025-09-08 08:07:50,578 [INFO] WI HCV Tests Weekly Workflow.
+2025-09-08 08:10:01,711 [INFO] Writing to Excel.
+2025-09-08 08:10:01,741 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-09-08 08:10:01,742 [INFO] Sending email.
+2025-09-08 08:10:03,283 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-09-08 08:10:03,283 [INFO] WI HCV Tests Weekly Workflow.
+2025-09-15 08:05:25,672 [INFO] WI HCV Tests Weekly Workflow.
+2025-09-15 08:10:11,703 [INFO] Writing to Excel.
+2025-09-15 08:10:11,750 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-09-15 08:10:11,750 [INFO] Sending email.
+2025-09-15 08:10:13,547 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-09-15 08:10:13,547 [INFO] WI HCV Tests Weekly Workflow.
+2025-09-22 08:06:45,746 [INFO] WI HCV Tests Weekly Workflow.
+2025-09-22 08:07:04,672 [INFO] Writing to Excel.
+2025-09-22 08:07:04,698 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-09-22 08:07:04,699 [INFO] Sending email.
+2025-09-22 08:07:06,047 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-09-22 08:07:06,048 [INFO] WI HCV Tests Weekly Workflow.
+2025-10-06 08:13:56,042 [INFO] WI HCV Tests Weekly Workflow.
+2025-10-06 08:20:03,288 [INFO] Writing to Excel.
+2025-10-06 08:20:03,327 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-10-06 08:20:03,327 [INFO] Sending email.
+2025-10-06 08:20:04,482 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-10-06 08:20:04,483 [INFO] WI HCV Tests Weekly Workflow.
+2025-10-13 08:11:52,257 [INFO] WI HCV Tests Weekly Workflow.
+2025-10-13 08:14:12,704 [INFO] Writing to Excel.
+2025-10-13 08:14:12,735 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-10-13 08:14:12,735 [INFO] Sending email.
+2025-10-13 08:14:13,800 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-10-13 08:14:13,801 [INFO] WI HCV Tests Weekly Workflow.
+2025-10-20 08:07:45,445 [INFO] WI HCV Tests Weekly Workflow.
+2025-10-20 08:08:04,577 [INFO] Writing to Excel.
+2025-10-20 08:08:04,615 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-10-20 08:08:04,616 [INFO] Sending email.
+2025-10-20 08:08:05,815 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-10-20 08:08:05,815 [INFO] WI HCV Tests Weekly Workflow.
+2025-10-27 08:07:54,615 [INFO] WI HCV Tests Weekly Workflow.
+2025-10-27 08:12:08,949 [INFO] Writing to Excel.
+2025-10-27 08:12:08,995 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-10-27 08:12:08,995 [INFO] Sending email.
+2025-10-27 08:12:10,241 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-10-27 08:12:10,241 [INFO] WI HCV Tests Weekly Workflow.
+2025-11-03 08:13:38,113 [INFO] WI HCV Tests Weekly Workflow.
+2025-11-03 08:14:25,304 [INFO] Writing to Excel.
+2025-11-03 08:14:25,328 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-11-03 08:14:25,328 [INFO] Sending email.
+2025-11-03 08:14:26,777 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-11-03 08:14:26,777 [INFO] WI HCV Tests Weekly Workflow.
+2025-11-10 08:07:02,460 [INFO] WI HCV Tests Weekly Workflow.
+2025-11-10 08:07:58,488 [INFO] Writing to Excel.
+2025-11-10 08:07:58,519 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-11-10 08:07:58,519 [INFO] Sending email.
+2025-11-10 08:07:59,758 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-11-10 08:07:59,759 [INFO] WI HCV Tests Weekly Workflow.
+2025-11-17 08:08:43,989 [INFO] WI HCV Tests Weekly Workflow.
+2025-11-17 08:09:06,137 [INFO] Writing to Excel.
+2025-11-17 08:09:06,168 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-11-17 08:09:06,168 [INFO] Sending email.
+2025-11-17 08:09:07,707 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-11-17 08:09:07,707 [INFO] WI HCV Tests Weekly Workflow.
+2025-11-24 08:07:39,973 [INFO] WI HCV Tests Weekly Workflow.
+2025-11-24 08:10:59,947 [INFO] Writing to Excel.
+2025-11-24 08:11:00,025 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-11-24 08:11:00,025 [INFO] Sending email.
+2025-11-24 08:11:01,273 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-11-24 08:11:01,273 [INFO] WI HCV Tests Weekly Workflow.
+2025-12-01 08:06:19,251 [INFO] WI HCV Tests Weekly Workflow.
+2025-12-01 08:13:31,824 [INFO] Writing to Excel.
+2025-12-01 08:13:31,886 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-12-01 08:13:31,886 [INFO] Sending email.
+2025-12-01 08:13:32,971 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-12-01 08:13:32,971 [INFO] WI HCV Tests Weekly Workflow.
+2025-12-08 08:07:59,228 [INFO] WI HCV Tests Weekly Workflow.
+2025-12-08 08:14:23,914 [INFO] Writing to Excel.
+2025-12-08 08:14:24,029 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-12-08 08:14:24,029 [INFO] Sending email.
+2025-12-08 08:14:25,767 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-12-08 08:14:25,767 [INFO] WI HCV Tests Weekly Workflow.
+2025-12-15 08:27:59,954 [INFO] WI HCV Tests Weekly Workflow.
+2025-12-15 08:29:41,581 [INFO] Writing to Excel.
+2025-12-15 08:29:41,628 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-12-15 08:29:41,629 [INFO] Sending email.
+2025-12-15 08:29:43,011 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-12-15 08:29:43,011 [INFO] WI HCV Tests Weekly Workflow.
+2025-12-22 08:06:02,162 [INFO] WI HCV Tests Weekly Workflow.
+2025-12-22 08:06:26,681 [INFO] Writing to Excel.
+2025-12-22 08:06:26,735 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-12-22 08:06:26,736 [INFO] Sending email.
+2025-12-22 08:06:27,830 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-12-22 08:06:27,830 [INFO] WI HCV Tests Weekly Workflow.
+2025-12-29 08:11:52,858 [INFO] WI HCV Tests Weekly Workflow.
+2025-12-29 08:12:35,021 [INFO] Writing to Excel.
+2025-12-29 08:12:35,062 [INFO] File saved in C:\routine_weekly\prevention/wi_hcv_tests_email/staging/WI HCV Tests from Last Week.xlsx. WI HCV Tests from Last Week.
+2025-12-29 08:12:35,062 [INFO] Sending email.
+2025-12-29 08:12:36,827 [INFO] WI HCV Tests Weekly Workflow email sent to Ben Bruso, Kristen Grimes
+2025-12-29 08:12:36,827 [INFO] WI HCV Tests Weekly Workflow.

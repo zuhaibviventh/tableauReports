@@ -1,0 +1,1378 @@
+2023-10-06 16:10:00,234 [INFO] Running Clinical Operations Daily ETL Workflow.
+2023-10-06 16:27:08,151 [INFO] Running Clinical Operations Daily ETL Workflow.
+2023-10-06 16:31:30,518 [INFO] Running Clinical Operations Daily ETL Workflow.
+2023-10-09 16:13:28,794 [INFO] Running Clinical Quality Daily ETL Workflow.
+2023-10-17 13:47:52,589 [INFO] Running Clinical Operations Daily ETL Workflow.
+2023-10-17 13:57:17,975 [INFO] Running Clinical Operations Daily ETL Workflow.
+2023-10-17 13:59:55,814 [INFO] Running Clinical Operations Daily ETL Workflow.
+2023-10-17 14:28:14,227 [INFO] Running Clinical Operations Daily ETL Workflow.
+2023-10-17 14:30:14,613 [INFO] Running Clinical Operations Daily ETL Workflow.
+2023-10-17 14:33:56,269 [INFO] Running Clinical Operations Daily ETL Workflow.
+2023-10-24 08:42:23,963 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-24 08:42:27,617 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-10-24 08:44:20,231 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-24 08:44:23,298 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-10-24 08:47:19,761 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-24 08:47:22,989 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-10-24 08:49:10,869 [INFO] Creating Hyper Table.
+2023-10-24 08:49:10,871 [ERROR] Incorrect connection keys: 'VL Status'
+2023-10-24 08:49:10,871 [INFO] Total run time is 107.8823s.
+2023-10-24 08:57:50,974 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-24 08:57:54,765 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-10-24 08:59:43,125 [INFO] Creating Hyper Table.
+2023-10-24 08:59:43,131 [ERROR] Incorrect connection keys: 'VL Status'
+2023-10-24 08:59:43,132 [INFO] Total run time is 108.3663s.
+2023-10-24 09:00:05,765 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-24 09:00:35,713 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-10-24 09:27:14,492 [INFO] Creating Hyper Table.
+2023-10-24 09:27:14,501 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/WIP - Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-10-24 10:27:59,015 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-24 10:28:02,659 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-10-24 10:31:07,847 [INFO] Creating Hyper Table.
+2023-10-24 10:31:07,849 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/WIP - Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-10-24 10:31:08,197 [INFO] Connection to Hyper file is closed.
+2023-10-24 10:31:08,197 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/WIP - Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-10-24 10:31:11,049 [INFO] Datasource published. Datasource ID: 4b5267ed-5664-437d-a38a-dd88d71e5f8e
+2023-10-24 10:31:11,192 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-10-24 10:31:11,193 [INFO] Total run time is 188.5329s.
+2023-10-24 10:42:38,032 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-24 10:42:41,226 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-10-24 10:44:30,443 [INFO] Creating Hyper Table.
+2023-10-24 10:44:30,447 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-10-24 10:44:30,771 [INFO] Connection to Hyper file is closed.
+2023-10-24 10:44:30,771 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-10-24 10:44:34,149 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-10-24 10:44:34,305 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-10-24 10:44:34,306 [INFO] Total run time is 113.0801s.
+2023-10-25 05:51:01,213 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-25 05:51:04,180 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-10-25 05:52:53,895 [INFO] Creating Hyper Table.
+2023-10-25 05:52:53,901 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-10-25 05:52:54,875 [INFO] Connection to Hyper file is closed.
+2023-10-25 05:52:54,876 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-10-25 05:52:58,278 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-10-25 05:52:58,419 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-10-25 05:52:58,420 [INFO] Total run time is 114.2396s.
+2023-10-25 12:24:32,811 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-25 12:24:35,317 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-10-25 12:31:11,323 [INFO] Creating Hyper Table.
+2023-10-25 12:31:11,327 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-10-25 12:31:11,675 [INFO] Connection to Hyper file is closed.
+2023-10-25 12:31:11,675 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-10-25 12:31:14,847 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-10-25 12:31:14,983 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-10-25 12:31:14,983 [INFO] Social Services - MCM Compliance.
+2023-10-25 12:34:46,886 [INFO] Creating Hyper Table.
+2023-10-25 13:09:34,632 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-25 13:09:37,549 [INFO] Social Services - MCM Compliance.
+2023-10-25 13:14:52,653 [INFO] Creating Hyper Table.
+2023-10-25 13:14:52,655 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/mcm_compliance/staging/MCM Compliance
+2023-10-25 13:21:49,317 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-25 13:21:52,848 [INFO] Social Services - MCM Compliance.
+2023-10-25 13:25:03,512 [INFO] Creating Hyper Table.
+2023-10-25 13:33:57,172 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-25 13:34:02,646 [INFO] Social Services - MCM Compliance.
+2023-10-25 13:39:06,691 [INFO] Social Services - MCM Compliance. pushed to Tableau.
+2023-10-25 13:39:06,694 [INFO] Total run time is 304.0476s.
+2023-10-25 13:52:12,005 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-25 13:52:14,200 [INFO] Social Services - MCM Compliance.
+2023-10-25 13:55:36,233 [INFO] Social Services - MCM Compliance. pushed to Tableau.
+2023-10-25 13:55:36,234 [INFO] Total run time is 202.0348s.
+2023-10-25 15:19:43,627 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-25 15:19:46,859 [INFO] Social Services - MCM Compliance.
+2023-10-25 15:22:41,080 [INFO] Social Services - MCM Compliance. pushed to Tableau.
+2023-10-25 15:22:41,084 [INFO] Total run time is 174.2241s.
+2023-10-25 15:41:16,520 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-25 15:41:19,034 [INFO] Social Services - MCM Compliance.
+2023-10-25 15:46:02,082 [INFO] Creating Hyper Table.
+2023-10-25 15:49:49,634 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-25 15:49:53,208 [INFO] Social Services - MCM Compliance.
+2023-10-25 15:52:50,913 [INFO] Creating Hyper Table.
+2023-10-25 15:57:44,430 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-25 15:57:46,294 [INFO] Social Services - MCM Compliance.
+2023-10-25 16:01:06,386 [INFO] Creating Hyper Table.
+2023-10-25 16:09:23,121 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-25 16:09:26,909 [INFO] Social Services - MCM Compliance.
+2023-10-25 16:13:30,683 [INFO] Creating Hyper Table.
+2023-10-26 04:59:37,091 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-26 04:59:39,429 [INFO] Social Services - MCM Compliance.
+2023-10-26 05:01:40,104 [INFO] Creating Hyper Table.
+2023-10-26 05:52:11,352 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-26 05:52:13,838 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-10-26 05:55:52,270 [INFO] Creating Hyper Table.
+2023-10-26 05:55:52,273 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-10-26 05:55:53,021 [INFO] Connection to Hyper file is closed.
+2023-10-26 05:55:53,021 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-10-26 05:55:56,134 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-10-26 05:55:56,252 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-10-26 05:55:56,253 [INFO] Total run time is 222.4147s.
+2023-10-27 04:56:08,734 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-27 04:56:12,038 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-10-27 04:58:08,118 [INFO] Creating Hyper Table.
+2023-10-27 04:58:08,124 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-10-27 04:58:08,472 [INFO] Connection to Hyper file is closed.
+2023-10-27 04:58:08,472 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-10-27 04:58:11,409 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-10-27 04:58:11,538 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-10-27 04:58:11,538 [INFO] Total run time is 119.5005s.
+2023-10-29 05:52:52,679 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-29 05:52:56,736 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-10-29 05:58:39,719 [INFO] Creating Hyper Table.
+2023-10-29 05:58:39,726 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-10-29 05:58:40,760 [INFO] Connection to Hyper file is closed.
+2023-10-29 05:58:40,761 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-10-29 05:58:44,095 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-10-29 05:58:44,242 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-10-29 05:58:44,243 [INFO] Total run time is 347.5070s.
+2023-10-31 06:21:30,703 [INFO] Running Social Services Daily ETL Workflow.
+2023-10-31 06:21:34,637 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-10-31 06:25:03,911 [INFO] Creating Hyper Table.
+2023-10-31 06:25:03,918 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-10-31 06:25:04,928 [INFO] Connection to Hyper file is closed.
+2023-10-31 06:25:04,929 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-10-31 06:25:08,570 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-10-31 06:25:08,731 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-10-31 06:25:08,732 [INFO] Total run time is 214.0962s.
+2023-11-01 06:02:42,782 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-01 06:02:46,617 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-01 06:16:21,253 [INFO] Creating Hyper Table.
+2023-11-01 06:16:21,263 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-01 06:16:22,011 [INFO] Connection to Hyper file is closed.
+2023-11-01 06:16:22,011 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-01 06:16:25,334 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-01 06:16:25,455 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-01 06:16:25,456 [INFO] Total run time is 818.8406s.
+2023-11-02 05:01:38,784 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-02 05:01:42,485 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-02 05:03:39,239 [INFO] Creating Hyper Table.
+2023-11-02 05:03:39,243 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-02 05:03:40,068 [INFO] Connection to Hyper file is closed.
+2023-11-02 05:03:40,069 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-02 05:03:43,525 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-02 05:03:43,658 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-02 05:03:43,659 [INFO] Total run time is 121.1735s.
+2023-11-03 05:37:29,139 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-03 05:37:34,530 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-03 05:39:24,683 [INFO] Creating Hyper Table.
+2023-11-03 05:39:24,689 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-03 05:39:25,689 [INFO] Connection to Hyper file is closed.
+2023-11-03 05:39:25,689 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-03 05:39:30,999 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-03 05:39:31,127 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-03 05:39:31,128 [INFO] Total run time is 116.5983s.
+2023-11-05 05:39:00,975 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-05 05:39:05,585 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-05 05:42:14,229 [INFO] Creating Hyper Table.
+2023-11-05 05:42:14,234 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-05 05:42:14,989 [INFO] Connection to Hyper file is closed.
+2023-11-05 05:42:14,989 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-05 05:42:19,005 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-05 05:42:19,149 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-05 05:42:19,150 [INFO] Total run time is 193.5643s.
+2023-11-07 05:42:32,516 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-07 05:42:36,851 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-07 05:44:32,046 [INFO] Creating Hyper Table.
+2023-11-07 05:44:32,050 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-07 05:44:32,953 [INFO] Connection to Hyper file is closed.
+2023-11-07 05:44:32,953 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-07 05:44:38,070 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-07 05:44:38,209 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-07 05:44:38,210 [INFO] Total run time is 121.3594s.
+2023-11-08 05:18:16,138 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-08 05:18:20,047 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-08 05:29:03,025 [INFO] Creating Hyper Table.
+2023-11-08 05:29:03,029 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-08 05:29:03,776 [INFO] Connection to Hyper file is closed.
+2023-11-08 05:29:03,776 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-08 05:29:06,734 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-08 05:29:06,872 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-08 05:29:06,873 [INFO] Total run time is 646.8262s.
+2023-11-09 06:04:58,442 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-09 06:05:04,094 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-09 06:11:08,482 [INFO] Creating Hyper Table.
+2023-11-09 06:11:08,486 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-09 06:11:09,231 [INFO] Connection to Hyper file is closed.
+2023-11-09 06:11:09,231 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-09 06:11:13,059 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-09 06:11:13,206 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-09 06:11:13,207 [INFO] Total run time is 369.1127s.
+2023-11-10 05:43:52,157 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-10 05:43:57,749 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-10 05:45:54,127 [INFO] Creating Hyper Table.
+2023-11-10 05:45:54,132 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-10 05:45:55,036 [INFO] Connection to Hyper file is closed.
+2023-11-10 05:45:55,036 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-10 05:45:59,979 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-10 05:46:00,103 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-10 05:46:00,104 [INFO] Total run time is 122.3551s.
+2023-11-12 06:00:30,192 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-12 06:00:35,251 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-12 06:04:34,571 [INFO] Creating Hyper Table.
+2023-11-12 06:04:34,576 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-12 06:04:35,439 [INFO] Connection to Hyper file is closed.
+2023-11-12 06:04:35,439 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-12 06:04:39,575 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-12 06:04:39,735 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-12 06:04:39,736 [INFO] Total run time is 244.4844s.
+2023-11-14 06:26:53,054 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-14 06:26:55,968 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-14 06:28:42,882 [INFO] Creating Hyper Table.
+2023-11-14 06:28:42,889 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-14 06:28:43,624 [INFO] Connection to Hyper file is closed.
+2023-11-14 06:28:43,624 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-14 06:28:47,686 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-14 06:28:47,834 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-14 06:28:47,835 [INFO] Total run time is 111.8678s.
+2023-11-15 05:48:58,348 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-15 05:49:02,743 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-15 05:50:53,387 [INFO] Creating Hyper Table.
+2023-11-15 05:50:53,393 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-15 05:50:54,387 [INFO] Connection to Hyper file is closed.
+2023-11-15 05:50:54,388 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-15 05:50:59,700 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-15 05:50:59,858 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-15 05:50:59,859 [INFO] Total run time is 117.1162s.
+2023-11-16 06:36:26,848 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-16 06:36:31,115 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-16 06:38:26,710 [INFO] Creating Hyper Table.
+2023-11-16 06:38:26,719 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-16 06:38:27,428 [INFO] Connection to Hyper file is closed.
+2023-11-16 06:38:27,428 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-16 06:38:31,277 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-16 06:38:31,407 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-16 06:38:31,408 [INFO] Total run time is 120.2932s.
+2023-11-17 06:48:45,359 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-17 06:48:48,409 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-17 06:51:10,524 [INFO] Creating Hyper Table.
+2023-11-17 06:51:10,528 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-17 06:51:11,329 [INFO] Connection to Hyper file is closed.
+2023-11-17 06:51:11,329 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-17 06:51:15,547 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-17 06:51:15,687 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-17 06:51:15,688 [INFO] Total run time is 147.2787s.
+2023-11-19 05:59:40,591 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-19 05:59:43,105 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-19 06:03:24,141 [INFO] Creating Hyper Table.
+2023-11-19 06:03:24,146 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-19 06:03:24,989 [INFO] Connection to Hyper file is closed.
+2023-11-19 06:03:24,989 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-19 06:03:28,045 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-19 06:03:28,191 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-19 06:03:28,192 [INFO] Total run time is 225.0877s.
+2023-11-19 08:26:22,205 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-19 08:26:25,374 [INFO] Prevention - Referring Clients to PE Programs.
+2023-11-19 08:26:26,504 [INFO] Creating Hyper Table.
+2023-11-19 08:26:26,505 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/referring_clients_to_pe_programs/staging/Prevention - Referring Clients to PE Programs
+2023-11-19 08:28:25,871 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-19 08:28:28,475 [INFO] Prevention - Referring Clients to PE Programs.
+2023-11-19 08:28:29,476 [INFO] Creating Hyper Table.
+2023-11-19 08:28:29,476 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/referring_clients_to_pe_programs/staging/Prevention - Referring Clients to PE Programs
+2023-11-19 08:29:56,900 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-19 08:29:59,781 [INFO] Prevention - Referring Clients to PE Programs.
+2023-11-19 08:30:00,889 [INFO] Creating Hyper Table.
+2023-11-19 08:32:32,693 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-19 08:32:35,351 [INFO] Prevention - Referring Clients to PE Programs.
+2023-11-19 08:32:36,312 [INFO] Creating Hyper Table.
+2023-11-19 08:32:36,313 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/referring_clients_to_pe_programs/staging/Prevention - Referring Clients to PE Programs
+2023-11-19 08:35:42,829 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-19 08:35:45,331 [INFO] Prevention - Referring Clients to PE Programs.
+2023-11-19 08:35:46,397 [INFO] Creating Hyper Table.
+2023-11-19 08:36:02,581 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-19 08:36:04,939 [INFO] Prevention - Referring Clients to PE Programs.
+2023-11-19 08:36:05,899 [INFO] Creating Hyper Table.
+2023-11-19 08:37:49,870 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-19 08:37:52,397 [INFO] Prevention - Referring Clients to PE Programs.
+2023-11-19 08:37:53,426 [INFO] Creating Hyper Table.
+2023-11-19 08:38:29,666 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-19 08:38:32,462 [INFO] Prevention - Referring Clients to PE Programs.
+2023-11-19 08:38:33,433 [INFO] Creating Hyper Table.
+2023-11-19 08:39:42,313 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-19 08:39:44,914 [INFO] Prevention - Referring Clients to PE Programs.
+2023-11-19 08:39:45,872 [INFO] Creating Hyper Table.
+2023-11-19 08:40:27,694 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-19 08:40:30,431 [INFO] Prevention - Referring Clients to PE Programs.
+2023-11-19 08:40:31,486 [INFO] Creating Hyper Table.
+2023-11-19 08:40:31,487 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/referring_clients_to_pe_programs/staging/Prevention - Referring Clients to PE Programs
+2023-11-19 08:42:24,500 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-19 08:42:27,228 [INFO] Prevention - Referring Clients to PE Programs.
+2023-11-19 08:42:28,186 [INFO] Creating Hyper Table.
+2023-11-19 08:43:20,886 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-19 08:43:23,488 [INFO] Prevention - Referring Clients to PE Programs.
+2023-11-19 08:43:24,429 [INFO] Creating Hyper Table.
+2023-11-19 08:46:49,380 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-19 08:46:51,940 [INFO] Prevention - Referring Clients to PE Programs.
+2023-11-19 08:46:52,885 [INFO] Creating Hyper Table.
+2023-11-19 08:46:52,886 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/referring_clients_to_pe_programs/staging/Prevention - Referring Clients to PE Programs
+2023-11-19 08:47:27,966 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-19 08:47:30,208 [INFO] Prevention - Referring Clients to PE Programs.
+2023-11-19 08:47:31,158 [INFO] Creating Hyper Table.
+2023-11-19 08:47:31,159 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/referring_clients_to_pe_programs/staging/Prevention - Referring Clients to PE Programs
+2023-11-19 08:48:14,330 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-19 08:48:16,768 [INFO] Prevention - Referring Clients to PE Programs.
+2023-11-19 08:48:17,877 [INFO] Creating Hyper Table.
+2023-11-19 08:48:17,878 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/referring_clients_to_pe_programs/staging/Prevention - Referring Clients to PE Programs
+2023-11-19 08:48:49,301 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-19 08:48:51,964 [INFO] Prevention - Referring Clients to PE Programs.
+2023-11-19 08:48:52,887 [INFO] Creating Hyper Table.
+2023-11-19 08:48:52,887 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/referring_clients_to_pe_programs/staging/Prevention - Referring Clients to PE Programs
+2023-11-19 08:50:10,410 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-19 08:50:12,762 [INFO] Prevention - Referring Clients to PE Programs.
+2023-11-19 08:50:13,795 [INFO] Creating Hyper Table.
+2023-11-19 08:50:13,796 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/referring_clients_to_pe_programs/staging/Prevention - Referring Clients to PE Programs
+2023-11-19 08:51:38,740 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-19 08:51:41,376 [INFO] Prevention - Referring Clients to PE Programs.
+2023-11-19 08:51:42,608 [INFO] Creating Hyper Table.
+2023-11-19 08:51:42,609 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/referring_clients_to_pe_programs/staging/Prevention - Referring Clients to PE Programs
+2023-11-19 08:52:12,755 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-19 08:52:15,589 [INFO] Prevention - Referring Clients to PE Programs.
+2023-11-19 08:52:16,490 [INFO] Creating Hyper Table.
+2023-11-19 08:52:16,491 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/referring_clients_to_pe_programs/staging/Prevention - Referring Clients to PE Programs
+2023-11-19 08:58:03,190 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-19 08:58:05,767 [INFO] Prevention - Referring Clients to PE Programs.
+2023-11-19 08:58:06,728 [INFO] Creating Hyper Table.
+2023-11-19 08:58:35,297 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-19 08:58:37,594 [INFO] Prevention - Referring Clients to PE Programs.
+2023-11-19 08:58:38,532 [INFO] Creating Hyper Table.
+2023-11-19 08:58:38,534 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/referring_clients_to_pe_programs/staging/Prevention - Referring Clients to PE Programs
+2023-11-20 06:26:53,057 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-20 06:26:57,646 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-20 06:31:14,101 [INFO] Creating Hyper Table.
+2023-11-20 06:31:14,107 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-20 06:31:14,948 [INFO] Connection to Hyper file is closed.
+2023-11-20 06:31:14,948 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-20 06:31:19,069 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-20 06:31:19,202 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-20 06:31:19,207 [INFO] Total run time is 261.5611s.
+2023-11-21 05:51:54,507 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-21 05:51:57,458 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-21 05:53:59,662 [INFO] Creating Hyper Table.
+2023-11-21 05:53:59,665 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-21 05:54:00,395 [INFO] Connection to Hyper file is closed.
+2023-11-21 05:54:00,395 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-21 05:54:04,295 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-21 05:54:04,424 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-21 05:54:04,425 [INFO] Total run time is 126.9672s.
+2023-11-22 05:55:54,942 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-22 05:55:58,355 [INFO] Social Services - MCM Compliance.
+2023-11-22 05:57:14,988 [INFO] Creating Hyper Table.
+2023-11-22 05:57:15,021 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/mcm_compliance/staging/MCM Compliance
+2023-11-22 05:57:16,002 [INFO] Connection to Hyper file is closed.
+2023-11-22 05:57:16,002 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/mcm_compliance/staging/MCM Compliance') to Tableau.
+2023-11-22 06:03:12,504 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-22 06:03:15,108 [INFO] Social Services - MCM Compliance.
+2023-11-22 06:04:21,476 [INFO] Creating Hyper Table.
+2023-11-22 06:04:21,516 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/mcm_compliance/staging/MCM Compliance.hyper
+2023-11-22 06:04:22,031 [INFO] Connection to Hyper file is closed.
+2023-11-22 06:04:22,031 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/mcm_compliance/staging/MCM Compliance.hyper') to Tableau.
+2023-11-22 06:04:26,434 [INFO] Datasource published. Datasource ID: 8697478c-6ae7-465e-8261-05022d38de1a
+2023-11-22 06:04:26,571 [INFO] Social Services - MCM Compliance. pushed to Tableau.
+2023-11-22 06:04:26,572 [INFO] Total run time is 71.4644s.
+2023-11-22 06:11:13,400 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-22 06:11:16,204 [INFO] Social Services - MCM Compliance.
+2023-11-22 06:12:24,471 [INFO] Creating Hyper Table.
+2023-11-22 06:12:24,504 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/mcm_compliance/staging/MCM Compliance.hyper
+2023-11-22 07:31:34,519 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-22 07:31:37,361 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-22 07:33:29,579 [INFO] Creating Hyper Table.
+2023-11-22 07:33:29,591 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-22 07:33:29,908 [INFO] Connection to Hyper file is closed.
+2023-11-22 07:33:29,908 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-22 07:33:34,062 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-22 07:33:34,189 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-22 07:33:34,189 [INFO] Total run time is 116.8281s.
+2023-11-23 06:32:51,623 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-23 06:32:56,012 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-23 06:35:29,678 [INFO] Creating Hyper Table.
+2023-11-23 06:35:29,683 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-23 06:35:33,497 [INFO] Connection to Hyper file is closed.
+2023-11-23 06:35:33,498 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-23 06:35:38,705 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-23 06:35:38,900 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-23 06:35:38,901 [INFO] Total run time is 162.8886s.
+2023-11-24 05:37:31,746 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-24 05:37:35,999 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-24 05:39:22,122 [INFO] Creating Hyper Table.
+2023-11-24 05:39:22,128 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-24 05:39:23,059 [INFO] Connection to Hyper file is closed.
+2023-11-24 05:39:23,060 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-24 05:39:28,233 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-24 05:39:28,383 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-24 05:39:28,384 [INFO] Total run time is 112.3846s.
+2023-11-26 05:59:54,855 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-26 05:59:59,666 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-26 06:01:55,048 [INFO] Creating Hyper Table.
+2023-11-26 06:01:55,053 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-26 06:01:56,001 [INFO] Connection to Hyper file is closed.
+2023-11-26 06:01:56,001 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-26 06:02:00,382 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-26 06:02:00,538 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-26 06:02:00,539 [INFO] Total run time is 120.8732s.
+2023-11-28 05:52:15,928 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-28 05:52:19,996 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-28 05:54:06,709 [INFO] Creating Hyper Table.
+2023-11-28 05:54:06,713 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-28 05:54:07,531 [INFO] Connection to Hyper file is closed.
+2023-11-28 05:54:07,531 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-28 05:54:11,483 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-28 05:54:11,628 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-28 05:54:11,629 [INFO] Total run time is 111.6331s.
+2023-11-29 05:42:55,862 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-29 05:42:59,611 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-29 05:49:01,722 [INFO] Creating Hyper Table.
+2023-11-29 05:49:01,729 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-29 05:49:02,498 [INFO] Connection to Hyper file is closed.
+2023-11-29 05:49:02,498 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-29 05:49:06,254 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-29 05:49:06,406 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-29 05:49:06,407 [INFO] Total run time is 366.7960s.
+2023-11-30 05:45:49,057 [INFO] Running Social Services Daily ETL Workflow.
+2023-11-30 05:45:52,381 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-11-30 05:48:00,358 [INFO] Creating Hyper Table.
+2023-11-30 05:48:00,361 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-11-30 05:48:01,098 [INFO] Connection to Hyper file is closed.
+2023-11-30 05:48:01,098 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-11-30 05:48:05,348 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-11-30 05:48:05,508 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-11-30 05:48:05,509 [INFO] Total run time is 133.1278s.
+2023-12-01 05:27:53,973 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-01 05:27:58,353 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-01 05:42:34,735 [INFO] Creating Hyper Table.
+2023-12-01 05:42:34,738 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-12-01 05:42:35,743 [INFO] Connection to Hyper file is closed.
+2023-12-01 05:42:35,743 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-12-01 05:42:40,466 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-01 05:42:40,582 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-01 05:42:40,582 [INFO] Total run time is 882.2283s.
+2023-12-03 05:51:23,402 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-03 05:51:27,828 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-03 05:55:04,367 [INFO] Creating Hyper Table.
+2023-12-03 05:55:04,373 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-12-03 05:55:05,255 [INFO] Connection to Hyper file is closed.
+2023-12-03 05:55:05,255 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-12-03 05:55:10,495 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-03 05:55:10,674 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-03 05:55:10,675 [INFO] Total run time is 222.8468s.
+2023-12-04 06:02:09,127 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-04 06:02:13,368 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-04 06:04:12,653 [INFO] Creating Hyper Table.
+2023-12-04 06:04:12,662 [INFO] Creating Hyper file: %USERPROFILE%/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-12-04 06:08:51,895 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-04 06:08:54,612 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-04 06:10:48,543 [INFO] Creating Hyper Table.
+2023-12-04 06:10:48,549 [INFO] Creating Hyper file: C:/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-12-04 06:11:08,358 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-04 06:11:11,126 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-04 06:13:01,693 [INFO] Creating Hyper Table.
+2023-12-04 06:13:01,696 [INFO] Creating Hyper file: C:/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-12-04 06:13:28,473 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-04 06:13:31,115 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-04 06:15:20,238 [INFO] Creating Hyper Table.
+2023-12-04 06:15:20,241 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-12-04 06:15:20,598 [INFO] Connection to Hyper file is closed.
+2023-12-04 06:15:20,599 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-12-04 06:15:25,027 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-04 06:15:25,175 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-04 06:15:25,176 [INFO] Total run time is 114.0616s.
+2023-12-05 05:43:53,609 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-05 05:43:56,352 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-05 05:46:02,552 [INFO] Creating Hyper Table.
+2023-12-05 05:46:02,557 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-12-05 05:46:03,290 [INFO] Connection to Hyper file is closed.
+2023-12-05 05:46:03,290 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-12-05 05:46:07,126 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-05 05:46:07,255 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-05 05:46:07,256 [INFO] Total run time is 130.9038s.
+2023-12-06 06:02:28,726 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-06 06:02:32,053 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-06 06:04:24,051 [INFO] Creating Hyper Table.
+2023-12-06 06:04:24,055 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-12-06 06:04:24,793 [INFO] Connection to Hyper file is closed.
+2023-12-06 06:04:24,793 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-12-06 06:04:28,994 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-06 06:04:29,127 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-06 06:04:29,128 [INFO] Total run time is 117.0759s.
+2023-12-07 05:39:18,909 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-07 05:39:22,891 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-07 05:41:31,071 [INFO] Creating Hyper Table.
+2023-12-07 05:41:31,081 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-12-07 05:41:31,838 [INFO] Connection to Hyper file is closed.
+2023-12-07 05:41:31,838 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-12-07 05:41:36,184 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-07 05:41:36,327 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-07 05:41:36,328 [INFO] Total run time is 133.4366s.
+2023-12-08 05:22:55,972 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-08 05:22:59,782 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-08 05:24:48,183 [INFO] Creating Hyper Table.
+2023-12-08 05:24:48,187 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-12-08 05:24:49,121 [INFO] Connection to Hyper file is closed.
+2023-12-08 05:24:49,121 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-12-08 05:24:53,439 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-08 05:24:53,613 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-08 05:24:53,614 [INFO] Total run time is 113.8323s.
+2023-12-10 08:14:21,517 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-10 08:14:25,590 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-10 08:37:44,974 [INFO] Creating Hyper Table.
+2023-12-10 08:37:44,978 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-12-10 08:37:45,709 [INFO] Connection to Hyper file is closed.
+2023-12-10 08:37:45,709 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-12-10 08:37:49,761 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-10 08:37:49,906 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-10 08:37:49,907 [INFO] Total run time is 1404.3174s.
+2023-12-12 06:09:31,764 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-12 06:09:34,978 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-12 06:11:34,550 [INFO] Creating Hyper Table.
+2023-12-12 06:11:34,554 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-12-12 06:11:35,266 [INFO] Connection to Hyper file is closed.
+2023-12-12 06:11:35,266 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-12-12 06:11:39,226 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-12 06:11:39,358 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-12 06:11:39,359 [INFO] Total run time is 124.3807s.
+2023-12-13 05:39:51,823 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-13 05:39:54,698 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-13 05:41:39,886 [INFO] Creating Hyper Table.
+2023-12-13 05:41:39,889 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-12-13 05:41:44,798 [INFO] Connection to Hyper file is closed.
+2023-12-13 05:41:44,798 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-12-13 05:41:48,736 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-13 05:41:48,894 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-13 05:41:48,896 [INFO] Total run time is 114.1974s.
+2023-12-14 06:43:22,351 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-14 06:43:25,605 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-14 06:45:35,024 [INFO] Creating Hyper Table.
+2023-12-14 06:45:35,028 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-12-14 06:45:35,715 [INFO] Connection to Hyper file is closed.
+2023-12-14 06:45:35,715 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-12-14 06:45:39,537 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-14 06:45:39,674 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-14 06:45:39,674 [INFO] Total run time is 134.0706s.
+2023-12-15 05:42:21,541 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-15 05:42:23,908 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-15 05:44:25,786 [INFO] Creating Hyper Table.
+2023-12-15 05:44:25,791 [INFO] Creating Hyper file: C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper
+2023-12-15 05:44:26,661 [INFO] Connection to Hyper file is closed.
+2023-12-15 05:44:26,661 [INFO] Publishing Hyper filer ('C:/Users/mscoggins/Vivent Health/Share Drives - Health/Health Informatics and Technology/Project Management/PE Routines/routine_daily/social_services/cm_management_daily_act_and_comp/staging/Case Management Monthly Activity and Compliance- Daily Version.hyper') to Tableau.
+2023-12-15 05:44:31,144 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-15 05:44:31,276 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-15 05:44:31,277 [INFO] Total run time is 127.3688s.
+2023-12-17 10:11:09,844 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-17 10:12:19,415 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-17 10:12:21,828 [INFO] Social Services - MCM Compliance.
+2023-12-17 10:27:19,816 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-17 10:27:22,369 [INFO] Social Services - MCM Compliance.
+2023-12-17 10:32:55,778 [INFO] Creating Hyper Table.
+2023-12-17 10:33:00,464 [INFO] Datasource published. Datasource ID: 8697478c-6ae7-465e-8261-05022d38de1a
+2023-12-17 10:33:00,592 [INFO] Social Services - MCM Compliance. pushed to Tableau.
+2023-12-17 10:33:00,594 [INFO] Total run time is 338.2246s.
+2023-12-17 10:41:12,601 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-17 10:41:15,375 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-17 10:52:32,094 [INFO] Creating Hyper Table.
+2023-12-17 10:52:36,418 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-17 10:52:36,552 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-17 10:52:36,553 [INFO] Total run time is 681.1779s.
+2023-12-17 10:58:10,868 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-17 10:58:13,283 [INFO] Prevention - Referring Clients to PE Programs.
+2023-12-17 10:58:14,415 [INFO] Creating Hyper Table.
+2023-12-17 10:58:18,305 [INFO] Datasource published. Datasource ID: 32ab6b6c-08fa-42a9-b524-f035a86fec57
+2023-12-17 10:58:18,428 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-17 10:58:18,428 [INFO] Total run time is 5.1449s.
+2023-12-17 11:03:53,251 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-17 11:03:56,634 [INFO] Prevention - Referring Clients to PE Programs.
+2023-12-17 11:03:57,692 [INFO] Creating Hyper Table.
+2023-12-17 11:04:02,807 [INFO] Datasource published. Datasource ID: 6b2ea5bd-05a5-4055-8071-3448c362306a
+2023-12-17 11:04:02,948 [INFO] Prevention - Referrals for New Clients, pushed to Tableau.
+2023-12-17 11:04:02,948 [INFO] Total run time is 6.3132s.
+2023-12-17 11:05:19,436 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-17 11:05:22,641 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-17 11:16:45,651 [INFO] Creating Hyper Table.
+2023-12-17 11:16:49,686 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-17 11:16:49,842 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-17 11:16:49,843 [INFO] Social Services - MCM Compliance.
+2023-12-17 11:22:02,909 [INFO] Creating Hyper Table.
+2023-12-17 11:22:07,841 [INFO] Datasource published. Datasource ID: 8697478c-6ae7-465e-8261-05022d38de1a
+2023-12-17 11:22:07,991 [INFO] Social Services - MCM Compliance. pushed to Tableau.
+2023-12-17 11:22:07,992 [INFO] Prevention - Referring Clients to PE Programs.
+2023-12-17 11:22:08,743 [INFO] Creating Hyper Table.
+2023-12-17 11:22:12,777 [INFO] Datasource published. Datasource ID: 6b2ea5bd-05a5-4055-8071-3448c362306a
+2023-12-17 11:22:12,907 [INFO] Prevention - Referrals for New Clients, pushed to Tableau.
+2023-12-17 11:22:12,909 [INFO] Total run time is 1010.2681s.
+2023-12-17 11:50:18,809 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-17 11:50:21,571 [INFO] Social Services Activity and Demographics
+2023-12-17 12:44:09,232 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-17 12:44:12,193 [INFO] Social Services Activity and Demographics
+2023-12-17 12:53:27,531 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-17 12:53:31,624 [INFO] Social Services Activity and Demographics
+2023-12-17 13:04:21,511 [INFO] Creating Hyper Table.
+2023-12-17 13:05:04,559 [INFO] Datasource published. Datasource ID: dc268d01-5085-4636-8396-3a48940dd55f
+2023-12-17 13:05:04,686 [INFO] Social Services Activity and Demographics, pushed to Tableau.
+2023-12-17 13:05:04,688 [INFO] Total run time is 693.0631s.
+2023-12-18 06:04:23,341 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-18 06:04:26,612 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-18 06:06:27,315 [INFO] Creating Hyper Table.
+2023-12-18 06:06:32,455 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-18 06:06:32,590 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-18 06:06:32,591 [INFO] Social Services - MCM Compliance.
+2023-12-18 06:07:45,847 [INFO] Creating Hyper Table.
+2023-12-18 06:07:50,710 [INFO] Datasource published. Datasource ID: 8697478c-6ae7-465e-8261-05022d38de1a
+2023-12-18 06:07:50,851 [INFO] Social Services - MCM Compliance. pushed to Tableau.
+2023-12-18 06:07:50,853 [INFO] Social Services Activity and Demographics
+2023-12-18 06:14:00,453 [INFO] Creating Hyper Table.
+2023-12-18 06:14:42,394 [INFO] Datasource published. Datasource ID: dc268d01-5085-4636-8396-3a48940dd55f
+2023-12-18 06:14:42,525 [INFO] Social Services Activity and Demographics, pushed to Tableau.
+2023-12-18 06:14:42,526 [INFO] Prevention - Referring Clients to PE Programs.
+2023-12-18 06:14:43,814 [INFO] Creating Hyper Table.
+2023-12-18 06:14:47,653 [INFO] Datasource published. Datasource ID: 6b2ea5bd-05a5-4055-8071-3448c362306a
+2023-12-18 06:14:47,777 [INFO] Prevention - Referrals for New Clients, pushed to Tableau.
+2023-12-18 06:14:47,779 [INFO] Total run time is 621.1669s.
+2023-12-19 06:51:38,852 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-19 06:51:42,899 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-19 06:55:41,884 [INFO] Creating Hyper Table.
+2023-12-19 06:55:51,547 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-19 06:55:51,699 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-19 06:55:51,700 [INFO] Social Services - MCM Compliance.
+2023-12-19 06:58:38,072 [INFO] Creating Hyper Table.
+2023-12-19 06:58:42,692 [INFO] Datasource published. Datasource ID: 8697478c-6ae7-465e-8261-05022d38de1a
+2023-12-19 06:58:42,818 [INFO] Social Services - MCM Compliance. pushed to Tableau.
+2023-12-19 06:58:42,818 [INFO] Social Services Activity and Demographics
+2023-12-19 07:09:37,027 [INFO] Creating Hyper Table.
+2023-12-19 07:10:12,497 [INFO] Datasource published. Datasource ID: dc268d01-5085-4636-8396-3a48940dd55f
+2023-12-19 07:10:12,631 [INFO] Social Services Activity and Demographics, pushed to Tableau.
+2023-12-19 07:10:12,633 [INFO] Prevention - Referring Clients to PE Programs.
+2023-12-19 07:10:13,654 [INFO] Creating Hyper Table.
+2023-12-19 07:10:17,745 [INFO] Datasource published. Datasource ID: 6b2ea5bd-05a5-4055-8071-3448c362306a
+2023-12-19 07:10:17,894 [INFO] Prevention - Referrals for New Clients, pushed to Tableau.
+2023-12-19 07:10:17,895 [INFO] Total run time is 1114.9966s.
+2023-12-20 05:59:36,007 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-20 05:59:39,264 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-20 06:06:07,580 [INFO] Creating Hyper Table.
+2023-12-20 06:06:11,844 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-20 06:06:11,987 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-20 06:06:11,988 [INFO] Social Services - MCM Compliance.
+2023-12-20 06:08:52,965 [INFO] Creating Hyper Table.
+2023-12-20 06:08:57,408 [INFO] Datasource published. Datasource ID: 8697478c-6ae7-465e-8261-05022d38de1a
+2023-12-20 06:08:57,524 [INFO] Social Services - MCM Compliance. pushed to Tableau.
+2023-12-20 06:08:57,524 [INFO] Social Services Activity and Demographics
+2023-12-20 06:20:28,196 [INFO] Creating Hyper Table.
+2023-12-20 06:21:17,325 [INFO] Datasource published. Datasource ID: dc268d01-5085-4636-8396-3a48940dd55f
+2023-12-20 06:21:17,462 [INFO] Social Services Activity and Demographics, pushed to Tableau.
+2023-12-20 06:21:17,464 [INFO] Prevention - Referring Clients to PE Programs.
+2023-12-20 06:21:18,585 [INFO] Creating Hyper Table.
+2023-12-20 06:21:22,724 [INFO] Datasource published. Datasource ID: 6b2ea5bd-05a5-4055-8071-3448c362306a
+2023-12-20 06:21:22,857 [INFO] Prevention - Referrals for New Clients, pushed to Tableau.
+2023-12-20 06:21:22,859 [INFO] Total run time is 1303.5945s.
+2023-12-21 07:54:10,269 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-21 07:54:13,906 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-21 07:57:35,389 [INFO] Creating Hyper Table.
+2023-12-21 07:57:39,640 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-21 07:57:39,772 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-21 07:57:39,774 [INFO] Social Services - MCM Compliance.
+2023-12-21 07:59:33,719 [INFO] Creating Hyper Table.
+2023-12-21 07:59:38,098 [INFO] Datasource published. Datasource ID: 8697478c-6ae7-465e-8261-05022d38de1a
+2023-12-21 07:59:38,232 [INFO] Social Services - MCM Compliance. pushed to Tableau.
+2023-12-21 07:59:38,232 [INFO] Social Services Activity and Demographics
+2023-12-21 08:06:21,781 [INFO] Creating Hyper Table.
+2023-12-21 08:07:14,264 [INFO] Datasource published. Datasource ID: dc268d01-5085-4636-8396-3a48940dd55f
+2023-12-21 08:07:14,407 [INFO] Social Services Activity and Demographics, pushed to Tableau.
+2023-12-21 08:07:14,408 [INFO] Prevention - Referring Clients to PE Programs.
+2023-12-21 08:07:15,608 [INFO] Creating Hyper Table.
+2023-12-21 08:07:19,778 [INFO] Datasource published. Datasource ID: 6b2ea5bd-05a5-4055-8071-3448c362306a
+2023-12-21 08:07:19,911 [INFO] Prevention - Referrals for New Clients, pushed to Tableau.
+2023-12-21 08:07:19,912 [INFO] Total run time is 786.0056s.
+2023-12-22 06:36:20,521 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-22 06:36:23,726 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-22 06:38:21,777 [INFO] Creating Hyper Table.
+2023-12-22 06:38:26,182 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-22 06:38:26,316 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-22 06:38:26,318 [INFO] Social Services - MCM Compliance.
+2023-12-22 06:39:36,244 [INFO] Creating Hyper Table.
+2023-12-22 06:39:40,583 [INFO] Datasource published. Datasource ID: 8697478c-6ae7-465e-8261-05022d38de1a
+2023-12-22 06:39:40,714 [INFO] Social Services - MCM Compliance. pushed to Tableau.
+2023-12-22 06:39:40,716 [INFO] Social Services Activity and Demographics
+2023-12-22 06:45:32,087 [INFO] Creating Hyper Table.
+2023-12-22 06:46:19,948 [INFO] Datasource published. Datasource ID: dc268d01-5085-4636-8396-3a48940dd55f
+2023-12-22 06:46:20,163 [INFO] Social Services Activity and Demographics, pushed to Tableau.
+2023-12-22 06:46:20,163 [INFO] Prevention - Referring Clients to PE Programs.
+2023-12-22 06:46:21,183 [INFO] Creating Hyper Table.
+2023-12-22 06:46:25,114 [INFO] Datasource published. Datasource ID: 6b2ea5bd-05a5-4055-8071-3448c362306a
+2023-12-22 06:46:25,263 [INFO] Prevention - Referrals for New Clients, pushed to Tableau.
+2023-12-22 06:46:25,263 [INFO] Total run time is 601.5367s.
+2023-12-24 07:06:28,384 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-24 07:06:32,380 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-24 07:08:14,348 [INFO] Creating Hyper Table.
+2023-12-24 07:08:31,397 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-24 07:08:31,551 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-24 07:08:31,552 [INFO] Social Services - MCM Compliance.
+2023-12-24 07:09:38,222 [INFO] Creating Hyper Table.
+2023-12-24 07:09:43,458 [INFO] Datasource published. Datasource ID: 8697478c-6ae7-465e-8261-05022d38de1a
+2023-12-24 07:09:43,617 [INFO] Social Services - MCM Compliance. pushed to Tableau.
+2023-12-24 07:09:43,617 [INFO] Social Services Activity and Demographics
+2023-12-24 07:15:16,241 [INFO] Creating Hyper Table.
+2023-12-24 07:16:06,775 [INFO] Datasource published. Datasource ID: dc268d01-5085-4636-8396-3a48940dd55f
+2023-12-24 07:16:06,918 [INFO] Social Services Activity and Demographics, pushed to Tableau.
+2023-12-24 07:16:06,919 [INFO] Prevention - Referring Clients to PE Programs.
+2023-12-24 07:16:07,964 [INFO] Creating Hyper Table.
+2023-12-24 07:16:12,139 [INFO] Datasource published. Datasource ID: 6b2ea5bd-05a5-4055-8071-3448c362306a
+2023-12-24 07:16:12,292 [INFO] Prevention - Referrals for New Clients, pushed to Tableau.
+2023-12-24 07:16:12,292 [INFO] Total run time is 579.9116s.
+2023-12-26 05:29:35,124 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-26 05:29:38,407 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-26 05:31:35,255 [INFO] Creating Hyper Table.
+2023-12-26 05:31:40,290 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-26 05:31:40,432 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-26 05:31:40,433 [INFO] Social Services - MCM Compliance.
+2023-12-26 05:32:43,849 [INFO] Creating Hyper Table.
+2023-12-26 05:32:50,471 [INFO] Datasource published. Datasource ID: 8697478c-6ae7-465e-8261-05022d38de1a
+2023-12-26 05:32:50,616 [INFO] Social Services - MCM Compliance. pushed to Tableau.
+2023-12-26 05:32:50,616 [INFO] Social Services Activity and Demographics
+2023-12-26 05:38:25,192 [INFO] Creating Hyper Table.
+2023-12-26 05:39:13,049 [INFO] Datasource published. Datasource ID: dc268d01-5085-4636-8396-3a48940dd55f
+2023-12-26 05:39:13,185 [INFO] Social Services Activity and Demographics, pushed to Tableau.
+2023-12-26 05:39:13,185 [INFO] Prevention - Referring Clients to PE Programs.
+2023-12-26 05:39:14,295 [INFO] Creating Hyper Table.
+2023-12-26 05:39:18,755 [INFO] Datasource published. Datasource ID: 6b2ea5bd-05a5-4055-8071-3448c362306a
+2023-12-26 05:39:18,910 [INFO] Prevention - Referrals for New Clients, pushed to Tableau.
+2023-12-26 05:39:18,911 [INFO] Total run time is 580.5037s.
+2023-12-27 05:46:32,945 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-27 05:46:37,841 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-27 05:48:27,828 [INFO] Creating Hyper Table.
+2023-12-27 05:48:33,790 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-27 05:48:33,939 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-27 05:48:33,941 [INFO] Social Services - MCM Compliance.
+2023-12-27 05:49:38,777 [INFO] Creating Hyper Table.
+2023-12-27 05:49:44,785 [INFO] Datasource published. Datasource ID: 8697478c-6ae7-465e-8261-05022d38de1a
+2023-12-27 05:49:44,938 [INFO] Social Services - MCM Compliance. pushed to Tableau.
+2023-12-27 05:49:44,939 [INFO] Social Services Activity and Demographics
+2023-12-27 05:55:29,777 [INFO] Creating Hyper Table.
+2023-12-27 05:56:15,036 [INFO] Datasource published. Datasource ID: dc268d01-5085-4636-8396-3a48940dd55f
+2023-12-27 05:56:15,168 [INFO] Social Services Activity and Demographics, pushed to Tableau.
+2023-12-27 05:56:15,168 [INFO] Prevention - Referring Clients to PE Programs.
+2023-12-27 05:56:16,172 [INFO] Creating Hyper Table.
+2023-12-27 05:56:20,516 [INFO] Datasource published. Datasource ID: 6b2ea5bd-05a5-4055-8071-3448c362306a
+2023-12-27 05:56:20,676 [INFO] Prevention - Referrals for New Clients, pushed to Tableau.
+2023-12-27 05:56:20,677 [INFO] Total run time is 582.8360s.
+2023-12-28 05:57:28,215 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-28 05:57:32,268 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-28 05:59:44,393 [INFO] Creating Hyper Table.
+2023-12-28 05:59:49,046 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-28 05:59:49,174 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-28 05:59:49,175 [INFO] Social Services - MCM Compliance.
+2023-12-28 06:00:54,967 [INFO] Creating Hyper Table.
+2023-12-28 06:01:00,015 [INFO] Datasource published. Datasource ID: 8697478c-6ae7-465e-8261-05022d38de1a
+2023-12-28 06:01:00,158 [INFO] Social Services - MCM Compliance. pushed to Tableau.
+2023-12-28 06:01:00,158 [INFO] Social Services Activity and Demographics
+2023-12-28 06:06:41,357 [INFO] Creating Hyper Table.
+2023-12-28 06:07:17,191 [INFO] Datasource published. Datasource ID: dc268d01-5085-4636-8396-3a48940dd55f
+2023-12-28 06:07:17,347 [INFO] Social Services Activity and Demographics, pushed to Tableau.
+2023-12-28 06:07:17,348 [INFO] Prevention - Referring Clients to PE Programs.
+2023-12-28 06:07:18,346 [INFO] Creating Hyper Table.
+2023-12-28 06:07:22,426 [INFO] Datasource published. Datasource ID: 6b2ea5bd-05a5-4055-8071-3448c362306a
+2023-12-28 06:07:22,561 [INFO] Prevention - Referrals for New Clients, pushed to Tableau.
+2023-12-28 06:07:22,562 [INFO] Total run time is 590.2932s.
+2023-12-29 05:59:50,572 [INFO] Running Social Services Daily ETL Workflow.
+2023-12-29 05:59:54,769 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2023-12-29 06:01:54,343 [INFO] Creating Hyper Table.
+2023-12-29 06:01:58,726 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2023-12-29 06:01:58,883 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2023-12-29 06:01:58,884 [INFO] Social Services - MCM Compliance.
+2023-12-29 06:03:09,956 [INFO] Creating Hyper Table.
+2023-12-29 06:03:14,999 [INFO] Datasource published. Datasource ID: 8697478c-6ae7-465e-8261-05022d38de1a
+2023-12-29 06:03:15,152 [INFO] Social Services - MCM Compliance. pushed to Tableau.
+2023-12-29 06:03:15,153 [INFO] Social Services Activity and Demographics
+2023-12-29 06:09:32,076 [INFO] Creating Hyper Table.
+2023-12-29 06:10:16,941 [INFO] Datasource published. Datasource ID: dc268d01-5085-4636-8396-3a48940dd55f
+2023-12-29 06:10:17,071 [INFO] Social Services Activity and Demographics, pushed to Tableau.
+2023-12-29 06:10:17,072 [INFO] Prevention - Referring Clients to PE Programs.
+2023-12-29 06:10:18,213 [INFO] Creating Hyper Table.
+2023-12-29 06:10:22,552 [INFO] Datasource published. Datasource ID: 6b2ea5bd-05a5-4055-8071-3448c362306a
+2023-12-29 06:10:22,677 [INFO] Prevention - Referrals for New Clients, pushed to Tableau.
+2023-12-29 06:10:22,677 [INFO] Total run time is 627.9081s.
+2024-01-01 05:31:27,682 [INFO] Running Social Services Daily ETL Workflow.
+2024-01-01 05:31:32,636 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2024-01-01 05:33:11,698 [INFO] Creating Hyper Table.
+2024-01-01 05:33:17,678 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2024-01-01 05:33:17,796 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2024-01-01 05:33:17,797 [INFO] Social Services - MCM Compliance.
+2024-01-01 05:34:32,939 [INFO] Creating Hyper Table.
+2024-01-01 05:34:51,660 [INFO] Datasource published. Datasource ID: 8697478c-6ae7-465e-8261-05022d38de1a
+2024-01-01 05:34:51,793 [INFO] Social Services - MCM Compliance. pushed to Tableau.
+2024-01-01 05:34:51,793 [INFO] Social Services Activity and Demographics
+2024-01-01 05:41:14,600 [INFO] Creating Hyper Table.
+2024-01-01 05:42:01,845 [INFO] Datasource published. Datasource ID: dc268d01-5085-4636-8396-3a48940dd55f
+2024-01-01 05:42:02,002 [INFO] Social Services Activity and Demographics, pushed to Tableau.
+2024-01-01 05:42:02,003 [INFO] Prevention - Referring Clients to PE Programs.
+2024-01-01 05:42:30,751 [INFO] Creating Hyper Table.
+2024-01-01 05:42:35,562 [INFO] Datasource published. Datasource ID: 6b2ea5bd-05a5-4055-8071-3448c362306a
+2024-01-01 05:42:35,716 [INFO] Prevention - Referrals for New Clients, pushed to Tableau.
+2024-01-01 05:42:35,717 [INFO] Total run time is 663.0807s.
+2024-01-02 05:29:44,747 [INFO] Running Social Services Daily ETL Workflow.
+2024-01-02 05:29:48,105 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version.
+2024-01-02 05:31:22,338 [INFO] Creating Hyper Table.
+2024-01-02 05:31:27,488 [INFO] Datasource published. Datasource ID: 13110870-7fa4-448f-8b7b-c21d4e7b1d1e
+2024-01-02 05:31:27,756 [INFO] Social Services - Case Management Monthly Activity and Compliance- Daily Version. pushed to Tableau.
+2024-01-02 05:31:27,758 [INFO] Social Services - MCM Compliance.
+2024-01-02 05:32:32,877 [INFO] Creating Hyper Table.
+2024-01-02 05:32:39,153 [INFO] Datasource published. Datasource ID: 8697478c-6ae7-465e-8261-05022d38de1a
+2024-01-02 05:32:39,306 [INFO] Social Services - MCM Compliance. pushed to Tableau.
+2024-01-02 05:32:39,306 [INFO] Social Services Activity and Demographics
+2024-01-02 05:38:16,413 [INFO] Creating Hyper Table.
+2024-01-02 06:32:20,319 [INFO] Running Social Services Daily ETL Workflow.
+2024-01-02 06:41:16,079 [INFO] Prevention - Referring Clients to PE Programs.
+2024-01-02 06:41:27,334 [INFO] Creating Hyper Table.
+2024-01-02 06:41:31,856 [INFO] Datasource published. Datasource ID: 6b2ea5bd-05a5-4055-8071-3448c362306a
+2024-01-02 06:41:31,994 [INFO] Prevention - Referrals for New Clients, pushed to Tableau.
+2024-01-02 06:41:31,995 [INFO] Total run time is 548.9326s.
+2024-01-02 06:41:34,682 [INFO] Running Prevention Daily ETL Workflow.
+2024-01-02 06:41:36,148 [INFO] Prevention - Referring Clients to PE Programs.
+2024-01-02 06:41:46,555 [INFO] Creating Hyper Table.
+2024-01-02 06:41:51,167 [INFO] Datasource published. Datasource ID: 6b2ea5bd-05a5-4055-8071-3448c362306a
+2024-01-02 06:41:51,298 [INFO] Prevention - Referrals for New Clients, pushed to Tableau.
+2024-01-02 06:41:51,306 [INFO] Total run time is 15.1581s.
+2024-01-02 06:55:30,354 [INFO] Running Prevention Daily ETL Workflow.
+2024-01-02 06:55:32,923 [INFO] Prevention - Referring Clients to PE Programs.
+2024-01-02 06:55:43,702 [INFO] Creating Hyper Table.
+2024-01-02 06:55:47,948 [INFO] Datasource published. Datasource ID: 6b2ea5bd-05a5-4055-8071-3448c362306a
+2024-01-02 06:55:48,071 [INFO] Prevention - Referrals for New Clients, pushed to Tableau.
+2024-01-02 06:55:48,072 [INFO] Prevention - PrEP Nav Enrollments and Activity.
+2024-01-02 06:56:36,638 [INFO] Creating Hyper Table.
+2024-01-02 07:15:37,644 [INFO] Running Prevention Daily ETL Workflow.
+2024-01-02 07:15:40,409 [INFO] Prevention - PrEP Nav Enrollments and Activity.
+2024-01-02 07:16:24,773 [INFO] Creating Hyper Table.
+2024-01-02 07:42:11,128 [INFO] Running Prevention Daily ETL Workflow.
+2024-01-02 07:42:13,594 [INFO] Prevention - PrEP Nav Enrollments and Activity.
+2024-01-02 07:43:47,984 [INFO] Running Prevention Daily ETL Workflow.
+2024-01-02 07:43:50,797 [INFO] Prevention - PrEP Nav Enrollments and Activity.
+2024-01-02 07:49:04,579 [INFO] Running Prevention Daily ETL Workflow.
+2024-01-02 07:49:06,908 [INFO] Prevention - PrEP Nav Enrollments and Activity.
+2024-01-02 07:49:52,985 [INFO] Creating Hyper Table.
+2024-01-02 07:49:59,381 [INFO] Datasource published. Datasource ID: 1cfdf7ea-b154-4254-bcad-1a55d7327a07
+2024-01-02 07:49:59,516 [INFO] Prevention - PrEP Nav Enrollments and Activity. pushed to Tableau.
+2024-01-02 07:49:59,554 [INFO] Total run time is 52.6456s.
+2024-01-02 09:03:54,934 [INFO] Running Prevention Daily ETL Workflow.
+2024-01-02 09:03:58,361 [INFO] Prevention - PrEP Nav Progress Logs with No Enrollment.
+2024-01-02 09:04:29,771 [INFO] Creating Hyper Table.
+2024-01-02 09:04:33,931 [INFO] Datasource published. Datasource ID: 34a1b86c-0bc3-4ac0-9240-0894322f63ab
+2024-01-02 09:04:34,075 [INFO] Prevention - PrEP Nav Progress Logs with No Enrollment. pushed to Tableau.
+2024-01-02 09:04:34,077 [INFO] Total run time is 35.7162s.
+2024-01-02 09:13:22,504 [INFO] Running Prevention Daily ETL Workflow.
+2024-01-02 09:13:25,272 [INFO] Prevention - PrEP Retention Enrollments and Activity.
+2024-01-02 09:14:10,689 [INFO] Creating Hyper Table.
+2024-01-02 09:14:16,141 [INFO] Datasource published. Datasource ID: 47302806-3f56-4f9e-814d-8fa6831be112
+2024-01-02 09:14:16,279 [INFO] Prevention - PrEP Retention Enrollments and Activity pushed to Tableau.
+2024-01-02 09:14:16,282 [INFO] Total run time is 51.0095s.
+2024-01-02 09:14:47,892 [INFO] Running Prevention Daily ETL Workflow.
+2024-01-02 09:14:50,459 [INFO] Prevention - PrEP Retention Enrollments and Activity.
+2024-01-02 09:15:34,489 [INFO] Creating Hyper Table.
+2024-01-02 09:15:39,454 [INFO] Datasource published. Datasource ID: 47302806-3f56-4f9e-814d-8fa6831be112
+2024-01-02 09:15:39,599 [INFO] Prevention - PrEP Retention Enrollments and Activity pushed to Tableau.
+2024-01-02 09:15:39,606 [INFO] Total run time is 49.1471s.
+2024-01-02 09:27:25,330 [INFO] Running Prevention Daily ETL Workflow.
+2024-01-02 09:27:27,830 [INFO] Prevention - Testing Sessions.
+2024-01-02 09:27:49,109 [INFO] Creating Hyper Table.
+2024-01-02 09:28:00,929 [INFO] Datasource published. Datasource ID: 8a5028df-1fb8-4e10-b9b8-005944a0da7c
+2024-01-02 09:28:01,067 [INFO] Prevention - Testing Sessions pushed to Tableau.
+2024-01-02 09:28:01,068 [INFO] Total run time is 33.2374s.
+2024-01-02 09:52:48,799 [INFO] Running Prevention Daily ETL Workflow.
+2024-01-02 09:52:51,287 [INFO] Prevention - Testing Sessions.
+2024-01-02 09:53:11,099 [INFO] Creating Hyper Table.
+2024-01-02 09:53:18,266 [INFO] Datasource published. Datasource ID: 8a5028df-1fb8-4e10-b9b8-005944a0da7c
+2024-01-02 09:53:18,412 [INFO] Prevention - Testing Sessions pushed to Tableau.
+2024-01-02 09:53:18,412 [INFO] Total run time is 27.1255s.
+2024-01-02 10:03:02,312 [INFO] Running Social Services Daily ETL Workflow.
+2024-01-02 10:18:58,545 [INFO] Total run time is 952.6256s.
+2024-01-02 10:19:01,811 [INFO] Running Prevention Daily ETL Workflow.
+2024-01-02 10:19:03,371 [INFO] Prevention - Referring Clients to PE Programs.
+2024-01-02 10:19:13,736 [INFO] Creating Hyper Table.
+2024-01-02 10:19:18,523 [INFO] Datasource published. Datasource ID: 6b2ea5bd-05a5-4055-8071-3448c362306a
+2024-01-02 10:19:18,646 [INFO] Prevention - Referrals for New Clients, pushed to Tableau.
+2024-01-02 10:19:18,646 [INFO] Prevention - PrEP Nav Enrollments and Activity.
+2024-01-02 10:20:04,353 [INFO] Creating Hyper Table.
+2024-01-02 10:20:10,589 [INFO] Datasource published. Datasource ID: 1cfdf7ea-b154-4254-bcad-1a55d7327a07
+2024-01-02 10:20:10,733 [INFO] Prevention - PrEP Nav Enrollments and Activity pushed to Tableau.
+2024-01-02 10:20:10,734 [INFO] Prevention - PrEP Nav Progress Logs with No Enrollment.
+2024-01-02 10:20:51,464 [INFO] Creating Hyper Table.
+2024-01-02 10:20:55,866 [INFO] Datasource published. Datasource ID: 34a1b86c-0bc3-4ac0-9240-0894322f63ab
+2024-01-02 10:20:55,996 [INFO] Prevention - PrEP Nav Progress Logs with No Enrollment pushed to Tableau.
+2024-01-02 10:20:55,996 [INFO] Prevention - PrEP Retention Enrollments and Activity.
+2024-01-02 10:21:38,543 [INFO] Creating Hyper Table.
+2024-01-02 10:21:43,048 [INFO] Datasource published. Datasource ID: 47302806-3f56-4f9e-814d-8fa6831be112
+2024-01-02 10:21:43,195 [INFO] Prevention - PrEP Retention Enrollments and Activity pushed to Tableau.
+2024-01-02 10:21:43,196 [INFO] Prevention - Testing Sessions.
+2024-01-02 10:22:01,255 [INFO] Creating Hyper Table.
+2024-01-02 10:22:07,982 [INFO] Datasource published. Datasource ID: 8a5028df-1fb8-4e10-b9b8-005944a0da7c
+2024-01-02 10:22:08,140 [INFO] Prevention - Testing Sessions pushed to Tableau.
+2024-01-02 10:22:08,140 [INFO] Total run time is 184.7692s.
+2024-01-02 11:20:31,961 [INFO] Running Prevention Daily ETL Workflow.
+2024-01-02 11:20:34,881 [INFO] Total run time is 0.0000s.
+2024-01-02 11:23:55,802 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-02 12:35:10,751 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-02 12:39:02,435 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-02 12:39:40,234 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-02 12:42:30,879 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-02 12:42:51,664 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-02 12:50:12,723 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-02 12:54:22,424 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-02 12:55:37,299 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-02 12:59:40,941 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-02 13:03:14,510 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-02 13:04:11,136 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-02 13:04:38,606 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-02 13:05:10,076 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-02 13:16:28,439 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-02 13:16:40,145 [INFO] Total run time is 9.3216s.
+2024-01-02 13:35:13,465 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-02 13:35:25,141 [INFO] Total run time is 8.8599s.
+2024-01-02 13:43:45,841 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-02 13:43:57,778 [INFO] Total run time is 9.4244s.
+2024-01-07 09:57:47,103 [INFO] Running Social Services Weekly ETL Workflow.
+2024-01-07 09:59:31,337 [INFO] Running Social Services Weekly ETL Workflow.
+2024-01-07 10:03:07,792 [INFO] Total run time is 212.7876s.
+2024-01-07 10:03:10,147 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-07 10:03:48,859 [INFO] Total run time is 37.4855s.
+2024-01-14 05:38:30,022 [INFO] Running Social Services Weekly ETL Workflow.
+2024-01-14 05:39:11,507 [INFO] Total run time is 38.3013s.
+2024-01-14 05:39:14,241 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-14 05:39:52,378 [INFO] Total run time is 36.5265s.
+2024-01-21 07:03:40,541 [INFO] Running Social Services Weekly ETL Workflow.
+2024-01-21 07:04:45,271 [INFO] Total run time is 59.9307s.
+2024-01-21 07:04:49,023 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-21 07:05:50,905 [INFO] Total run time is 58.0893s.
+2024-01-28 11:22:28,207 [INFO] Running Social Services Weekly ETL Workflow.
+2024-01-28 11:23:09,754 [INFO] Total run time is 37.8221s.
+2024-01-28 11:23:12,346 [INFO] Running Prevention Weekly ETL Workflow.
+2024-01-28 11:23:44,862 [INFO] Total run time is 29.8839s.
+2024-02-04 05:47:28,100 [INFO] Running Social Services Weekly ETL Workflow.
+2024-02-04 05:48:08,730 [INFO] Total run time is 38.0745s.
+2024-02-04 05:48:10,092 [INFO] Running Prevention Weekly ETL Workflow.
+2024-02-04 05:49:33,292 [INFO] Total run time is 81.6376s.
+2024-02-11 06:21:59,131 [INFO] Running Social Services Weekly ETL Workflow.
+2024-02-11 06:25:24,900 [INFO] Total run time is 203.4937s.
+2024-02-11 06:25:27,677 [INFO] Running Prevention Weekly ETL Workflow.
+2024-02-11 06:26:19,062 [INFO] Total run time is 50.2034s.
+2024-02-18 06:04:17,948 [INFO] Running Social Services Weekly ETL Workflow.
+2024-02-18 06:04:59,811 [INFO] Total run time is 37.0641s.
+2024-02-18 06:05:02,480 [INFO] Running Prevention Weekly ETL Workflow.
+2024-02-18 06:06:01,944 [INFO] Total run time is 57.4406s.
+2024-02-25 06:43:06,230 [INFO] Running Social Services Weekly ETL Workflow.
+2024-02-25 06:47:31,254 [INFO] Total run time is 261.5101s.
+2024-02-25 06:47:34,099 [INFO] Running Prevention Weekly ETL Workflow.
+2024-02-25 06:48:11,357 [INFO] Total run time is 35.3504s.
+2024-03-03 05:51:45,586 [INFO] Running Social Services Weekly ETL Workflow.
+2024-03-03 05:51:59,867 [INFO] Total run time is 9.3901s.
+2024-03-03 05:52:03,565 [INFO] Running Prevention Weekly ETL Workflow.
+2024-03-03 05:52:26,983 [INFO] Total run time is 21.4300s.
+2024-03-10 07:15:49,418 [INFO] Running Social Services Weekly ETL Workflow.
+2024-03-10 07:15:59,271 [INFO] Total run time is 6.1040s.
+2024-03-10 07:16:03,283 [INFO] Running Prevention Weekly ETL Workflow.
+2024-03-10 07:16:46,493 [INFO] Total run time is 39.3173s.
+2024-03-17 06:21:39,990 [INFO] Running Social Services Weekly ETL Workflow.
+2024-03-17 06:21:52,457 [INFO] Total run time is 8.2250s.
+2024-03-17 06:21:56,315 [INFO] Running Prevention Weekly ETL Workflow.
+2024-03-17 06:22:35,062 [INFO] Total run time is 37.0396s.
+2024-03-25 06:02:53,955 [INFO] Running Social Services Weekly ETL Workflow.
+2024-03-25 06:03:04,926 [INFO] Total run time is 5.7954s.
+2024-03-25 06:03:07,649 [INFO] Running Prevention Weekly ETL Workflow.
+2024-03-25 06:03:39,891 [INFO] Total run time is 30.3268s.
+2024-03-31 07:05:08,989 [INFO] Running Social Services Weekly ETL Workflow.
+2024-03-31 07:05:59,165 [INFO] Running Social Services Weekly ETL Workflow.
+2024-03-31 07:06:10,708 [INFO] Total run time is 7.9417s.
+2024-03-31 07:06:14,452 [INFO] Running Prevention Weekly ETL Workflow.
+2024-03-31 07:06:46,960 [INFO] Total run time is 30.9864s.
+2024-04-07 06:13:22,717 [INFO] Running Social Services Weekly ETL Workflow.
+2024-04-07 06:13:32,700 [INFO] Total run time is 6.4020s.
+2024-04-07 06:13:36,607 [INFO] Running Prevention Weekly ETL Workflow.
+2024-04-07 06:17:21,488 [INFO] Total run time is 221.5734s.
+2024-04-14 07:00:15,407 [INFO] Running Social Services Weekly ETL Workflow.
+2024-04-14 07:00:22,555 [INFO] Total run time is 4.1223s.
+2024-04-14 07:00:24,603 [INFO] Running Prevention Weekly ETL Workflow.
+2024-04-14 07:01:04,800 [INFO] Total run time is 35.7493s.
+2024-04-21 06:10:19,673 [INFO] Running Social Services Weekly ETL Workflow.
+2024-04-21 06:10:27,673 [INFO] Total run time is 5.1884s.
+2024-04-21 06:10:30,330 [INFO] Running Prevention Weekly ETL Workflow.
+2024-04-21 06:10:56,604 [INFO] Total run time is 24.8219s.
+2024-04-28 06:59:27,356 [INFO] Running Social Services Weekly ETL Workflow.
+2024-04-28 06:59:34,875 [INFO] Total run time is 4.8940s.
+2024-04-28 06:59:36,511 [INFO] Running Prevention Weekly ETL Workflow.
+2024-04-28 07:04:38,258 [INFO] Total run time is 300.4351s.
+2024-05-05 12:25:55,383 [INFO] Running Social Services Weekly ETL Workflow.
+2024-05-05 12:26:02,659 [INFO] Total run time is 4.9090s.
+2024-05-05 12:26:03,730 [INFO] Running Prevention Weekly ETL Workflow.
+2024-05-05 12:29:50,835 [INFO] Total run time is 225.9225s.
+2024-05-12 08:14:13,956 [INFO] Running Social Services Weekly ETL Workflow.
+2024-05-12 08:14:22,192 [INFO] Total run time is 5.5430s.
+2024-05-12 08:14:24,496 [INFO] Running Prevention Weekly ETL Workflow.
+2024-05-12 08:18:13,552 [INFO] Total run time is 226.5919s.
+2024-05-19 05:44:01,466 [INFO] Running Social Services Weekly ETL Workflow.
+2024-05-19 05:44:11,187 [INFO] Total run time is 5.9421s.
+2024-05-19 05:44:14,603 [INFO] Running Prevention Weekly ETL Workflow.
+2024-05-19 05:44:36,394 [INFO] Total run time is 19.7009s.
+2024-05-26 05:51:28,425 [INFO] Running Social Services Weekly ETL Workflow.
+2024-05-26 05:51:41,348 [INFO] Total run time is 7.0480s.
+2024-05-26 05:51:45,068 [INFO] Running Prevention Weekly ETL Workflow.
+2024-05-26 05:54:27,106 [INFO] Total run time is 160.1438s.
+2024-06-02 06:57:26,234 [INFO] Running Social Services Weekly ETL Workflow.
+2024-06-02 06:57:33,766 [INFO] Total run time is 4.6349s.
+2024-06-02 06:57:35,550 [INFO] Running Prevention Weekly ETL Workflow.
+2024-06-02 07:00:08,662 [INFO] Total run time is 150.1991s.
+2024-06-09 06:54:53,001 [INFO] Running Social Services Weekly ETL Workflow.
+2024-06-09 06:55:02,213 [INFO] Total run time is 6.1351s.
+2024-06-09 06:55:04,983 [INFO] Running Prevention Weekly ETL Workflow.
+2024-06-09 06:59:01,894 [INFO] Total run time is 235.2302s.
+2024-06-16 09:31:27,380 [INFO] Running Social Services Weekly ETL Workflow.
+2024-06-16 09:31:35,782 [INFO] Total run time is 5.2387s.
+2024-06-16 09:31:38,421 [INFO] Running Prevention Weekly ETL Workflow.
+2024-06-16 09:35:46,560 [INFO] Total run time is 246.3587s.
+2024-06-23 06:09:39,349 [INFO] Running Social Services Weekly ETL Workflow.
+2024-06-23 06:09:47,174 [INFO] Total run time is 4.5923s.
+2024-06-23 06:09:50,322 [INFO] Running Prevention Weekly ETL Workflow.
+2024-06-23 06:12:45,586 [INFO] Total run time is 173.1358s.
+2024-06-30 04:35:31,301 [INFO] Running Social Services Weekly ETL Workflow.
+2024-06-30 04:35:45,230 [INFO] Total run time is 7.9410s.
+2024-06-30 04:35:50,201 [INFO] Running Prevention Weekly ETL Workflow.
+2024-06-30 04:41:52,489 [INFO] Total run time is 359.4763s.
+2024-07-01 05:20:28,796 [INFO] Running Social Services Weekly ETL Workflow.
+2024-07-01 05:20:42,129 [INFO] Total run time is 8.4219s.
+2024-07-01 05:20:46,076 [INFO] Running Prevention Weekly ETL Workflow.
+2024-07-07 05:25:23,012 [INFO] Running Social Services Weekly ETL Workflow.
+2024-07-07 05:25:33,262 [INFO] Total run time is 5.9866s.
+2024-07-07 05:25:36,852 [INFO] Running Prevention Weekly ETL Workflow.
+2024-07-07 05:26:54,428 [INFO] Total run time is 75.1454s.
+2024-07-14 04:53:11,253 [INFO] Running Social Services Weekly ETL Workflow.
+2024-07-14 04:53:22,070 [INFO] Total run time is 5.9504s.
+2024-07-14 04:53:25,023 [INFO] Running Prevention Weekly ETL Workflow.
+2024-07-14 04:57:32,895 [INFO] Total run time is 244.6663s.
+2024-07-21 05:00:44,263 [INFO] Running Social Services Weekly ETL Workflow.
+2024-07-21 05:01:53,577 [INFO] Total run time is 65.9015s.
+2024-07-21 05:01:56,198 [INFO] Running Prevention Weekly ETL Workflow.
+2024-07-21 05:02:21,845 [INFO] Total run time is 23.1629s.
+2024-07-28 06:03:17,858 [INFO] Running Social Services Weekly ETL Workflow.
+2024-07-28 06:03:51,799 [INFO] Total run time is 30.8387s.
+2024-07-28 06:03:53,852 [INFO] Running Prevention Weekly ETL Workflow.
+2024-07-28 06:04:59,884 [INFO] Total run time is 63.9870s.
+2024-08-04 07:53:03,511 [INFO] Running Social Services Weekly ETL Workflow.
+2024-08-04 07:53:33,542 [INFO] Total run time is 28.1494s.
+2024-08-04 07:53:35,642 [INFO] Running Prevention Weekly ETL Workflow.
+2024-08-04 07:54:55,768 [INFO] Total run time is 78.2407s.
+2024-08-11 05:18:06,409 [INFO] Running Social Services Weekly ETL Workflow.
+2024-08-11 05:18:36,728 [INFO] Total run time is 27.2232s.
+2024-08-11 05:18:38,598 [INFO] Running Prevention Weekly ETL Workflow.
+2024-08-11 05:19:24,191 [INFO] Total run time is 43.8901s.
+2024-08-18 18:37:11,686 [INFO] Running Social Services Weekly ETL Workflow.
+2024-08-18 18:37:47,801 [INFO] Total run time is 32.9431s.
+2024-08-18 18:37:50,885 [INFO] Running Prevention Weekly ETL Workflow.
+2024-08-18 18:38:15,058 [INFO] Total run time is 21.5426s.
+2024-08-25 05:54:53,363 [INFO] Running Social Services Weekly ETL Workflow.
+2024-08-25 05:55:30,029 [INFO] Total run time is 33.3372s.
+2024-08-25 05:55:32,015 [INFO] Running Prevention Weekly ETL Workflow.
+2024-08-25 05:55:59,870 [INFO] Total run time is 25.4883s.
+2024-09-01 04:31:08,941 [INFO] Running Social Services Weekly ETL Workflow.
+2024-09-01 04:31:42,241 [INFO] Total run time is 29.9936s.
+2024-09-01 04:31:44,519 [INFO] Running Prevention Weekly ETL Workflow.
+2024-09-01 04:32:18,270 [INFO] Total run time is 31.6665s.
+2024-09-08 05:10:20,139 [INFO] Running Social Services Weekly ETL Workflow.
+2024-09-08 05:10:57,364 [INFO] Total run time is 32.9543s.
+2024-09-08 05:11:00,311 [INFO] Running Prevention Weekly ETL Workflow.
+2024-09-08 05:12:51,762 [INFO] Total run time is 108.6176s.
+2024-09-15 04:40:13,806 [INFO] Running Social Services Weekly ETL Workflow.
+2024-09-15 04:40:54,606 [INFO] Total run time is 37.7824s.
+2024-09-15 04:40:56,898 [INFO] Running Prevention Weekly ETL Workflow.
+2024-09-15 04:42:08,213 [INFO] Total run time is 68.4876s.
+2024-09-22 08:15:10,588 [INFO] Running Social Services Weekly ETL Workflow.
+2024-09-22 08:15:44,834 [INFO] Total run time is 31.7358s.
+2024-09-22 08:15:46,816 [INFO] Running Prevention Weekly ETL Workflow.
+2024-09-22 08:16:52,655 [INFO] Total run time is 63.3148s.
+2024-09-29 04:15:34,281 [INFO] Running Social Services Weekly ETL Workflow.
+2024-09-29 04:16:10,402 [INFO] Total run time is 31.9764s.
+2024-09-29 04:16:12,939 [INFO] Running Prevention Weekly ETL Workflow.
+2024-09-29 04:19:41,042 [INFO] Total run time is 205.4922s.
+2024-10-06 05:02:06,513 [INFO] Running Social Services Weekly ETL Workflow.
+2024-10-06 05:02:44,200 [INFO] Total run time is 34.7412s.
+2024-10-06 05:02:46,811 [INFO] Running Prevention Weekly ETL Workflow.
+2024-10-06 05:03:38,131 [INFO] Total run time is 48.7610s.
+2024-10-13 04:49:47,066 [INFO] Running Social Services Weekly ETL Workflow.
+2024-10-13 04:51:20,689 [INFO] Total run time is 88.1182s.
+2024-10-13 04:51:24,720 [INFO] Running Prevention Weekly ETL Workflow.
+2024-10-13 04:52:27,438 [INFO] Total run time is 60.1062s.
+2024-10-20 04:58:55,700 [INFO] Running Social Services Weekly ETL Workflow.
+2024-10-20 04:59:53,171 [INFO] Total run time is 51.1533s.
+2024-10-20 04:59:57,738 [INFO] Running Prevention Weekly ETL Workflow.
+2024-10-20 05:02:03,471 [INFO] Total run time is 123.5089s.
+2024-10-27 03:52:34,850 [INFO] Running Social Services Weekly ETL Workflow.
+2024-10-27 03:53:13,809 [INFO] Total run time is 33.0825s.
+2024-10-27 03:53:18,530 [INFO] Running Prevention Weekly ETL Workflow.
+2024-10-27 03:55:25,157 [INFO] Total run time is 123.7427s.
+2024-11-03 04:05:47,649 [INFO] Running Social Services Weekly ETL Workflow.
+2024-11-03 04:07:04,231 [INFO] Total run time is 70.8240s.
+2024-11-03 04:07:09,222 [INFO] Running Prevention Weekly ETL Workflow.
+2024-11-03 04:09:11,189 [INFO] Total run time is 118.9124s.
+2024-11-10 05:27:39,387 [INFO] Running Social Services Weekly ETL Workflow.
+2024-11-10 05:28:13,128 [INFO] Total run time is 31.3501s.
+2024-11-10 05:28:15,330 [INFO] Running Prevention Weekly ETL Workflow.
+2024-11-10 05:30:20,384 [INFO] Total run time is 122.9539s.
+2024-11-17 05:15:16,889 [INFO] Running Social Services Weekly ETL Workflow.
+2024-11-17 05:16:16,819 [INFO] Total run time is 57.4596s.
+2024-11-17 05:16:18,181 [INFO] Running Prevention Weekly ETL Workflow.
+2024-11-17 05:18:16,485 [INFO] Total run time is 116.6622s.
+2025-04-07 08:30:24,999 [INFO] Running Social Services Weekly ETL Workflow.
+2025-04-07 08:30:25,018 [ERROR] Config file was not found: [Errno 2] No such file or directory: 'C:\\routine_weekly/utils/config/config.json'
+2025-04-07 08:31:16,852 [INFO] Total run time is 51.8339s.
+2025-04-07 08:31:16,852 [ERROR] Config file was not found: [Errno 2] No such file or directory: 'C:\\routine_weekly/utils/config/config.json'
+2025-04-07 08:31:16,852 [INFO] Running Prevention Weekly ETL Workflow.
+2025-04-07 08:31:16,852 [ERROR] Config file was not found: [Errno 2] No such file or directory: 'C:\\routine_weekly/utils/config/config.json'
+2025-04-07 08:39:24,431 [INFO] Running Social Services Weekly ETL Workflow.
+2025-04-07 08:39:24,844 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-07 08:39:39,689 [INFO] Total run time is 14.8407s.
+2025-04-07 08:39:40,127 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-07 08:39:40,142 [INFO] Running Prevention Weekly ETL Workflow.
+2025-04-07 08:39:40,548 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-07 08:42:35,869 [INFO] Total run time is 175.3209s.
+2025-04-07 08:42:36,166 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-07 09:09:06,475 [INFO] Running Social Services Weekly ETL Workflow.
+2025-04-07 09:09:06,992 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-07 09:11:27,823 [INFO] Running Social Services Weekly ETL Workflow.
+2025-04-07 09:11:27,823 [INFO] Total run time is 0.0000s.
+2025-04-07 09:14:06,599 [INFO] Running Social Services Weekly ETL Workflow.
+2025-04-07 09:15:03,870 [INFO] Running Social Services Weekly ETL Workflow.
+2025-04-07 09:21:54,191 [INFO] Running Social Services Weekly ETL Workflow.
+2025-04-07 09:21:58,461 [INFO] Total run time is 4.2703s.
+2025-04-15 12:01:42,203 [INFO] Running Social Services Weekly ETL Workflow.
+2025-04-15 12:01:42,779 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-15 12:02:03,056 [INFO] Total run time is 20.2770s.
+2025-04-15 12:02:03,057 [INFO] Running Prevention Weekly ETL Workflow.
+2025-04-15 12:02:03,479 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-15 12:04:04,894 [INFO] Total run time is 121.4105s.
+2025-04-15 12:04:05,347 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-21 08:53:55,417 [INFO] Running Social Services Weekly ETL Workflow.
+2025-04-21 08:53:55,979 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-21 08:54:12,148 [INFO] Total run time is 16.1684s.
+2025-04-21 08:54:12,148 [INFO] Running Prevention Weekly ETL Workflow.
+2025-04-21 08:54:12,585 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-21 08:54:32,958 [INFO] Total run time is 20.3726s.
+2025-04-21 08:54:33,395 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-28 09:51:03,869 [INFO] Running Social Services Weekly ETL Workflow.
+2025-04-28 09:51:04,291 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-28 09:51:32,307 [INFO] Total run time is 28.0156s.
+2025-04-28 09:51:32,307 [INFO] Running Prevention Weekly ETL Workflow.
+2025-04-28 09:51:32,619 [ERROR] Config file was not found: Webhook Url is not updated
+2025-04-28 09:52:35,260 [INFO] Total run time is 62.6405s.
+2025-04-28 09:52:35,556 [ERROR] Config file was not found: Webhook Url is not updated
+2025-05-06 08:48:33,848 [INFO] Running Social Services Weekly ETL Workflow.
+2025-05-06 08:48:34,270 [ERROR] Config file was not found: Webhook Url is not updated
+2025-05-06 08:49:14,144 [INFO] Total run time is 39.8740s.
+2025-05-06 08:49:14,144 [INFO] Running Prevention Weekly ETL Workflow.
+2025-05-06 08:49:14,535 [ERROR] Config file was not found: Webhook Url is not updated
+2025-05-06 08:52:57,643 [INFO] Total run time is 223.1080s.
+2025-05-06 08:52:58,158 [ERROR] Config file was not found: Webhook Url is not updated
+2025-05-20 10:22:29,504 [INFO] Running Social Services Weekly ETL Workflow.
+2025-05-20 10:22:29,895 [ERROR] Config file was not found: Webhook Url is not updated
+2025-05-20 10:23:34,786 [INFO] Total run time is 64.8910s.
+2025-05-20 10:23:34,802 [INFO] Running Prevention Weekly ETL Workflow.
+2025-05-20 10:23:35,067 [ERROR] Config file was not found: Webhook Url is not updated
+2025-05-20 10:25:51,069 [INFO] Total run time is 136.0015s.
+2025-05-20 10:25:51,397 [ERROR] Config file was not found: Webhook Url is not updated
+2025-05-27 10:07:34,287 [INFO] Running Social Services Weekly ETL Workflow.
+2025-05-27 10:07:34,662 [ERROR] Config file was not found: Webhook Url is not updated
+2025-05-27 10:08:12,990 [INFO] Total run time is 38.3280s.
+2025-05-27 10:08:12,990 [INFO] Running Prevention Weekly ETL Workflow.
+2025-05-27 10:08:13,411 [ERROR] Config file was not found: Webhook Url is not updated
+2025-05-27 10:09:50,475 [INFO] Total run time is 97.0636s.
+2025-05-27 10:09:50,897 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-03 12:13:29,435 [INFO] Running Social Services Weekly ETL Workflow.
+2025-06-03 12:13:29,951 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-03 12:13:53,170 [INFO] Total run time is 23.2186s.
+2025-06-03 12:13:53,170 [INFO] Running Prevention Weekly ETL Workflow.
+2025-06-03 12:13:53,482 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-03 12:15:59,529 [INFO] Total run time is 126.0471s.
+2025-06-03 12:15:59,936 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-09 11:09:19,039 [INFO] Running Social Services Weekly ETL Workflow.
+2025-06-09 11:09:19,507 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-09 11:09:44,459 [INFO] Total run time is 24.9519s.
+2025-06-09 11:09:44,459 [INFO] Running Prevention Weekly ETL Workflow.
+2025-06-09 11:09:44,803 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-09 11:10:47,678 [INFO] Total run time is 62.8589s.
+2025-06-09 11:10:47,997 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-17 11:10:10,586 [INFO] Running Social Services Weekly ETL Workflow.
+2025-06-17 11:10:10,977 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-17 11:10:57,820 [INFO] Total run time is 46.8437s.
+2025-06-17 11:10:57,836 [INFO] Running Prevention Weekly ETL Workflow.
+2025-06-17 11:10:58,117 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-17 11:12:54,679 [INFO] Total run time is 116.5620s.
+2025-06-17 11:12:54,992 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-24 09:10:11,195 [INFO] Running Social Services Weekly ETL Workflow.
+2025-06-24 09:10:11,617 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-24 09:10:31,132 [INFO] Total run time is 19.5154s.
+2025-06-24 09:10:31,132 [INFO] Running Prevention Weekly ETL Workflow.
+2025-06-24 09:10:31,461 [ERROR] Config file was not found: Webhook Url is not updated
+2025-06-24 09:10:52,585 [INFO] Total run time is 21.1247s.
+2025-06-24 09:10:52,929 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-01 15:14:54,446 [INFO] Running Social Services Weekly ETL Workflow.
+2025-07-01 15:14:54,868 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-01 15:26:47,305 [INFO] Total run time is 712.4372s.
+2025-07-01 15:26:47,306 [INFO] Running Prevention Weekly ETL Workflow.
+2025-07-01 15:26:47,676 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-01 15:33:00,182 [INFO] Total run time is 372.5031s.
+2025-07-01 15:33:00,573 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-07 08:05:19,178 [INFO] Running Social Services Weekly ETL Workflow.
+2025-07-07 08:05:19,573 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-07 08:05:43,813 [INFO] Total run time is 24.2380s.
+2025-07-07 08:05:43,813 [INFO] Running Prevention Weekly ETL Workflow.
+2025-07-07 08:05:44,081 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-07 08:07:21,456 [INFO] Total run time is 97.3739s.
+2025-07-07 08:07:21,733 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-14 08:07:43,804 [INFO] Running Social Services Weekly ETL Workflow.
+2025-07-14 08:07:44,304 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-14 08:08:33,522 [INFO] Total run time is 49.2186s.
+2025-07-14 08:08:33,522 [INFO] Running Prevention Weekly ETL Workflow.
+2025-07-14 08:08:33,851 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-14 08:13:53,503 [INFO] Total run time is 319.6523s.
+2025-07-14 08:13:53,878 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-21 08:06:24,100 [INFO] Running Social Services Weekly ETL Workflow.
+2025-07-21 08:06:25,022 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-21 08:06:50,756 [INFO] Total run time is 25.7337s.
+2025-07-21 08:06:50,756 [INFO] Running Prevention Weekly ETL Workflow.
+2025-07-21 08:06:51,052 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-21 08:07:11,849 [INFO] Total run time is 20.7965s.
+2025-07-21 08:07:12,161 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-28 08:07:42,464 [INFO] Running Social Services Weekly ETL Workflow.
+2025-07-28 08:07:43,074 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-28 08:08:16,089 [INFO] Total run time is 32.9999s.
+2025-07-28 08:08:16,089 [INFO] Running Prevention Weekly ETL Workflow.
+2025-07-28 08:08:16,527 [ERROR] Config file was not found: Webhook Url is not updated
+2025-07-28 08:09:59,808 [INFO] Total run time is 103.2813s.
+2025-07-28 08:10:00,245 [ERROR] Config file was not found: Webhook Url is not updated
+2025-08-04 08:07:45,974 [INFO] Running Social Services Weekly ETL Workflow.
+2025-08-04 08:07:46,458 [ERROR] Config file was not found: Webhook Url is not updated
+2025-08-04 08:08:16,599 [INFO] Total run time is 30.1406s.
+2025-08-04 08:08:16,599 [INFO] Running Prevention Weekly ETL Workflow.
+2025-08-04 08:08:16,927 [ERROR] Config file was not found: Webhook Url is not updated
+2025-08-11 08:12:18,148 [INFO] Running Social Services Weekly ETL Workflow.
+2025-08-11 08:12:18,617 [ERROR] Config file was not found: Webhook Url is not updated
+2025-08-11 08:13:01,602 [INFO] Total run time is 42.9844s.
+2025-08-11 08:13:01,602 [INFO] Running Prevention Weekly ETL Workflow.
+2025-08-11 08:13:01,930 [ERROR] Config file was not found: Webhook Url is not updated
+2025-08-11 08:15:24,473 [INFO] Total run time is 142.5436s.
+2025-08-11 08:15:24,895 [ERROR] Config file was not found: Webhook Url is not updated
+2025-08-18 08:05:17,693 [INFO] Running Social Services Weekly ETL Workflow.
+2025-08-18 08:05:18,193 [ERROR] Config file was not found: Webhook Url is not updated
+2025-08-18 08:06:53,193 [INFO] Total run time is 94.9997s.
+2025-08-18 08:06:53,193 [INFO] Running Prevention Weekly ETL Workflow.
+2025-08-18 08:06:53,506 [ERROR] Config file was not found: Webhook Url is not updated
+2025-08-18 08:07:14,256 [INFO] Total run time is 20.7499s.
+2025-08-18 08:07:17,537 [ERROR] Config file was not found: Webhook Url is not updated
+2025-08-25 08:13:16,404 [INFO] Running Social Services Weekly ETL Workflow.
+2025-08-25 08:13:17,023 [ERROR] Config file was not found: Webhook Url is not updated
+2025-08-25 08:14:01,514 [INFO] Total run time is 44.4894s.
+2025-08-25 08:14:01,514 [INFO] Running Prevention Weekly ETL Workflow.
+2025-08-25 08:14:01,983 [ERROR] Config file was not found: Webhook Url is not updated
+2025-08-25 08:17:12,095 [INFO] Total run time is 190.1091s.
+2025-08-25 08:17:12,581 [ERROR] Config file was not found: Webhook Url is not updated
+2025-09-08 08:07:11,976 [INFO] Running Social Services Weekly ETL Workflow.
+2025-09-08 08:07:12,491 [ERROR] Config file was not found: Webhook Url is not updated
+2025-09-08 08:07:50,197 [INFO] Total run time is 37.7039s.
+2025-09-08 08:07:50,198 [INFO] Running Prevention Weekly ETL Workflow.
+2025-09-08 08:07:50,576 [ERROR] Config file was not found: Webhook Url is not updated
+2025-09-08 08:10:03,284 [INFO] Total run time is 132.7056s.
+2025-09-08 08:10:03,707 [ERROR] Config file was not found: Webhook Url is not updated
+2025-09-15 08:04:39,047 [INFO] Running Social Services Weekly ETL Workflow.
+2025-09-15 08:04:39,438 [ERROR] Config file was not found: Webhook Url is not updated
+2025-09-15 08:05:25,282 [INFO] Total run time is 45.8437s.
+2025-09-15 08:05:25,282 [INFO] Running Prevention Weekly ETL Workflow.
+2025-09-15 08:05:25,672 [ERROR] Config file was not found: Webhook Url is not updated
+2025-09-15 08:10:13,547 [INFO] Total run time is 287.8746s.
+2025-09-15 08:10:13,953 [ERROR] Config file was not found: Webhook Url is not updated
+2025-09-22 08:06:23,921 [INFO] Running Social Services Weekly ETL Workflow.
+2025-09-22 08:06:25,124 [ERROR] Config file was not found: Webhook Url is not updated
+2025-09-22 08:06:45,414 [INFO] Total run time is 20.2869s.
+2025-09-22 08:06:45,414 [INFO] Running Prevention Weekly ETL Workflow.
+2025-09-22 08:06:45,744 [ERROR] Config file was not found: Webhook Url is not updated
+2025-09-22 08:07:06,048 [INFO] Total run time is 20.3019s.
+2025-09-22 08:07:06,464 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-06 08:12:52,933 [INFO] Running Social Services Weekly ETL Workflow.
+2025-10-06 08:12:53,529 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-06 08:13:55,746 [INFO] Total run time is 62.2132s.
+2025-10-06 08:13:55,746 [INFO] Running Prevention Weekly ETL Workflow.
+2025-10-06 08:13:56,040 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-06 08:20:04,483 [INFO] Total run time is 368.4416s.
+2025-10-06 08:20:04,863 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-13 08:11:02,951 [INFO] Running Social Services Weekly ETL Workflow.
+2025-10-13 08:11:03,357 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-13 08:11:51,924 [INFO] Total run time is 48.5668s.
+2025-10-13 08:11:51,924 [INFO] Running Prevention Weekly ETL Workflow.
+2025-10-13 08:11:52,255 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-13 08:14:13,801 [INFO] Total run time is 141.5438s.
+2025-10-13 08:14:17,156 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-20 08:07:12,059 [INFO] Running Social Services Weekly ETL Workflow.
+2025-10-20 08:07:12,544 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-20 08:07:45,091 [INFO] Total run time is 32.5449s.
+2025-10-20 08:07:45,091 [INFO] Running Prevention Weekly ETL Workflow.
+2025-10-20 08:07:45,443 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-20 08:08:05,816 [INFO] Total run time is 20.3709s.
+2025-10-20 08:08:06,152 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-27 08:07:08,452 [INFO] Running Social Services Weekly ETL Workflow.
+2025-10-27 08:07:08,735 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-27 08:07:54,359 [INFO] Total run time is 45.6208s.
+2025-10-27 08:07:54,359 [INFO] Running Prevention Weekly ETL Workflow.
+2025-10-27 08:07:54,613 [ERROR] Config file was not found: Webhook Url is not updated
+2025-10-27 08:12:10,242 [INFO] Total run time is 255.6267s.
+2025-10-27 08:12:10,516 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-03 08:13:03,072 [INFO] Running Social Services Weekly ETL Workflow.
+2025-11-03 08:13:03,405 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-03 08:13:37,860 [INFO] Total run time is 34.4526s.
+2025-11-03 08:13:37,860 [INFO] Running Prevention Weekly ETL Workflow.
+2025-11-03 08:13:38,111 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-03 08:14:26,778 [INFO] Total run time is 48.6654s.
+2025-11-03 08:14:27,235 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-10 08:06:22,801 [INFO] Running Social Services Weekly ETL Workflow.
+2025-11-10 08:06:23,131 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-10 08:07:02,215 [INFO] Total run time is 39.0808s.
+2025-11-10 08:07:02,215 [INFO] Running Prevention Weekly ETL Workflow.
+2025-11-10 08:07:02,458 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-10 08:07:59,759 [INFO] Total run time is 57.2991s.
+2025-11-10 08:08:00,015 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-17 08:08:19,057 [INFO] Running Social Services Weekly ETL Workflow.
+2025-11-17 08:08:19,342 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-17 08:08:43,754 [INFO] Total run time is 24.4123s.
+2025-11-17 08:08:43,754 [INFO] Running Prevention Weekly ETL Workflow.
+2025-11-17 08:08:43,989 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-17 08:09:07,707 [INFO] Total run time is 23.7180s.
+2025-11-17 08:09:07,941 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-24 08:05:39,190 [INFO] Running Social Services Weekly ETL Workflow.
+2025-11-24 08:05:39,487 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-24 08:07:39,721 [INFO] Total run time is 120.2184s.
+2025-11-24 08:07:39,721 [INFO] Running Prevention Weekly ETL Workflow.
+2025-11-24 08:07:39,971 [ERROR] Config file was not found: Webhook Url is not updated
+2025-11-24 08:11:01,273 [INFO] Total run time is 201.3002s.
+2025-11-24 08:11:01,542 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-01 08:05:53,897 [INFO] Running Social Services Weekly ETL Workflow.
+2025-12-01 08:05:54,181 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-01 08:06:18,994 [INFO] Total run time is 24.8129s.
+2025-12-01 08:06:18,994 [INFO] Running Prevention Weekly ETL Workflow.
+2025-12-01 08:06:19,249 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-01 08:13:32,971 [INFO] Total run time is 433.7200s.
+2025-12-01 08:13:33,237 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-08 08:07:11,477 [INFO] Running Social Services Weekly ETL Workflow.
+2025-12-08 08:07:11,780 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-08 08:07:58,980 [INFO] Total run time is 47.1979s.
+2025-12-08 08:07:58,980 [INFO] Running Prevention Weekly ETL Workflow.
+2025-12-08 08:07:59,226 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-08 08:14:25,768 [INFO] Total run time is 386.5400s.
+2025-12-08 08:14:26,026 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-15 08:27:30,458 [INFO] Running Social Services Weekly ETL Workflow.
+2025-12-15 08:27:30,876 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-15 08:27:59,664 [INFO] Total run time is 28.7874s.
+2025-12-15 08:27:59,665 [INFO] Running Prevention Weekly ETL Workflow.
+2025-12-15 08:27:59,952 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-15 08:29:43,011 [INFO] Total run time is 103.0568s.
+2025-12-15 08:29:43,281 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-22 08:05:27,299 [INFO] Running Social Services Weekly ETL Workflow.
+2025-12-22 08:05:27,755 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-22 08:06:01,756 [INFO] Total run time is 33.9986s.
+2025-12-22 08:06:01,757 [INFO] Running Prevention Weekly ETL Workflow.
+2025-12-22 08:06:02,160 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-22 08:06:27,830 [INFO] Total run time is 25.6677s.
+2025-12-22 08:06:28,125 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-29 08:10:45,798 [INFO] Running Social Services Weekly ETL Workflow.
+2025-12-29 08:10:46,179 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-29 08:11:52,454 [INFO] Total run time is 66.2729s.
+2025-12-29 08:11:52,454 [INFO] Running Prevention Weekly ETL Workflow.
+2025-12-29 08:11:52,856 [ERROR] Config file was not found: Webhook Url is not updated
+2025-12-29 08:12:36,828 [INFO] Total run time is 43.9704s.
+2025-12-29 08:12:37,226 [ERROR] Config file was not found: Webhook Url is not updated
