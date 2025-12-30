@@ -10,7 +10,7 @@ from utils import (
 )
 
 directory = context.get_context(os.path.abspath(__file__))
-sql_file = f"{directory}/co_bh_mh_active_patients/sql/mh_active_patients.sql"
+sql_file = f"{directory}/co_bh_mh_active_patients/sql/mh_active_patients_nm.sql"
 mh_act_pats_logger = logger.setup_logger(
     "mh_active_patients_logger",
     f"{directory}/logs/main.log"
@@ -25,7 +25,7 @@ project_id = vh_config.grab_tableau_id(
 def run(shared_drive):
     mh_act_pats_logger.info("Clinical Operations - MH Active Patients.")
     
-    hyper_file = f"{shared_drive}/MH Active Patients.hyper"
+    hyper_file = f"{shared_drive}/MH Active Patients_DEV.hyper"
     if not os.path.exists(shared_drive):
         os.makedirs(shared_drive)
 

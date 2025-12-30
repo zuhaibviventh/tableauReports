@@ -16,7 +16,7 @@ from utils import (
 )
 
 directory = context.get_context(os.path.abspath(__file__))
-sql_file = f"{directory}/co_cp_htn_cohort/sql/htn_cohort.sql"
+sql_file = f"{directory}/co_cp_htn_cohort/sql/htn_cohort_nm.sql"
 htn_cohort_logger = logger.setup_logger(
     "htn_cohort_logger",
     f"{directory}/logs/main.log"
@@ -30,7 +30,7 @@ project_id = vh_config.grab_tableau_id(
 
 def run(shared_drive):
     htn_cohort_logger.info("Clinical Operations - Clinical Pharmacy HTN Cohort.")
-    hyper_file = f"{shared_drive}/Clinical Pharmacy HTN Cohort.hyper"
+    hyper_file = f"{shared_drive}/Clinical Pharmacy HTN Cohort_DEV.hyper"
     if not os.path.exists(shared_drive):
         os.makedirs(shared_drive)
 

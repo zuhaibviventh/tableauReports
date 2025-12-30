@@ -16,7 +16,7 @@ from utils import (
 )
 
 directory = context.get_context(os.path.abspath(__file__))
-sql_file = f"{directory}/co_cp_older_pats_no_a1c/sql/main_pats_no_a1c.sql"
+sql_file = f"{directory}/co_cp_older_pats_no_a1c/sql/main_pats_no_a1c_nm.sql"
 older_pats_no_a1c_logger = logger.setup_logger(
     "older_pats_no_a1c_logger",
     f"{directory}/logs/main.log"
@@ -31,7 +31,7 @@ project_id = vh_config.grab_tableau_id(
 def run(shared_drive):
     older_pats_no_a1c_logger.info("Clinical Operations - Clinical Pharmacy - Patients Over 35 Without A1c.")
 
-    hyper_file = f"{shared_drive}/Clinical Pharmacy - Patients Over 35 Without A1c.hyper"
+    hyper_file = f"{shared_drive}/Clinical Pharmacy - Patients Over 35 Without A1c_DEV.hyper"
     if not os.path.exists(shared_drive):
         os.makedirs(shared_drive)
 

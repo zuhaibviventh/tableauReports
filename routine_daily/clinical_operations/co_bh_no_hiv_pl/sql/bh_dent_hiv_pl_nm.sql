@@ -26,7 +26,7 @@ FROM Clarity.dbo.IDENTITY_ID_VIEW id
                       ROW_NUMBER() OVER (PARTITION BY pev.PAT_ID ORDER BY pev.CONTACT_DATE ASC) AS ROW_NUM_ASC
                FROM Clarity.dbo.PAT_ENC_VIEW pev
                    INNER JOIN Clarity.dbo.CLARITY_SER_VIEW ser ON pev.VISIT_PROV_ID = ser.PROV_ID
-                   INNER JOIN Clarity.dbo.CLARITY_DEP_VIEW dep ON pev.DEPARTMENT_ID = dep.DEPARTMENT_ID
+                   LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON pev.DEPARTMENT_ID = dep.DEPARTMENT_ID
                WHERE pev.APPT_STATUS_C = 1 --Scheduled
                      AND SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'DT') svis ON svis.PAT_ID = id.PAT_ID
                                                                                 AND svis.ROW_NUM_ASC = 1 -- First scheduled
@@ -36,7 +36,7 @@ FROM Clarity.dbo.IDENTITY_ID_VIEW id
                       ROW_NUMBER() OVER (PARTITION BY pev.PAT_ID ORDER BY pev.CONTACT_DATE ASC) AS ROW_NUM_ASC
                FROM Clarity.dbo.PAT_ENC_VIEW pev
                    INNER JOIN Clarity.dbo.CLARITY_SER_VIEW ser ON pev.VISIT_PROV_ID = ser.PROV_ID
-                   INNER JOIN Clarity.dbo.CLARITY_DEP_VIEW dep ON pev.DEPARTMENT_ID = dep.DEPARTMENT_ID
+                   LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON pev.DEPARTMENT_ID = dep.DEPARTMENT_ID
                WHERE pev.APPT_STATUS_C = 1 --Scheduled
                      AND SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) IN ( 'AD', 'MH', 'BH', 'PY' )) spvis ON spvis.PAT_ID = id.PAT_ID
                                                                                                         AND spvis.ROW_NUM_ASC = 1 -- First scheduled
@@ -50,27 +50,11 @@ FROM Clarity.dbo.IDENTITY_ID_VIEW id
     ) dx ON dx.PAT_ID = id.PAT_ID
     LEFT JOIN (SELECT pev.PAT_ID,
                       pev.CONTACT_DATE 'Last Visit',
-                      SUBSTRING(dep.DEPT_ABBREVIATION, 3, 2) 'STATE',
-                      CASE WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'MK' THEN 'MILWAUKEE'
-                          WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'KN' THEN 'KENOSHA'
-                          WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'GB' THEN 'GREEN BAY'
-                          WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'WS' THEN 'WAUSAU'
-                          WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'AP' THEN 'APPLETON'
-                          WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'EC' THEN 'EAU CLAIRE'
-                          WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'LC' THEN 'LACROSSE'
-                          WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'MD' THEN 'MADISON'
-                          WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'BL' THEN 'BELOIT'
-                          WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'BI' THEN 'BILLING'
-                          WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'SL' THEN 'ST LOUIS'
-                          WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'DN' THEN 'DENVER'
-                          WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'AS' THEN 'AUSTIN'
-                          WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'KC' THEN 'KANSAS CITY'
-                          WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'CG' THEN 'CHICAGO'
-                          ELSE SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2)
-                      END AS CITY,
+                      dep.STATE,
+                      dep.CITY,
                       ROW_NUMBER() OVER (PARTITION BY pev.PAT_ID ORDER BY pev.CONTACT_DATE DESC) AS ROW_NUM_DESC
                FROM Clarity.dbo.PAT_ENC_VIEW pev
-                   INNER JOIN Clarity.dbo.CLARITY_DEP_VIEW dep ON pev.DEPARTMENT_ID = dep.DEPARTMENT_ID
+                   LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON pev.DEPARTMENT_ID = dep.DEPARTMENT_ID
                    LEFT JOIN Clarity.dbo.CLARITY_SER_VIEW ser ON pev.VISIT_PROV_ID = ser.PROV_ID
                WHERE pev.CONTACT_DATE > DATEADD(MONTH, -36, GETDATE())
                      AND pev.APPT_STATUS_C IN ( 2, 6 )
@@ -82,7 +66,7 @@ FROM Clarity.dbo.IDENTITY_ID_VIEW id
                       ROW_NUMBER() OVER (PARTITION BY pev.PAT_ID ORDER BY pev.CONTACT_DATE DESC) AS ROW_NUM_DESC
                FROM Clarity.dbo.PAT_ENC_VIEW pev
                    INNER JOIN Clarity.dbo.CLARITY_SER_VIEW ser ON pev.VISIT_PROV_ID = ser.PROV_ID
-                   INNER JOIN Clarity.dbo.CLARITY_DEP_VIEW dep ON pev.DEPARTMENT_ID = dep.DEPARTMENT_ID
+                   LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON pev.DEPARTMENT_ID = dep.DEPARTMENT_ID
                WHERE pev.APPT_STATUS_C IN ( 2, 6 )
                      AND SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'DT') LastDen ON LastDen.PAT_ID = id.PAT_ID
                                                                                    AND LastDen.ROW_NUM_DESC = 1 -- First scheduled
@@ -92,7 +76,7 @@ FROM Clarity.dbo.IDENTITY_ID_VIEW id
                       ROW_NUMBER() OVER (PARTITION BY pev.PAT_ID ORDER BY pev.CONTACT_DATE DESC) AS ROW_NUM_DESC
                FROM Clarity.dbo.PAT_ENC_VIEW pev
                    INNER JOIN Clarity.dbo.CLARITY_SER_VIEW ser ON pev.VISIT_PROV_ID = ser.PROV_ID
-                   INNER JOIN Clarity.dbo.CLARITY_DEP_VIEW dep ON pev.DEPARTMENT_ID = dep.DEPARTMENT_ID
+                   LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON pev.DEPARTMENT_ID = dep.DEPARTMENT_ID
                WHERE pev.APPT_STATUS_C IN ( 2, 6 )
                      AND SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) IN ( 'AD', 'MH', 'BH', 'PY' )) LastBH ON LastBH.PAT_ID = id.PAT_ID
                                                                                                          AND LastBH.ROW_NUM_DESC = 1 -- First scheduled

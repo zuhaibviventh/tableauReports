@@ -7,24 +7,11 @@ SET ANSI_WARNINGS OFF;
 
 SELECT TOP 10000000 pev.PAT_ID,
                     pev.CONTACT_DATE LAST_OFFICE_VISIT,
-                    SUBSTRING(dep.DEPT_ABBREVIATION, 3, 2) 'STATE',
-                    CASE WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'MK' THEN 'MILWAUKEE'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'KN' THEN 'KENOSHA'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'GB' THEN 'GREEN BAY'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'WS' THEN 'WAUSAU'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'AP' THEN 'APPLETON'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'EC' THEN 'EAU CLAIRE'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'LC' THEN 'LACROSSE'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'MD' THEN 'MADISON'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'BL' THEN 'BELOIT'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'BI' THEN 'BILLING'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'SL' THEN 'ST LOUIS'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'DN' THEN 'DENVER'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'AS' THEN 'AUSTIN'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'KC' THEN 'KANSAS CITY'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'CG' THEN 'CHICAGO'
-                        ELSE SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2)
-                    END AS CITY,
+                    dep.STATE,
+                    dep.CITY,
+                    dep.SITE,
+                    dep.LOS
+                    /*
                     CASE WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'MN' THEN 'MAIN LOCATION'
                         WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'DR' THEN 'D&R'
                         WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'KE' THEN 'KEENEN'
@@ -43,9 +30,10 @@ SELECT TOP 10000000 pev.PAT_ID,
                         WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'MH' THEN 'BEHAVIORAL'
                         ELSE SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2)
                     END AS 'LOS'
+                    */
 INTO #Attribution1
 FROM Clarity.dbo.PAT_ENC_VIEW pev
-    INNER JOIN Clarity.dbo.CLARITY_DEP_VIEW dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
+    LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
 WHERE pev.CONTACT_DATE > DATEADD(MONTH, -36, GETDATE())
 --  AND pev.APPT_STATUS_C IN (2, 6)
 
@@ -118,7 +106,7 @@ SELECT TOP 10000000 -- Visit-level info DISTINCT --using DISTINCT since some pts
 INTO #visits
 FROM #pop p
     INNER JOIN Clarity.dbo.PAT_ENC_VIEW pev ON pev.PAT_ID = p.PAT_ID
-    INNER JOIN Clarity.dbo.CLARITY_DEP_VIEW dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
+    LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
     INNER JOIN Clarity.dbo.CLARITY_SER_VIEW ser ON pev.VISIT_PROV_ID = ser.PROV_ID
     LEFT JOIN Clarity.dbo.ZC_APPT_STATUS zas ON zas.APPT_STATUS_C = pev.APPT_STATUS_C
     LEFT JOIN Clarity.dbo.CLARITY_PRC prc ON pev.APPT_PRC_ID = prc.PRC_ID
@@ -156,7 +144,7 @@ SELECT DISTINCT TOP 10000000 --using DISTINCT since some pts have more than one 
 FROM Clarity.dbo.SMARTTOOL_LOGGER_VIEW sl
     INNER JOIN Clarity.dbo.PAT_ENC_VIEW pev ON sl.CSN = pev.PAT_ENC_CSN_ID
     INNER JOIN #pop b ON b.PAT_ID = pev.PAT_ID
-    INNER JOIN Clarity.dbo.CLARITY_DEP_VIEW dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
+    LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
     INNER JOIN Clarity.dbo.CLARITY_EMP_VIEW ce ON sl.USER_ID = ce.USER_ID
     LEFT JOIN Clarity.dbo.CLARITY_SER_VIEW ser ON ce.PROV_ID = ser.PROV_ID
     INNER JOIN Clarity.dbo.CL_SPHR cs ON sl.SMARTPHRASE_ID = cs.SMARTPHRASE_ID

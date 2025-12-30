@@ -18,7 +18,7 @@ FROM
     INNER JOIN Clarity.dbo.CLARITY_EDG edg ON plv.DX_ID = edg.DX_ID
     INNER JOIN Clarity.dbo.EDG_CURRENT_ICD10 icd10 ON edg.DX_ID = icd10.DX_ID
     INNER JOIN Clarity.dbo.CLARITY_SER_VIEW ser ON p.CUR_PCP_PROV_ID = ser.PROV_ID
-    INNER JOIN Clarity.dbo.CLARITY_DEP_VIEW dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
+    LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
 
 
 WHERE 
@@ -60,7 +60,7 @@ SELECT
        p.PAT_NAME AS PATIENT,
        MAX(CASE ---To get the Dept ID of the PCP if exists
                WHEN depser.DEPT_ABBREVIATION IS NOT NULL THEN (SUBSTRING(depser.DEPT_ABBREVIATION, 3, 2))
-               ELSE (SUBSTRING(dep.DEPT_ABBREVIATION, 3, 2))
+               ELSE dep.STATE)
            END) AS STATE,
        MAX(CASE WHEN ser.PROVIDER_TYPE_C = 102 THEN 1 ELSE 0 END) AS 'MED REVIEW BY PHARMACIST#',
        MAX(CASE WHEN ser.PROVIDER_TYPE_C = 102
@@ -81,7 +81,7 @@ FROM Clarity.dbo.PATIENT_VIEW p
     LEFT JOIN Clarity.dbo.CLARITY_SER_VIEW ser ON pev.VISIT_PROV_ID = ser.PROV_ID
                                                   AND ser.PROVIDER_TYPE_C = 102 -- Pharmacist
     INNER JOIN Clarity.dbo.IDENTITY_ID_VIEW id ON p.PAT_ID = id.PAT_ID
-    INNER JOIN Clarity.dbo.CLARITY_DEP_VIEW dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
+    LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
     LEFT JOIN #insurance_info ii ON p.PAT_ID = ii.PAT_ID
                                 AND ii.ROW_NUM_DESC = 1
 
