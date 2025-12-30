@@ -13,7 +13,7 @@ from utils import (
     emails
 )
 directory = context.get_context(os.path.abspath(__file__))
-sql_file = f"{directory}/co_bh_no_hiv_pl/sql/bh_dent_hiv_pl.sql"
+sql_file = f"{directory}/co_bh_no_hiv_pl/sql/bh_dent_hiv_pl_nm.sql"
 hiv_pl_logger = logger.setup_logger(
     "bh_dent_hiv_pl_logger",
     f"{directory}/logs/main.log"
@@ -28,7 +28,7 @@ project_id = vh_config.grab_tableau_id(
 def run(shared_drive):
     hiv_pl_logger.info("Clinical Operations - BH and Dental Patients Without HIV on Their Problem List.")
 
-    hyper_file = f"{shared_drive}/BH and Dental Patients Without HIV on Their Problem List.hyper"
+    hyper_file = f"{shared_drive}/BH and Dental Patients Without HIV on Their Problem List_DEV.hyper"
     if not os.path.exists(shared_drive):
         os.makedirs(shared_drive)
 

@@ -13,7 +13,7 @@ from utils import (
 )
 
 directory = context.get_context(os.path.abspath(__file__))
-baseline = f"{directory}/co_cp_hm_imm_alerts/sql/01_baseline.sql"
+baseline = f"{directory}/co_cp_hm_imm_alerts/sql/01_baseline_nm.sql"
 sql_file = f"{directory}/co_cp_hm_imm_alerts/sql/hm_immunization_alerts.sql"
 hm_imm_alerts_logger = logger.setup_logger(
     "hm_imm_alerts_logger",
@@ -29,7 +29,7 @@ project_id = vh_config.grab_tableau_id(
 
 def run(shared_drive):
     hm_imm_alerts_logger.info("Clinical Operations - HM Immunization Alerts.")
-    hyper_file = f"{shared_drive}/HM Immunization Alerts.hyper"
+    hyper_file = f"{shared_drive}/HM Immunization Alerts DEV.hyper"
     if not os.path.exists(shared_drive):
         os.makedirs(shared_drive)
 
