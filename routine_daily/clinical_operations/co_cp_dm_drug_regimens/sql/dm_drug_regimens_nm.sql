@@ -10,27 +10,9 @@ SELECT pev.PAT_ID,
        dep.STATE,
        dep.CITY,
        dep.SITE,
-       dep.LOS
-       /*
-       CASE WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'MN' THEN 'MAIN LOCATION'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'DR' THEN 'D&R'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'KE' THEN 'KEENEN'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'UC' THEN 'UNIVERSITY OF COLORADO'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'ON' THEN 'AUSTIN MAIN'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'TW' THEN 'AUSTIN OTHER'
-           ELSE 'ERROR'
-       END AS 'SITE',
-       CASE WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'MD' THEN 'MEDICAL'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'DT' THEN 'DENTAL'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'CM' THEN 'CASE MANAGEMENT'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'RX' THEN 'PHARMACY'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'AD' THEN 'BEHAVIORAL'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'PY' THEN 'BEHAVIORAL'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'BH' THEN 'BEHAVIORAL'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'MH' THEN 'BEHAVIORAL'
-           ELSE 'ERROR'
-       END AS 'LOS'
-       */
+       dep.SERVICE_LINE AS LOS
+       dep.SERVICE_TYPE,
+       dep.SUB_SERVICE_LINE
 INTO #Attribution1
 FROM Clarity.dbo.PAT_ENC_VIEW pev
     LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
@@ -44,12 +26,14 @@ SELECT a1.PAT_ID,
        a1.CITY,
        a1.SITE,
        a1.LOS,
+       a1.SERVICE_TYPE,
+       a1.SUB_SERVICE_LINE,
        ROW_NUMBER() OVER (PARTITION BY a1.PAT_ID ORDER BY a1.LAST_OFFICE_VISIT DESC) AS ROW_NUM_DESC
 INTO #Attribution2
 FROM #Attribution1 a1
 WHERE a1.LOS = 'MEDICAL';
 
-SELECT a2.PAT_ID, a2.LOS, a2.CITY, a2.STATE INTO #Attribution3 FROM #Attribution2 a2 WHERE a2.ROW_NUM_DESC = 1;
+SELECT a2.PAT_ID, a2.LOS, a2.CITY, a2.STATE, a2.SERVICE_TYPE, a2.SUB_SERVICE_LINE INTO #Attribution3 FROM #Attribution2 a2 WHERE a2.ROW_NUM_DESC = 1;
 
 SELECT DISTINCT flag.PATIENT_ID PAT_ID,
                 id.IDENTITY_ID,
@@ -104,6 +88,9 @@ SELECT pop.PAT_ID,
        pop.PCP,
        a3.CITY,
        a3.STATE,
+       a3.SERVICE_TYPE,
+       a3.LOS,
+       a3.SUB_SERVICE_LINE,
        COALESCE(med.Sulfonylureas, 0) Sulfonylureas,
        COALESCE(med.Meglitinides, 0) Meglitinides,
        COALESCE(med.Biguanide, 0) Biguanide,

@@ -10,27 +10,9 @@ SELECT TOP 10000000 pev.PAT_ID,
                     dep.STATE,
                     dep.CITY,
                     dep.SITE,
-                    dep.LOS
-                    /*
-                    CASE WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'MN' THEN 'MAIN LOCATION'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'DR' THEN 'D&R'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'KE' THEN 'KEENEN'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'UC' THEN 'UNIVERSITY OF COLORADO'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'ON' THEN 'AUSTIN MAIN'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'TW' THEN 'AUSTIN OTHER'
-                        ELSE SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2)
-                    END AS 'SITE',
-                    CASE WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'MD' THEN 'MEDICAL'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'DT' THEN 'DENTAL'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'CM' THEN 'CASE MANAGEMENT'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'RX' THEN 'PHARMACY'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'AD' THEN 'BEHAVIORAL'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'PY' THEN 'BEHAVIORAL'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'BH' THEN 'BEHAVIORAL'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'MH' THEN 'BEHAVIORAL'
-                        ELSE SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2)
-                    END AS 'LOS'
-                    */
+                    dep.SERVICE_LINE AS LOS
+                    dep.SERVICE_TYPE,
+	                dep.SUB_SERVICE_LINE
 INTO #Attribution1
 FROM Clarity.dbo.PAT_ENC_VIEW pev
     LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
@@ -44,6 +26,8 @@ SELECT TOP 10000000 a1.PAT_ID,
                     a1.CITY,
                     a1.SITE,
                     a1.LOS,
+                    a1.SERVICE_TYPE,
+	                a1.SUB_SERVICE_LINE,
                     ROW_NUMBER() OVER (PARTITION BY a1.PAT_ID ORDER BY a1.LAST_OFFICE_VISIT DESC) AS ROW_NUM_DESC
 INTO #Attribution2
 FROM #Attribution1 a1;
@@ -51,6 +35,8 @@ FROM #Attribution1 a1;
 SELECT TOP 10000000 a2.PAT_ID,
                     a2.LOS,
                     a2.CITY,
+                    a2.SERVICE_TYPE,
+	                a2.SUB_SERVICE_LINE,
                     a2.STATE
 INTO #Attribution3
 FROM #Attribution2 a2
@@ -102,6 +88,8 @@ SELECT TOP 10000000 -- Visit-level info DISTINCT --using DISTINCT since some pts
        MAX(x.TOTAL_PAY_AMOUNT) TOTAL_PAY_AMOUNT,
        MAX(zfc.NAME) VISIT_INSURANCE,
        dep.DEPT_ABBREVIATION,
+       dep.CITY,
+       dep.STATE,
        dep.DEPARTMENT_NAME
 INTO #visits
 FROM #pop p
@@ -343,23 +331,8 @@ SELECT TOP 10000000 pop.PAT_ID,
                         WHEN d.fpl_Percentage > 500 THEN '7. >500'
                         ELSE '8. Unknown'
                     END AS fpl_percentage_levels,
-                    SUBSTRING(v.DEPT_ABBREVIATION, 3, 2) 'STATE2',
-                    CASE WHEN SUBSTRING(v.DEPT_ABBREVIATION, 5, 2) = 'MK' THEN 'MILWAUKEE'
-                        WHEN SUBSTRING(v.DEPT_ABBREVIATION, 5, 2) = 'KN' THEN 'KENOSHA'
-                        WHEN SUBSTRING(v.DEPT_ABBREVIATION, 5, 2) = 'GB' THEN 'GREEN BAY'
-                        WHEN SUBSTRING(v.DEPT_ABBREVIATION, 5, 2) = 'WS' THEN 'WAUSAU'
-                        WHEN SUBSTRING(v.DEPT_ABBREVIATION, 5, 2) = 'AP' THEN 'APPLETON'
-                        WHEN SUBSTRING(v.DEPT_ABBREVIATION, 5, 2) = 'EC' THEN 'EAU CLAIRE'
-                        WHEN SUBSTRING(v.DEPT_ABBREVIATION, 5, 2) = 'LC' THEN 'LACROSSE'
-                        WHEN SUBSTRING(v.DEPT_ABBREVIATION, 5, 2) = 'MD' THEN 'MADISON'
-                        WHEN SUBSTRING(v.DEPT_ABBREVIATION, 5, 2) = 'BL' THEN 'BELOIT'
-                        WHEN SUBSTRING(v.DEPT_ABBREVIATION, 5, 2) = 'BI' THEN 'BILLING'
-                        WHEN SUBSTRING(v.DEPT_ABBREVIATION, 5, 2) = 'SL' THEN 'ST LOUIS'
-                        WHEN SUBSTRING(v.DEPT_ABBREVIATION, 5, 2) = 'DN' THEN 'DENVER'
-                        WHEN SUBSTRING(v.DEPT_ABBREVIATION, 5, 2) = 'AS' THEN 'AUSTIN'
-                        WHEN SUBSTRING(v.DEPT_ABBREVIATION, 5, 2) = 'KC' THEN 'KANSAS CITY'
-                        ELSE 'ERROR'
-                    END AS CITY2
+                    v.STATE AS 'STATE2',
+                    v.CITY AS 'CITY2'
 INTO #a
 FROM #pop pop
     LEFT JOIN #Demo d ON d.PAT_ID = pop.PAT_ID
@@ -392,7 +365,9 @@ GROUP BY pop.PAT_ID,
          v.VISIT_INSURANCE,
          d.fpl_percentage,
          v.DEPT_ABBREVIATION,
-         v.DEPARTMENT_NAME;
+         v.DEPARTMENT_NAME
+         v.CITY,
+         v.STATE ;
 
 SELECT DISTINCT TOP 10000000 a.PAT_ID,
                              a.MRN,
@@ -432,6 +407,9 @@ SELECT DISTINCT TOP 10000000 a.PAT_ID,
                              a.IDU,
                              COALESCE(a3.CITY, a.CITY2) 'CITY',
                              COALESCE(a3.STATE, a.STATE2) 'STATE',
+                             a3.SERVICE_TYPE,
+                             a3.LOS,
+	                         a3.SUB_SERVICE_LINE,
                              a.PREFERRED_PHARMACY,
                              a.PROC_CODE,
                              a.[PROCEDURE],

@@ -89,6 +89,9 @@ def tableau_push(df, hyper_file):
             TableDefinition.Column("MET_YN", SqlType.text()),
             TableDefinition.Column("CITY", SqlType.text()),
             TableDefinition.Column("STATE", SqlType.text()),
+            TableDefinition.Column("LOS", SqlType.text()),
+            TableDefinition.Column("SERVICE_TYPE", SqlType.text()),
+            TableDefinition.Column("SUB_SERVICE_LINE", SqlType.text()),
             TableDefinition.Column("ACTIVE_TO_COHORT", SqlType.text()),
             TableDefinition.Column("COHORT_ENROLL_DATE", SqlType.date())
         ]

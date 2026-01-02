@@ -13,16 +13,9 @@ SELECT pev.PAT_ID,
        ser.PROV_NAME,
        dep.CITY,
        dep.SITE,
-       CASE WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'MD' THEN 'MEDICAL'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'DT' THEN 'DENTAL'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'CM' THEN 'CASE MANAGEMENT'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'RX' THEN 'PHARMACY'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'AD' THEN 'BEHAVIORAL'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'PY' THEN 'BEHAVIORAL'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'BH' THEN 'BEHAVIORAL'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'MH' THEN 'BEHAVIORAL'
-           ELSE 'ERROR'
-       END AS LOS
+       dep.SERVICE_TYPE,
+	   dep.SERVICE_LINE,
+	   dep.SUB_SERVICE_LINE
 INTO #visit_info
 FROM Clarity.dbo.PAT_ENC_VIEW pev
     LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
@@ -40,10 +33,13 @@ WITH
                #visit_info.PROV_NAME,
                #visit_info.CITY,
                #visit_info.SITE,
+               #visit_info.SERVICE_TYPE,
+	           #visit_info.SERVICE_LINE,
+	           #visit_info.SUB_SERVICE_LINE,
                ROW_NUMBER() OVER (PARTITION BY #visit_info.PAT_ID
 ORDER BY #visit_info.LAST_OFFICE_VISIT DESC) AS ROW_NUM_DESC
         FROM #visit_info
-        WHERE LOS = 'BEHAVIORAL'
+        WHERE SERVICE_LINE = 'BEHAVIORAL'
     )
 SELECT * INTO #bh_patients FROM bh_patients_helper WHERE bh_patients_helper.ROW_NUM_DESC = 1;
 
@@ -79,6 +75,9 @@ WITH
                #bh_patients.PROV_NAME,
                #bh_patients.CITY,
                #bh_patients.SITE,
+               #bh_patients.SERVICE_TYPE,
+	           #bh_patients.SERVICE_LINE,
+	           #bh_patients.SUB_SERVICE_LINE,
                #mh_patients.PAT_NAME,
                #mh_patients.MRN,
                CAST(#mh_patients.[Last Visit] AS DATE) AS LAST_VISIT,
@@ -104,6 +103,9 @@ SELECT mh_bh_cohort.PAT_ID,
        mh_bh_cohort.PROV_NAME,
        mh_bh_cohort.CITY,
        mh_bh_cohort.SITE,
+       mh_bh_cohort.SERVICE_TYPE,
+       mh_bh_cohort.SERVICE_LINE,
+       mh_bh_cohort.SUB_SERVICE_LINE,
        mh_bh_cohort.PAT_NAME,
        mh_bh_cohort.MRN,
        mh_bh_cohort.LAST_VISIT,

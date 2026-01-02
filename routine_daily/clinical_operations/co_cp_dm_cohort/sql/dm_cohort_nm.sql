@@ -10,26 +10,9 @@ SELECT TOP 10000000 pev.PAT_ID,
                     dep.STATE,
                     dep.CITY,
                     dep.SITE,
-                    /*
-                    CASE WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'MN' THEN 'MAIN LOCATION'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'DR' THEN 'D&R'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'KE' THEN 'KEENEN'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'UC' THEN 'UNIVERSITY OF COLORADO'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'ON' THEN 'AUSTIN MAIN'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'TW' THEN 'AUSTIN OTHER'
-                        ELSE SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2)
-                    END AS 'SITE',
-                    */
-                    CASE WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'MD' THEN 'MEDICAL'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'DT' THEN 'DENTAL'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'CM' THEN 'CASE MANAGEMENT'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'RX' THEN 'PHARMACY'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'AD' THEN 'BEHAVIORAL'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'PY' THEN 'BEHAVIORAL'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'BH' THEN 'BEHAVIORAL'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'MH' THEN 'BEHAVIORAL'
-                        ELSE 'ERROR'
-                    END AS 'LOS'
+                    dep.SERVICE_LINE AS LOS,
+                    dep.SERVICE_TYPE,
+	                dep.SUB_SERVICE_LINE
 INTO #Attribution1
 FROM Clarity.dbo.PAT_ENC_VIEW pev
     LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
@@ -41,6 +24,8 @@ SELECT TOP 10000000 a1.PAT_ID,
                     a1.CITY,
                     a1.SITE,
                     a1.LOS,
+                    a1.SERVICE_TYPE,
+	                a1.SUB_SERVICE_LINE,
                     ROW_NUMBER() OVER (PARTITION BY a1.PAT_ID ORDER BY a1.LAST_OFFICE_VISIT DESC) AS ROW_NUM_DESC
 INTO #Attribution2
 FROM #Attribution1 a1
@@ -49,7 +34,9 @@ WHERE a1.LOS = 'MEDICAL';
 SELECT TOP 10000000 a2.PAT_ID,
                     a2.LOS,
                     a2.CITY,
-                    a2.STATE
+                    a2.STATE,
+                    a2.SERVICE_TYPE,
+	                a2.SUB_SERVICE_LINE
 INTO #Attribution3
 FROM #Attribution2 a2
 WHERE a2.ROW_NUM_DESC = 1;
@@ -60,6 +47,9 @@ SELECT TOP 10000000 id.IDENTITY_ID MRN,
                     orv.RESULT_DATE A1c_Date,
                     a3.CITY,
                     a3.STATE,
+                    a3.SERVICE_TYPE,
+                    a3.LOS,
+	                a3.SUB_SERVICE_LINE,
                     MIN(CASE WHEN flag.ACTIVE_C = 1 THEN 'ACTIVE' ELSE 'INACTIVE' END) AS COHORT_STATUS,
                     MAX(flag.ACCT_NOTE_INSTANT) COHORT_ENROLL_DATE,
                     ser.EXTERNAL_NAME PCP,
@@ -90,6 +80,9 @@ GROUP BY id.IDENTITY_ID,
          orv.RESULT_DATE,
          a3.CITY,
          a3.STATE,
+         a3.LOS,
+         a3.SERVICE_TYPE,
+         a3.SUB_SERVICE_LINE,
          ser.EXTERNAL_NAME,
          zc.NAME,
          pa.ADDRESS;
@@ -101,6 +94,9 @@ SELECT TOP 10000000 --to only get A1c on or after enrollement (can't do this in 
        b.A1c_Date,
        b.CITY,
        b.STATE,
+       b.LOS,
+       b.SERVICE_TYPE,
+       b.SUB_SERVICE_LINE,
        b.COHORT_STATUS,
        b.COHORT_ENROLL_DATE,
        b.PCP,
@@ -124,6 +120,9 @@ SELECT TOP 10000000 b.MRN,
                     b.A1c_Date,
                     b.CITY,
                     b.STATE,
+                    b.SERVICE_TYPE,
+                    b.LOS,
+                    b.SUB_SERVICE_LINE,
                     b.COHORT_STATUS,
                     b.COHORT_ENROLL_DATE,
                     b.PCP,
@@ -151,6 +150,9 @@ SELECT TOP 10000000 --to only get A1c on or Before enrollement (can't do this in
        b.A1c_Date,
        b.CITY,
        b.STATE,
+       b.LOS,
+       b.SERVICE_TYPE,
+       b.SUB_SERVICE_LINE,
        b.COHORT_STATUS,
        b.COHORT_ENROLL_DATE,
        b.PCP,
@@ -176,6 +178,9 @@ SELECT c.MRN,
        CAST(c.A1c_Date AS DATE) AS A1c_Date,
        c.CITY,
        c.STATE,
+       c.SERVICE_TYPE,
+       c.LOS,
+       c.SUB_SERVICE_LINE,
        c.COHORT_STATUS,
        c.COHORT_ENROLL_DATE,
        c.PCP,

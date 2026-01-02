@@ -7,6 +7,9 @@ SELECT id.IDENTITY_ID MRN,
        spvis.[Next BH Appt Prov],
        attr.STATE,
        attr.CITY,
+       attr.SERVICE_TYPE as [Service Type],
+	   attr.SERVICE_LINE as [Service Line],
+	   attr.SUB_SERVICE_LINE as [Sub Service Line],
        LastBH.[Last BH Appt],
        LastBH.[Last BH Appt Prov],
        LastDen.[Last Dental Appt],
@@ -52,6 +55,9 @@ FROM Clarity.dbo.IDENTITY_ID_VIEW id
                       pev.CONTACT_DATE 'Last Visit',
                       dep.STATE,
                       dep.CITY,
+                      dep.SERVICE_TYPE,
+	                  dep.SERVICE_LINE,
+	                  dep.SUB_SERVICE_LINE,
                       ROW_NUMBER() OVER (PARTITION BY pev.PAT_ID ORDER BY pev.CONTACT_DATE DESC) AS ROW_NUM_DESC
                FROM Clarity.dbo.PAT_ENC_VIEW pev
                    LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON pev.DEPARTMENT_ID = dep.DEPARTMENT_ID

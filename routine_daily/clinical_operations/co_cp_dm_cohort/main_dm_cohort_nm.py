@@ -74,7 +74,10 @@ def tableau_push(df, hyper_file):
             TableDefinition.Column("A1c", SqlType.double()),
             TableDefinition.Column("A1c_Date", SqlType.date()),
             TableDefinition.Column("CITY", SqlType.text()),
-            TableDefinition.Column("STATE", SqlType.text()),
+            TableDefinition.Column("STATE", SqlType.text()), #SERVICE_TYPE
+            TableDefinition.Column("SERVICE_TYPE", SqlType.text()),
+            TableDefinition.Column("LOS", SqlType.text()),
+            TableDefinition.Column("SUB_SERVICE_LINE", SqlType.text()),
             TableDefinition.Column("COHORT_STATUS", SqlType.text()),
             TableDefinition.Column("COHORT_ENROLL_DATE", SqlType.date()),
             TableDefinition.Column("PCP", SqlType.text()),

@@ -10,26 +10,9 @@ SELECT pev.PAT_ID,
        dep.STATE,
        dep.CITY,
        dep.SITE,
-       /*
-       CASE WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'MN' THEN 'MAIN LOCATION'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'DR' THEN 'D&R'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'KE' THEN 'KEENEN'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'UC' THEN 'UNIVERSITY OF COLORADO'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'ON' THEN 'AUSTIN MAIN'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'TW' THEN 'AUSTIN OTHER'
-           ELSE 'ERROR'
-       END AS 'SITE',
-       */
-       CASE WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'MD' THEN 'MEDICAL'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'DT' THEN 'DENTAL'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'CM' THEN 'CASE MANAGEMENT'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'RX' THEN 'PHARMACY'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'AD' THEN 'BEHAVIORAL'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'PY' THEN 'BEHAVIORAL'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'BH' THEN 'BEHAVIORAL'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'MH' THEN 'BEHAVIORAL'
-           ELSE 'ERROR'
-       END AS 'LOS'
+       dep.SERVICE_TYPE,
+       dep.SERVICE_LINE AS LOS,
+       dep.SUB_SERVICE_LINE
 INTO #Attribution1
 FROM Clarity.dbo.PAT_ENC_VIEW pev
     LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
@@ -41,18 +24,23 @@ SELECT a1.PAT_ID,
        a1.CITY,
        a1.SITE,
        a1.LOS,
+       a1.SERVICE_TYPE,
+       a1.SUB_SERVICE_LINE,
        ROW_NUMBER() OVER (PARTITION BY a1.PAT_ID ORDER BY a1.LAST_OFFICE_VISIT DESC) AS ROW_NUM_DESC
 INTO #Attribution2
 FROM #Attribution1 a1
 WHERE a1.LOS = 'MEDICAL';
 
-SELECT a2.PAT_ID, a2.LOS, a2.CITY, a2.STATE INTO #Attribution3 FROM #Attribution2 a2 WHERE a2.ROW_NUM_DESC = 1;
+SELECT a2.PAT_ID, a2.LOS, a2.CITY, a2.STATE, a2.SERVICE_TYPE, a2.SUB_SERVICE_LINE INTO #Attribution3 FROM #Attribution2 a2 WHERE a2.ROW_NUM_DESC = 1;
 
 SELECT id.IDENTITY_ID,
        p.PAT_ID,
        p.PAT_NAME,
        a3.CITY,
        a3.STATE,
+       a3.LOS,
+       a3.SERVICE_TYPE,
+       a3.SUB_SERVICE_LINE,
        MAX(CASE --To pick 'Y' for people who have been in and out of the cohort
                WHEN flag.ACTIVE_C = 1 THEN 'Y'
                ELSE 'N'
@@ -71,6 +59,9 @@ GROUP BY id.IDENTITY_ID,
          p.PAT_NAME,
          a3.CITY,
          a3.STATE,
+         a3.LOS,
+         a3.SERVICE_TYPE,
+         a3.SUB_SERVICE_LINE,
          ser.EXTERNAL_NAME;
 
 SELECT --to get last BP
@@ -122,6 +113,9 @@ SELECT pop.IDENTITY_ID,
        e.FIRST_SYSTOLIC,
        pop.CITY,
        pop.STATE,
+       pop.LOS,
+       pop.SERVICE_TYPE,
+       pop.SUB_SERVICE_LINE,
        pop.ACTIVE_TO_COHORT,
        pop.COHORT_ENROLL_DATE
 INTO #b
@@ -149,6 +143,9 @@ SELECT b.IDENTITY_ID,
        END AS PREVIOUS_HIGH_BP,
        b.CITY,
        b.STATE,
+       b.LOS,
+       b.SERVICE_TYPE,
+       b.SUB_SERVICE_LINE,
        b.ACTIVE_TO_COHORT,
        b.COHORT_ENROLL_DATE
 INTO #c
@@ -182,6 +179,9 @@ SELECT c.IDENTITY_ID MRN,
        END AS MET_YN,
        c.CITY,
        c.STATE,
+       c.LOS,
+       c.SERVICE_TYPE,
+       c.SUB_SERVICE_LINE,
        c.ACTIVE_TO_COHORT,
        c.COHORT_ENROLL_DATE
 FROM #c c;
