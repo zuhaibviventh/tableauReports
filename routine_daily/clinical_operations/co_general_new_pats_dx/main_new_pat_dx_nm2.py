@@ -16,21 +16,21 @@ from utils import (
 )
 
 directory = context.get_context(os.path.abspath(__file__))
-sql_file = f"{directory}/co_general_no_shows_pats/sql/no_shows_by_pats.sql"
-no_shows_pats = logger.setup_logger(
-    "no_shows_pats",
+sql_file = f"{directory}/co_general_new_pats_dx/sql/new_pat_dx_nm2.sql"
+new_pats_logger = logger.setup_logger(
+    "new_pats_logger",
     f"{directory}/logs/main.log"
 )
 
-config = vh_config.grab(no_shows_pats)
+config = vh_config.grab(new_pats_logger)
 project_id = vh_config.grab_tableau_id(
     project_name = "Clinical Operations",
-    logger = no_shows_pats
+    logger = new_pats_logger
 )
 
 def run(shared_drive):
-    no_shows_pats.info("Clinical Operations - No Shows by Patient.")
-    hyper_file = f"{shared_drive}/No Shows by Patient.hyper"
+    new_pats_logger.info("Clinical Operations - New Patient Visits Scheduled.")
+    hyper_file = f"{shared_drive}/New Patient Visits Scheduled.hyper"
     if not os.path.exists(shared_drive):
         os.makedirs(shared_drive)
 
@@ -47,55 +47,54 @@ def run(shared_drive):
         )
 
         with internal_engine.connect() as clarity_connection:
-            no_shows_df = connections.sql_to_df(
+            new_pat_df = connections.sql_to_df(
                 file = sql_file,
                 connection = clarity_connection
             )
 
-        if len(no_shows_df.index) == 0:
-            no_shows_pats.info("There are no data.")
-            no_shows_pats.info("Clinical Operations - No Shows by Patient Daily ETL finished.")
+        if len(new_pat_df.index) == 0:
+            new_pats_logger.info("There are no data.")
+            new_pats_logger.info("Clinical Operations - New Patient Visits Scheduled Daily ETL finished.")
         else:
-            tableau_push(no_shows_df, hyper_file)
+            tableau_push(new_pat_df, hyper_file)
 
     except ConnectionError as connection_error:
-        no_shows_pats.error(f"Unable to connect to OCHIN - Vivent Health: {connection_error}")
+        new_pats_logger.error(f"Unable to connect to OCHIN - Vivent Health: {connection_error}")
     except KeyError as key_error:
-        no_shows_pats.error(f"Incorrect connection keys: {key_error}")
+        new_pats_logger.error(f"Incorrect connection keys: {key_error}")
 
 
 def tableau_push(df, hyper_file):
-    no_shows_pats.info("Creating Hyper Table.")
+    new_pats_logger.info("Creating Hyper Table.")
 
     table_definition = TableDefinition(
-        table_name = TableName("No Shows by Patient"),
+        table_name = TableName("New Patient Visits Scheduled"),
         columns = [
             TableDefinition.Column("MRN", SqlType.text()),
             TableDefinition.Column("PATIENT", SqlType.text()),
+            TableDefinition.Column("DEPARTMENT_NAME", SqlType.text()),
             TableDefinition.Column("STATE", SqlType.text()),
             TableDefinition.Column("CITY", SqlType.text()),
-            TableDefinition.Column("LOS", SqlType.text()),
-            TableDefinition.Column("PCP", SqlType.text()),
-            TableDefinition.Column("VISIT PROVIDER", SqlType.text()),
-            TableDefinition.Column("NO SHOWS", SqlType.int()),
-            TableDefinition.Column("Next Any Appt", SqlType.date()),
-            TableDefinition.Column("Next Appt Prov", SqlType.text()),
-            TableDefinition.Column("Next PCP Appt", SqlType.date()),
-            TableDefinition.Column("No Show Flag - Medical", SqlType.text()),
-            TableDefinition.Column("No Show Flag - BH", SqlType.text()),
-            TableDefinition.Column("No Show Flag - Dental", SqlType.text())
+            TableDefinition.Column("SERVICE_TYPE", SqlType.text()),
+            TableDefinition.Column("SERVICE_LINE", SqlType.text()),
+            TableDefinition.Column("SUB_SERVICE_LINE", SqlType.text()),
+            TableDefinition.Column("Visit Date", SqlType.date()),
+            TableDefinition.Column("Visit Provider", SqlType.text()),
+            TableDefinition.Column("Visit Type", SqlType.text()),
+            TableDefinition.Column("Date Appointment Created", SqlType.date()),
+            TableDefinition.Column("Days Until Appt", SqlType.int()),
+            TableDefinition.Column("Days Since Appt Created", SqlType.int())
         ]
     )
-
     vh_tableau.push_to_tableau(
         df=df,
         hyper_file=hyper_file,
         table_definition=table_definition,
-        logger=no_shows_pats,
+        logger=new_pats_logger,
         project_id=project_id
     )
 
-    no_shows_pats.info(
-        "Clinical Operations - No Shows by Patient pushed to Tableau."
+    new_pats_logger.info(
+        "Clinical Operations - New Patient Visits Scheduled pushed to Tableau."
     )
 

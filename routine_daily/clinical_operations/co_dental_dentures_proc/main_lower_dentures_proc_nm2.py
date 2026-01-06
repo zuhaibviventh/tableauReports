@@ -16,8 +16,8 @@ from utils import (
 )
 
 directory = context.get_context(os.path.abspath(__file__))
-sql_file = f"{directory}/co_dental_dentures_proc/sql/lower_dentures_proc.sql"
-sql_file2 = f"{directory}/co_dental_dentures_proc/sql/Aanalytics_department_mapping.sql"
+sql_file = f"{directory}/co_dental_dentures_proc/sql/lower_dentures_proc_nm2.sql"
+sql_file2 = f"{directory}/co_dental_dentures_proc/sql/Aanalytics_department_mapping_nm2.sql"
 lower_dentures_logger = logger.setup_logger(
     "lower_dentures_logger",
     f"{directory}/logs/main.log"
@@ -111,6 +111,9 @@ def tableau_push(df, hyper_file):
             TableDefinition.Column("PERFORMING PROVIDER", SqlType.text()),
             TableDefinition.Column("STATE", SqlType.text()),
             TableDefinition.Column("CITY", SqlType.text()),
+            TableDefinition.Column("SERVICE_TYPE", SqlType.text()),
+            TableDefinition.Column("SERVICE_LINE", SqlType.text()),
+            TableDefinition.Column("SUB_SERVICE_LINE", SqlType.text()),
             TableDefinition.Column("SPECIALTY", SqlType.text()),
             TableDefinition.Column("SERVICE_LINE", SqlType.text())
         ]

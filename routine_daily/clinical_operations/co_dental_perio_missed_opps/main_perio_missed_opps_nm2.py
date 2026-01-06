@@ -16,7 +16,7 @@ from utils import (
 )
 
 directory = context.get_context(os.path.abspath(__file__))
-sql_file = f"{directory}/co_dental_perio_missed_opps/sql/perio_missed_opps.sql"
+sql_file = f"{directory}/co_dental_perio_missed_opps/sql/perio_missed_opps_nm2.sql"
 missed_opps_logger = logger.setup_logger(
     "missed_opps_logger",
     f"{directory}/logs/main.log"
@@ -74,7 +74,11 @@ def tableau_push(df, hyper_file):
             TableDefinition.Column("MRN", SqlType.text()),
             TableDefinition.Column("PATIENT", SqlType.text()),
             TableDefinition.Column("PROVIDER", SqlType.text()),
+            TableDefinition.Column("CITY", SqlType.text()),
             TableDefinition.Column("STATE", SqlType.text()),
+            TableDefinition.Column("SERVICE_TYPE", SqlType.text()),
+            TableDefinition.Column("SERVICE_LINE", SqlType.text()),
+            TableDefinition.Column("SUB_SERVICE_LINE", SqlType.text()),
             TableDefinition.Column("DEPARTMENT_NAME", SqlType.text()),
             TableDefinition.Column("VISIT_DATE", SqlType.date()),
             TableDefinition.Column("PERIO_CODE_USED", SqlType.text())

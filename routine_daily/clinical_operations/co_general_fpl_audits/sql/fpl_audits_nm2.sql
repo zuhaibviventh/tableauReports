@@ -74,50 +74,16 @@ WITH visits_info
 AS (SELECT
 		pev.PAT_ID
 		,CAST (pev.CONTACT_DATE AS DATE) AS LAST_OFFICE_VISIT
-		,SUBSTRING (dep.DEPT_ABBREVIATION, 3, 2) 'STATE'
-		,CASE
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 5, 2) = 'MK' THEN 'MILWAUKEE'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 5, 2) = 'KN' THEN 'KENOSHA'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 5, 2) = 'GB' THEN 'GREEN BAY'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 5, 2) = 'WS' THEN 'WAUSAU'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 5, 2) = 'AP' THEN 'APPLETON'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 5, 2) = 'EC' THEN 'EAU CLAIRE'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 5, 2) = 'LC' THEN 'LACROSSE'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 5, 2) = 'MD' THEN 'MADISON'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 5, 2) = 'BL' THEN 'BELOIT'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 5, 2) = 'BI' THEN 'BILLING'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 5, 2) = 'SL' THEN 'ST LOUIS'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 5, 2) = 'DN' THEN 'DENVER'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 5, 2) = 'AS' THEN 'AUSTIN'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 5, 2) = 'KC' THEN 'KANSAS CITY'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 5, 2) = 'CG' THEN 'CHICAGO'
-			ELSE SUBSTRING (dep.DEPT_ABBREVIATION, 5, 2)
-		END AS CITY
-		,CASE
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 7, 2) = 'MN' THEN 'MAIN LOCATION'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 7, 2) = 'DR' THEN 'D&R'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 7, 2) = 'KE' THEN 'KEENEN'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 7, 2) = 'UC' THEN 'UNIVERSITY OF COLORADO'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 7, 2) = 'ON' THEN 'AUSTIN MAIN'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 7, 2) = 'TW' THEN 'AUSTIN OTHER'
-			ELSE SUBSTRING (dep.DEPT_ABBREVIATION, 7, 2)
-		END AS 'SITE'
-		,CASE
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 9, 2) = 'MD' THEN 'MEDICAL'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 9, 2) = 'DT' THEN 'DENTAL'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 9, 2) = 'CM' THEN 'CASE MANAGEMENT'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 9, 2) = 'RX' THEN 'PHARMACY'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 9, 2) = 'AD' THEN 'BEHAVIORAL'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 9, 2) = 'PY' THEN 'BEHAVIORAL'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 9, 2) = 'BH' THEN 'BEHAVIORAL'
-			WHEN SUBSTRING (dep.DEPT_ABBREVIATION, 9, 2) = 'MH' THEN 'BEHAVIORAL'
-			ELSE SUBSTRING (dep.DEPT_ABBREVIATION, 9, 2)
-		END AS 'LOS'
+		,dep.CITY
+        ,dep.STATE
+        ,dep.SERVICE_TYPE
+        ,dep.SERVICE_LINE
+        ,dep.SUB_SERVICE_LINE
 		,dep.DEPARTMENT_NAME 'Department'
 
 	FROM
 		CLARITY.dbo.PAT_ENC_VIEW pev
-		INNER JOIN CLARITY.dbo.CLARITY_DEP_VIEW dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
+		LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
 
 	WHERE
 		pev.CONTACT_DATE > DATEADD (MONTH, -12, GETDATE ())
@@ -129,7 +95,9 @@ AS (SELECT
 		,visits_info.STATE
 		,visits_info.CITY
 		,visits_info.SITE
-		,visits_info.LOS
+        ,visits_info.SERVICE_TYPE
+        ,visits_info.SERVICE_LINE
+        ,visits_info.SUB_SERVICE_LINE
 		,visits_info.Department
 		,ROW_NUMBER () OVER (PARTITION BY
 								visits_info.PAT_ID
@@ -158,8 +126,10 @@ AS (SELECT
 		,visit_nums.STATE
 		,visit_nums.CITY
 		,visit_nums.SITE
-		,visit_nums.LOS
-		,visit_nums.Department
+        ,visit_nums.SERVICE_TYPE
+        ,visit_nums.SERVICE_LINE
+        ,visit_nums.SUB_SERVICE_LINE
+        ,visit_nums.Department
 
 	FROM
 		visit_nums
@@ -234,7 +204,9 @@ SELECT
 						) AS ROW_NUM_DESC
 	,emp.NAME PSR
 	,latest_visits.LAST_OFFICE_VISIT AS [Last Office Visit]
-	,latest_visits.LOS 'Service Line'
+	,latest_visits.SERVICE_TYPE  'Service Type'
+    ,latest_visits.SERVICE_LINE  'Service Line'
+    ,latest_visits.SUB_SERVICE_LINE  'Sub Service Line'
 	,latest_visits.CITY 'Site'
 	,latest_visits.STATE 'State'
 	,latest_visits.Department
@@ -282,9 +254,11 @@ SELECT
 	,#delivery.PATIENT_TYPE AS [Patient Type]
 	,#delivery.PSR
 	,#delivery.[Last Office Visit]
-	,#delivery.[Service Line]
 	,#delivery.Site
 	,#delivery.State
+	,#delivery.['Service Type']
+	,#delivery.['Service Line']
+	,#delivery.['Sub Service Line']
 	,#delivery.Department
 	,#delivery.[FDS - Photo ID]
 	,#delivery.[FDS - Photo ID Date]

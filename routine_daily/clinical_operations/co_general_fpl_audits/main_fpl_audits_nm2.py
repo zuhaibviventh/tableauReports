@@ -12,7 +12,7 @@ from utils import (
 )
 
 directory = context.get_context(os.path.abspath(__file__))
-sql_file = f"{directory}/co_general_fpl_audits/sql/fpl_audits.sql"
+sql_file = f"{directory}/co_general_fpl_audits/sql/fpl_audits_nm2.sql"
 
 fpl_audits_logger = logger.setup_logger(
     "fpl_audits_logger",
@@ -81,9 +81,11 @@ def tableau_push(df, hyper_file):
             TableDefinition.Column("Patient Type", SqlType.text()),
             TableDefinition.Column("PSR", SqlType.text()),
             TableDefinition.Column("Last Office Visit", SqlType.date()),
-            TableDefinition.Column("Service Line", SqlType.text()),
             TableDefinition.Column("Site", SqlType.text()),
             TableDefinition.Column("State", SqlType.text()),
+            TableDefinition.Column("Service Type", SqlType.text()),
+            TableDefinition.Column("Service Line", SqlType.text()),
+            TableDefinition.Column("Sub Service Line", SqlType.text()),
             TableDefinition.Column("Department", SqlType.text()),
             TableDefinition.Column("FDS - Photo ID", SqlType.text()),
             TableDefinition.Column("FDS - Photo ID Date", SqlType.date()),

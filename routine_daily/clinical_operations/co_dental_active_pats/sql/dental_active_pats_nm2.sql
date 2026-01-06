@@ -10,7 +10,11 @@ SELECT id.IDENTITY_ID MRN,
        ZC_COUNTY.NAME AS COUNTY_OF_RESIDENCE,
        CAST(v.CONTACT_DATE AS DATE) 'LAST VISIT',
        v.LAST_PROVIDER,
+       v.CITY,
        v.STATE,
+       v.SERVICE_TYPE,
+       v.SERVICE_LINE,
+       v.SUB_SERVICE_LINE,
        v.DEPARTMENT_NAME,
        v.VISIT_NAME AS LAST_VISIT_ENCOUNTER_NAME,
        DATEDIFF(mm, v.CONTACT_DATE, GETDATE()) 'MONTHS SINCE SEEN',
@@ -24,12 +28,16 @@ FROM CLARITY.dbo.IDENTITY_ID_VIEW id
     LEFT JOIN (SELECT pev.PAT_ID,
                       ser.PROV_NAME LAST_PROVIDER,
                       pev.CONTACT_DATE,
-                      SUBSTRING(dep.DEPT_ABBREVIATION, 3, 2) 'STATE',
+                      dep.CITY,
+                      dep.STATE,
+                      dep.SERVICE_TYPE,
+                      dep.SERVICE_LINE,
+                      dep.SUB_SERVICE_LINE,
                       dep.DEPARTMENT_NAME,
                       clarity_prc.PRC_NAME AS VISIT_NAME,
                       ROW_NUMBER() OVER (PARTITION BY pev.PAT_ID ORDER BY pev.CONTACT_DATE DESC) AS ROW_NUM_DESC
                FROM CLARITY.dbo.PAT_ENC_VIEW pev
-                   INNER JOIN CLARITY.dbo.CLARITY_DEP_VIEW dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
+                   LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
                    LEFT JOIN CLARITY.dbo.CLARITY_SER_VIEW ser ON pev.VISIT_PROV_ID = ser.PROV_ID
                    INNER JOIN CLARITY.dbo.CLARITY_PRC AS clarity_prc ON pev.APPT_PRC_ID = clarity_prc.PRC_ID
                WHERE pev.APPT_STATUS_C IN ( 2, 6 ) -- Arrived, completed
@@ -43,7 +51,7 @@ FROM CLARITY.dbo.IDENTITY_ID_VIEW id
                       clarity_prc.PRC_NAME AS VISIT_NAME,
                       ROW_NUMBER() OVER (PARTITION BY pev.PAT_ID ORDER BY pev.CONTACT_DATE ASC) AS ROW_NUM_ASC
                FROM CLARITY.dbo.PAT_ENC_VIEW pev
-                   INNER JOIN CLARITY.dbo.CLARITY_DEP_VIEW dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
+                   LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
                    LEFT JOIN CLARITY.dbo.CLARITY_SER_VIEW ser ON pev.VISIT_PROV_ID = ser.PROV_ID
                    INNER JOIN CLARITY.dbo.CLARITY_PRC AS clarity_prc ON pev.APPT_PRC_ID = clarity_prc.PRC_ID
                WHERE pev.APPT_STATUS_C = 1 -- Scheduled
