@@ -76,6 +76,7 @@ AS (SELECT
 		,CAST (pev.CONTACT_DATE AS DATE) AS LAST_OFFICE_VISIT
 		,dep.CITY
         ,dep.STATE
+        ,dep.SITE
         ,dep.SERVICE_TYPE
         ,dep.SERVICE_LINE
         ,dep.SUB_SERVICE_LINE
@@ -256,9 +257,9 @@ SELECT
 	,#delivery.[Last Office Visit]
 	,#delivery.Site
 	,#delivery.State
-	,#delivery.['Service Type']
-	,#delivery.['Service Line']
-	,#delivery.['Sub Service Line']
+	,#delivery.[Service Type]
+	,#delivery.[Service Line]
+	,#delivery.[Sub Service Line]
 	,#delivery.Department
 	,#delivery.[FDS - Photo ID]
 	,#delivery.[FDS - Photo ID Date]

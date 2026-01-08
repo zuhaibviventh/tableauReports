@@ -32,7 +32,7 @@ SET ANSI_WARNINGS OFF;
 
 SELECT pev.PAT_ID,
        pev.CONTACT_DATE LAST_OFFICE_VISIT,
-       dep,STATE,
+       dep.STATE,
        dep.CITY,
        dep.SITE,
        dep.SERVICE_TYPE,

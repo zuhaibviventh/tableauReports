@@ -10,7 +10,7 @@ SELECT pev.PAT_ID,
        dep.STATE,
        dep.CITY,
        dep.SITE,
-       dep.SERVICE_LINE AS LOS
+       dep.SERVICE_LINE AS LOS,
        dep.SERVICE_TYPE,
        dep.SUB_SERVICE_LINE
 INTO #Attribution1
