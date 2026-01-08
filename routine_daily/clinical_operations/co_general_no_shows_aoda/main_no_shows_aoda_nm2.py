@@ -95,7 +95,6 @@ def tableau_push(df, hyper_file):
             TableDefinition.Column("LOS", SqlType.text()),
             TableDefinition.Column("SEX", SqlType.text()),
             TableDefinition.Column("RACE", SqlType.text()),
-            TableDefinition.Column("CITY", SqlType.text()),
             TableDefinition.Column("ZIP", SqlType.text()),
             TableDefinition.Column("APPT TYPE", SqlType.text())
         ]

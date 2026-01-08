@@ -14,7 +14,7 @@ from utils import (
 
 directory = context.get_context(os.path.abspath(__file__))
 baseline = f"{directory}/co_cp_hm_imm_alerts/sql/01_baseline_nm.sql"
-sql_file = f"{directory}/co_cp_hm_imm_alerts/sql/historical_hm_immunization_alerts.sql"
+sql_file = f"{directory}/co_cp_hm_imm_alerts/sql/historical_hm_immunization_alerts_nm.sql"
 hm_imm_alerts_logger = logger.setup_logger(
     "hm_imm_alerts_logger",
     f"{directory}/logs/main.log"

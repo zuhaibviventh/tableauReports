@@ -30,7 +30,7 @@ project_id = vh_config.grab_tableau_id(
 
 def run(shared_drive):
     no_shows_pats.info("Clinical Operations - No Shows by Patient.")
-    hyper_file = f"{shared_drive}/No Shows by Patient.hyper"
+    hyper_file = f"{shared_drive}/No Shows by Patient DEV2.hyper"
     if not os.path.exists(shared_drive):
         os.makedirs(shared_drive)
 
@@ -51,6 +51,9 @@ def run(shared_drive):
                 file = sql_file,
                 connection = clarity_connection
             )
+
+        no_shows_df = no_shows_df[['MRN', 'PATIENT', 'STATE', 'CITY','SERVICE_TYPE','LOS', 'SUB_SERVICE_LINE','PCP','VISIT PROVIDER', 'NO SHOWS',"Next Any Appt","Next Appt Prov","Next PCP Appt",
+                                   "No Show Flag - Medical","No Show Flag - BH","No Show Flag - Dental"]]
 
         if len(no_shows_df.index) == 0:
             no_shows_pats.info("There are no data.")

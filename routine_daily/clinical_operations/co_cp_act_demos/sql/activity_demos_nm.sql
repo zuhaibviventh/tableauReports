@@ -10,7 +10,7 @@ SELECT TOP 10000000 pev.PAT_ID,
                     dep.STATE,
                     dep.CITY,
                     dep.SITE,
-                    dep.SERVICE_LINE AS LOS
+                    dep.SERVICE_LINE AS LOS,
                     dep.SERVICE_TYPE,
 	                dep.SUB_SERVICE_LINE
 INTO #Attribution1
@@ -113,6 +113,8 @@ GROUP BY p.PAT_ID,
          zas.NAME,
          prc.PRC_NAME,
          dep.DEPT_ABBREVIATION,
+         dep.CITY,
+         dep.STATE,
          dep.DEPARTMENT_NAME
 UNION
 SELECT DISTINCT TOP 10000000 --using DISTINCT since some pts have more than one flag so it is duplicating their lines
@@ -128,6 +130,8 @@ SELECT DISTINCT TOP 10000000 --using DISTINCT since some pts have more than one 
        NULL TOTAL_PAY_AMOUNT,
        NULL VISIT_INSURANCE,
        dep.DEPT_ABBREVIATION,
+       dep.CITY,
+       dep.STATE,
        dep.DEPARTMENT_NAME
 FROM Clarity.dbo.SMARTTOOL_LOGGER_VIEW sl
     INNER JOIN Clarity.dbo.PAT_ENC_VIEW pev ON sl.CSN = pev.PAT_ENC_CSN_ID
@@ -365,7 +369,7 @@ GROUP BY pop.PAT_ID,
          v.VISIT_INSURANCE,
          d.fpl_percentage,
          v.DEPT_ABBREVIATION,
-         v.DEPARTMENT_NAME
+         v.DEPARTMENT_NAME,
          v.CITY,
          v.STATE ;
 

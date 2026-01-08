@@ -104,7 +104,7 @@ FROM Clarity.dbo.PATIENT_VIEW p
     INNER JOIN Clarity.dbo.CLARITY_PRC prc ON pev.APPT_PRC_ID = prc.PRC_ID
     INNER JOIN Clarity.dbo.IDENTITY_ID_VIEW id ON pev.PAT_ID = id.PAT_ID
     LEFT JOIN Clarity.dbo.CLARITY_SER_VIEW ser ON pev.VISIT_PROV_ID = ser.PROV_ID
-    LEFT JOIN Clarity.dbo.CLARITY_DEP_VIEW dep ON pev.DEPARTMENT_ID = dep.DEPARTMENT_ID
+    LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON pev.DEPARTMENT_ID = dep.DEPARTMENT_ID
     LEFT JOIN Clarity.dbo.ZC_SEX zs ON p.SEX_C = zs.RCPT_MEM_SEX_C
     LEFT JOIN Clarity.dbo.PATIENT_RACE pr ON p.PAT_ID = pr.PAT_ID
                                              AND pr.LINE = 1

@@ -53,6 +53,6 @@ GROUP BY
     dep.SERVICE_TYPE,
     dep.SERVICE_LINE,
     dep.SUB_SERVICE_LINE,
-    ,pev.CONTACT_DATE 
+    pev.CONTACT_DATE
 
 ;

@@ -16,7 +16,7 @@ from utils import (
 )
 
 directory = context.get_context(os.path.abspath(__file__))
-sql_file = f"{directory}/co_mcm_care_team_monitoring/sql/care_team_monitoring.sql"
+sql_file = f"{directory}/co_mcm_care_team_monitoring/sql/care_team_monitoring_dev.sql"
 care_team_monitoring_logger = logger.setup_logger(
     "care_team_monitoring_logger",
     f"{directory}/logs/main.log"
@@ -30,7 +30,7 @@ project_id = vh_config.grab_tableau_id(
 
 def run(shared_drive):
     care_team_monitoring_logger.info("Clinical Operations - Care Team Monitoring.")
-    hyper_file = f"{shared_drive}/Care Team Monitoring.hyper"
+    hyper_file = f"{shared_drive}/Care Team Monitoring dev.hyper"
     if not os.path.exists(shared_drive):
         os.makedirs(shared_drive)
 
@@ -74,6 +74,9 @@ def tableau_push(df, hyper_file):
             TableDefinition.Column("Patient", SqlType.text()),
             TableDefinition.Column("STATE", SqlType.text()),
             TableDefinition.Column("CITY", SqlType.text()),
+            TableDefinition.Column("SERVICE_TYPE", SqlType.text()),
+            TableDefinition.Column("LOS", SqlType.text()),
+            TableDefinition.Column("SUB_SERVICE_LINE", SqlType.text()),
             TableDefinition.Column("PCP", SqlType.text()),
             TableDefinition.Column("RN", SqlType.text()),
             TableDefinition.Column("MH Therapist", SqlType.text()),

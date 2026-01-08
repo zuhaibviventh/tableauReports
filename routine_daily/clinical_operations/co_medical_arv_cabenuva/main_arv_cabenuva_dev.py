@@ -12,7 +12,7 @@ from utils import (
 )
 
 directory = context.get_context(os.path.abspath(__file__))
-sql_file = f"{directory}/co_medical_arv_cabenuva/sql/arv_cabenuva.sql"
+sql_file = f"{directory}/co_medical_arv_cabenuva/sql/arv_cabenuva_dev.sql"
 arv_cabenuva_logger = logger.setup_logger(
     "arv_cabenuva_logger",
     f"{directory}/logs/main.log"
@@ -27,7 +27,7 @@ project_id = vh_config.grab_tableau_id(
 
 def run(shared_drive):
     arv_cabenuva_logger.info("Clinical Operations - ARV Cabenuva.")
-    hyper_file = f"{shared_drive}/ARV Cabenuva.hyper"
+    hyper_file = f"{shared_drive}/ARV Cabenuva Dev.hyper"
     if not os.path.exists(shared_drive):
         os.makedirs(shared_drive)
 
@@ -74,6 +74,9 @@ def tableau_push(df, hyper_file):
             TableDefinition.Column("SEX_AT_BIRTH", SqlType.text()),
             TableDefinition.Column("STATE", SqlType.text()),
             TableDefinition.Column("CITY", SqlType.text()),
+            TableDefinition.Column("SERVICE_TYPE", SqlType.text()),
+            TableDefinition.Column("SERVICE_LINE", SqlType.text()),
+            TableDefinition.Column("SUB_SERVICE_LINE", SqlType.text()),
             TableDefinition.Column("AGE", SqlType.int()),
             TableDefinition.Column("FINANCIAL_CLASS_NAME", SqlType.text()),
             TableDefinition.Column("LAST_INJECTION_DATE", SqlType.date()),

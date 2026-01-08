@@ -26,24 +26,12 @@ SELECT id.IDENTITY_ID MRN,
            WHEN rp.PHARMACY_NAME LIKE '%VIVENT PHARMACY%' THEN 'Vivent Pharmacy'
            ELSE 'Other Pharmacy'
        END 'Pharmacy',
-       CASE WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'MK' THEN 'MILWUAKEE'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'KN' THEN 'KENOSHA'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'GB' THEN 'GREEN BAY'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'WS' THEN 'WAUSAU'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'AP' THEN 'APPLETON'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'EC' THEN 'EAU CLAIRE'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'LC' THEN 'LACROSSE'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'MD' THEN 'MADISON'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'BL' THEN 'BELOIT'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'BI' THEN 'BILLING'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'SL' THEN 'ST LOUIS'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'DN' THEN 'DENVER'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'AS' THEN 'AUSTIN'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'KC' THEN 'KANSAS CITY'
-           WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'CG' THEN 'CHICAGO'
-           ELSE 'New Site'
-       END AS 'Site',
-       SUBSTRING(dep.DEPT_ABBREVIATION, 3, 2) 'STATE',
+       dep.Site,
+       dep.STATE,
+       dep.CITY,
+       dep.SERVICE_TYPE,
+       dep.SERVICE_LINE,
+       dep.SUB_SERVICE_LINE,
        IIF(prep.[PATIENT TYPE] = 'PrEP', 'PrEP', 'HIV') AS 'PATIENT TYPE',
        GETDATE() AS UPDATE_DTTM
 FROM Clarity.dbo.ORDER_MED_VIEW omv
@@ -53,7 +41,7 @@ FROM Clarity.dbo.ORDER_MED_VIEW omv
     INNER JOIN Clarity.dbo.PATIENT_VIEW p ON omv.PAT_ID = p.PAT_ID
     LEFT JOIN Clarity.dbo.RX_PHR rp ON omv.PHARMACY_ID = rp.PHARMACY_ID
     LEFT JOIN Clarity.dbo.CLARITY_SER_VIEW ser ON omv.AUTHRZING_PROV_ID = ser.PROV_ID
-    LEFT JOIN Clarity.dbo.CLARITY_DEP_VIEW dep ON omv.LOGIN_DEP_ID = dep.DEPARTMENT_ID
+    LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON omv.LOGIN_DEP_ID = dep.DEPARTMENT_ID
     LEFT JOIN #prep prep ON omv.PAT_ID = prep.PATIENT_ID
 WHERE YEAR(omv.ORDERING_DATE) > 2015
       AND ios.INDICATIONS_USE_ID IN ( 138, 3032, 4472 ) --HIV infection, HIV infection pre-exposure prophylaxis, prevention of HIV infection after exposure

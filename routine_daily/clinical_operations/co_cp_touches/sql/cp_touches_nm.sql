@@ -24,7 +24,7 @@ FROM Clarity.dbo.PATIENT_VIEW p
     INNER JOIN Clarity.dbo.PAT_ENC_VIEW pev ON p.PAT_ID = pev.PAT_ID
     LEFT JOIN Clarity.dbo.CLARITY_SER_VIEW ser ON pev.VISIT_PROV_ID = ser.PROV_ID
     INNER JOIN Clarity.dbo.ZC_DISP_ENC_TYPE enc ON pev.ENC_TYPE_C = enc.DISP_ENC_TYPE_C
-    INNER JOIN Clarity.dbo.CLARITY_DEP_VIEW dep ON pev.DEPARTMENT_ID = dep.DEPARTMENT_ID
+    LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON pev.DEPARTMENT_ID = dep.DEPARTMENT_ID
     LEFT JOIN Clarity.dbo.CLARITY_SER_VIEW serpcp ON p.CUR_PCP_PROV_ID = serpcp.PROV_ID
 WHERE ser.PROVIDER_TYPE_C IN ('102', '104') --Updated 11/5/2024 per dan scales adding nutritionists.
       AND pev.CONTACT_DATE > '1/1/2018'
@@ -50,7 +50,7 @@ SELECT iiv.IDENTITY_ID MRN,
        pev.APPT_PRC_ID
 FROM Clarity.dbo.SMARTTOOL_LOGGER_VIEW sl
     INNER JOIN Clarity.dbo.PAT_ENC_VIEW pev ON sl.CSN = pev.PAT_ENC_CSN_ID
-    INNER JOIN Clarity.dbo.CLARITY_DEP_VIEW dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
+    LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
     INNER JOIN Clarity.dbo.PATIENT_VIEW p ON pev.PAT_ID = p.PAT_ID
     INNER JOIN Clarity.dbo.IDENTITY_ID_VIEW iiv ON pev.PAT_ID = iiv.PAT_ID
                                                    AND iiv.IDENTITY_TYPE_ID = 64
