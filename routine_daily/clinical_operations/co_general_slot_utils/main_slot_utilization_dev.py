@@ -16,7 +16,7 @@ from utils import (
 )
 
 directory = context.get_context(os.path.abspath(__file__))
-sql_file = f"{directory}/co_general_slot_utils/sql/slot_utilization_report.sql"
+sql_file = f"{directory}/co_general_slot_utils/sql/slot_utilization_report_dev.sql"
 slot_utils_logger = logger.setup_logger(
     "slot_utils_logger",
     f"{directory}/logs/main.log"
@@ -30,7 +30,7 @@ project_id = vh_config.grab_tableau_id(
 
 def run(shared_drive):
     slot_utils_logger.info("Clinical Operations - Appointment Availability and Use (Ops Report).")
-    hyper_file = f"{shared_drive}/Appointment Availability and Use (Ops Report).hyper"
+    hyper_file = f"{shared_drive}/Appointment Availability and Use (Ops Report) Dev.hyper"
     if not os.path.exists(shared_drive):
         os.makedirs(shared_drive)
 
@@ -81,6 +81,10 @@ def tableau_push(df, hyper_file):
             TableDefinition.Column("PROV_ID", SqlType.text()),
             TableDefinition.Column("DEPARTMENT", SqlType.text()),
             TableDefinition.Column("LOS", SqlType.text()),
+            TableDefinition.Column("CITY", SqlType.text()),
+            TableDefinition.Column("STATE", SqlType.text()),
+            TableDefinition.Column("SERVICE_TYPE", SqlType.text()),
+            TableDefinition.Column("SERVICE_LINE", SqlType.text()),
             TableDefinition.Column("DEPT_ID", SqlType.int()),
             TableDefinition.Column("PROVIDER TYPE", SqlType.text()),
             TableDefinition.Column("APPOINTMENT SLOTS", SqlType.int()),

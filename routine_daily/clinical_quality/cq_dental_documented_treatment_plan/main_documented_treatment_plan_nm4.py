@@ -17,7 +17,7 @@ from utils import (
 )
 
 directory = context.get_context(os.path.abspath(__file__))
-sql_file = f"{directory}/cq_dental_documented_treatment_plan/sql/documented_treatment_plan.sql"
+sql_file = f"{directory}/cq_dental_documented_treatment_plan/sql/documented_treatment_plan_nm4.sql"
 documented_treatment_plan_logger = logger.setup_logger(
     "documented_treatment_plan_logger",
     f"{directory}/logs/main.log"
@@ -33,7 +33,7 @@ def run(shared_drive):
     documented_treatment_plan_logger.info(
         "Clinical Quality - Dental - Documented Treatment Plan."
     )
-    hyper_file = f"{shared_drive}/Dental - Documented Treatment Plan.hyper"
+    hyper_file = f"{shared_drive}/Dental - Documented Treatment Plan DEV.hyper"
     if not os.path.exists(shared_drive):
         os.makedirs(shared_drive)
 
@@ -79,6 +79,9 @@ def tableau_push(df, hyper_file):
             TableDefinition.Column("OUTCOME", SqlType.text()),
             TableDefinition.Column("CITY", SqlType.text()),
             TableDefinition.Column("STATE", SqlType.text()),
+            TableDefinition.Column("SERVICE_TYPE", SqlType.text()),
+            TableDefinition.Column("LOS", SqlType.text()),
+            TableDefinition.Column("SUB_SERVICE_LINE", SqlType.text()),
             TableDefinition.Column("Next Any Appt", SqlType.date()),
             TableDefinition.Column("Next Appt Prov", SqlType.text()),
             TableDefinition.Column("Next Dental Appt", SqlType.date()),

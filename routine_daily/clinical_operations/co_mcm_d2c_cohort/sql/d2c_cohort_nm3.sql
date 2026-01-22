@@ -32,45 +32,15 @@ SET ANSI_WARNINGS OFF;
 
 SELECT TOP 10000000 pev.PAT_ID,
                     pev.CONTACT_DATE LAST_OFFICE_VISIT,
-                    SUBSTRING(dep.DEPT_ABBREVIATION, 3, 2) 'STATE',
-                    CASE WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'MK' THEN 'MILWAUKEE'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'KN' THEN 'KENOSHA'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'GB' THEN 'GREEN BAY'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'WS' THEN 'WAUSAU'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'AP' THEN 'APPLETON'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'EC' THEN 'EAU CLAIRE'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'LC' THEN 'LACROSSE'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'MD' THEN 'MADISON'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'BL' THEN 'BELOIT'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'BI' THEN 'BILLING'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'SL' THEN 'ST LOUIS'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'DN' THEN 'DENVER'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'AS' THEN 'AUSTIN'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'KC' THEN 'KANSAS CITY'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2) = 'CG' THEN 'CHICAGO'
-                        ELSE SUBSTRING(dep.DEPT_ABBREVIATION, 5, 2)
-                    END AS CITY,
-                    CASE WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'MN' THEN 'MAIN LOCATION'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'DR' THEN 'D&R'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'KE' THEN 'KEENEN'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'UC' THEN 'UNIVERSITY OF COLORADO'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'ON' THEN 'AUSTIN MAIN'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 7, 2) = 'TW' THEN 'AUSTIN OTHER'
-                        ELSE 'ERROR'
-                    END AS 'SITE',
-                    CASE WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'MD' THEN 'MEDICAL'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'DT' THEN 'DENTAL'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'CM' THEN 'CASE MANAGEMENT'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'RX' THEN 'PHARMACY'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'AD' THEN 'BEHAVIORAL'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'PY' THEN 'BEHAVIORAL'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'BH' THEN 'BEHAVIORAL'
-                        WHEN SUBSTRING(dep.DEPT_ABBREVIATION, 9, 2) = 'MH' THEN 'BEHAVIORAL'
-                        ELSE 'ERROR'
-                    END AS 'LOS'
+                    dep.STATE,
+                    dep.CITY,
+                    dep.SERVICE_TYPE,
+                    dep.SERVICE_LINE AS LOS,
+                    dep.SUB_SERVICE_LINE,
+                    dep.SITE
 INTO #Attribution1
 FROM Clarity.dbo.PAT_ENC_VIEW pev
-    INNER JOIN Clarity.dbo.CLARITY_DEP_VIEW dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
+    LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
 WHERE pev.CONTACT_DATE > DATEADD(MONTH, -48, GETDATE())
       --AND pev.APPT_STATUS_C IN (2, 6)  --Since looking for pts with no compelted appts
       AND pev.ENC_TYPE_C NOT IN ( '32000', '119' ) --MyChart Encounters
@@ -82,6 +52,8 @@ SELECT TOP 10000000 a1.PAT_ID,
                     a1.CITY,
                     a1.SITE,
                     a1.LOS,
+                    a1.SERVICE_TYPE,
+                    a1.SUB_SERVICE_LINE,
                     ROW_NUMBER() OVER (PARTITION BY a1.PAT_ID ORDER BY a1.LAST_OFFICE_VISIT DESC) AS ROW_NUM_DESC
 INTO #Attribution2
 FROM #Attribution1 a1
@@ -89,6 +61,9 @@ WHERE a1.LOS = 'MEDICAL';
 
 SELECT TOP 10000000 a2.PAT_ID,
                     a2.LOS,
+                    a2.SERVICE_TYPE,
+                    a2.SUB_SERVICE_LINE,
+                    a2.SITE,
                     a2.CITY,
                     a2.STATE
 INTO #Attribution3
@@ -100,6 +75,10 @@ SELECT TOP 1000000 id.IDENTITY_ID MRN,
                    ser.PROV_NAME 'PCP',
                    a3.CITY,
                    a3.STATE,
+                   a3.LOS,
+                   a3.SERVICE_TYPE,
+                   a3.SUB_SERVICE_LINE,
+                   a3.SITE,
                    vis.[VISIT PROVIDER] 'NEW VISIT PROVIDER',
                    vis.[VISIT DATE] AS 'NEW VISIT DATE',
                    vis.[VISIT DEPT] 'NEW VISIT DEPT',
@@ -131,7 +110,7 @@ FROM Clarity.dbo.IDENTITY_ID_VIEW id
                       dep.DEPARTMENT_NAME 'VISIT DEPT',
                       ROW_NUMBER() OVER (PARTITION BY pev.PAT_ID ORDER BY pev.CONTACT_DATE DESC) AS ROW_NUM_DESC
                FROM Clarity.dbo.PAT_ENC_VIEW pev
-                   INNER JOIN Clarity.dbo.CLARITY_DEP_VIEW dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
+                   LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
                    INNER JOIN Clarity.dbo.CLARITY_SER_VIEW ser ON pev.VISIT_PROV_ID = ser.PROV_ID
                WHERE pev.APPT_STATUS_C IN ( 2, 6 )
                      AND pev.CONTACT_DATE > DATEADD(MONTH, -12, GETDATE())
@@ -145,7 +124,7 @@ FROM Clarity.dbo.IDENTITY_ID_VIEW id
                                   dep.DEPARTMENT_NAME 'VISIT DEPT',
                                   ROW_NUMBER() OVER (PARTITION BY pev.PAT_ID ORDER BY pev.CONTACT_DATE DESC) AS ROW_NUM_DESC
                FROM Clarity.dbo.PAT_ENC_VIEW pev
-                   INNER JOIN Clarity.dbo.CLARITY_DEP_VIEW dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
+                   LEFT JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
                    INNER JOIN Clarity.dbo.CLARITY_SER_VIEW ser ON pev.VISIT_PROV_ID = ser.PROV_ID
                WHERE pev.APPT_STATUS_C IN ( 2, 6 )
                      AND pev.CONTACT_DATE < DATEADD(MONTH, -12, GETDATE())

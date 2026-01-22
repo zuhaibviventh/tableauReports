@@ -30,7 +30,7 @@ project_id = vh_config.grab_tableau_id(
 
 def run(shared_drive):
     dental_logger.info("Clinical Operations - Dental Recent Visits with no Open Episodes.")
-    hyper_file = f"{shared_drive}/Dental - Recent Visits with No Open Episode.hyper"
+    hyper_file = f"{shared_drive}/Dental - Recent Visits with No Open Episode DEV.hyper"
     if not os.path.exists(shared_drive):
         os.makedirs(shared_drive)
 

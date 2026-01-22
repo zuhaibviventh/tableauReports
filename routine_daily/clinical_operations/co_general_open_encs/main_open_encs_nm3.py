@@ -16,7 +16,7 @@ from utils import (
 )
 
 directory = context.get_context(os.path.abspath(__file__))
-sql_file = f"{directory}/co_general_open_encs/sql/open_encs.sql"
+sql_file = f"{directory}/co_general_open_encs/sql/open_encs_nm2.sql"
 open_encs_logger = logger.setup_logger(
     "open_encs_logger",
     f"{directory}/logs/main.log"
@@ -80,9 +80,12 @@ def tableau_push(df, hyper_file):
             TableDefinition.Column("ENC_TYPE", SqlType.text()),
             TableDefinition.Column("VISIT_PROVIDER", SqlType.text()),
             TableDefinition.Column("DEPARTMENT_NAME", SqlType.text()),
+            TableDefinition.Column("SERVICE_TYPE", SqlType.text()),
             TableDefinition.Column("LOS", SqlType.text()),
+            TableDefinition.Column("SUB_SERVICE_LINE", SqlType.text()),
             TableDefinition.Column("CITY", SqlType.text()),
             TableDefinition.Column("STATE", SqlType.text()),
+            TableDefinition.Column("SITE", SqlType.text()),
             TableDefinition.Column("BUS_DAYS", SqlType.int()),
             TableDefinition.Column("PROC_NAME", SqlType.text()),
             TableDefinition.Column("SCHEDULED_YN", SqlType.text())

@@ -9,50 +9,17 @@ IF OBJECT_ID ('tempdb..#Attribution1') IS NOT NULL
 SELECT
     pev.PAT_ID
   , pev.CONTACT_DATE LAST_OFFICE_VISIT
-  , SUBSTRING (dep.DEPT_ABBREVIATION, 3, 2) 'STATE'
-  , CASE SUBSTRING (dep.DEPT_ABBREVIATION, 5, 2)
-        WHEN 'MK' THEN 'MILWAUKEE'
-        WHEN 'KN' THEN 'KENOSHA'
-        WHEN 'GB' THEN 'GREEN BAY'
-        WHEN 'WS' THEN 'WAUSAU'
-        WHEN 'AP' THEN 'APPLETON'
-        WHEN 'EC' THEN 'EAU CLAIRE'
-        WHEN 'LC' THEN 'LACROSSE'
-        WHEN 'MD' THEN 'MADISON'
-        WHEN 'BL' THEN 'BELOIT'
-        WHEN 'BI' THEN 'BILLING'
-        WHEN 'SL' THEN 'ST LOUIS'
-        WHEN 'DN' THEN 'DENVER'
-        WHEN 'AS' THEN 'AUSTIN'
-        WHEN 'KC' THEN 'KANSAS CITY'
-        WHEN 'CG' THEN 'CHICAGO'
-        ELSE SUBSTRING (dep.DEPT_ABBREVIATION, 5, 2)
-    END AS CITY
-  , CASE SUBSTRING (dep.DEPT_ABBREVIATION, 7, 2)
-        WHEN 'MN' THEN 'MAIN LOCATION'
-        WHEN 'DR' THEN 'D&R'
-        WHEN 'KE' THEN 'KEENEN'
-        WHEN 'UC' THEN 'UNIVERSITY OF COLORADO'
-        WHEN 'ON' THEN 'AUSTIN MAIN'
-        WHEN 'TW' THEN 'AUSTIN OTHER'
-        ELSE 'ERROR'
-    END AS 'SITE'
-  , CASE SUBSTRING (dep.DEPT_ABBREVIATION, 9, 2)
-        WHEN 'MD' THEN 'MEDICAL'
-        WHEN 'DT' THEN 'DENTAL'
-        WHEN 'CM' THEN 'CASE MANAGEMENT'
-        WHEN 'RX' THEN 'PHARMACY'
-        WHEN 'AD' THEN 'BEHAVIORAL'
-        WHEN 'PY' THEN 'BEHAVIORAL'
-        WHEN 'BH' THEN 'BEHAVIORAL'
-        WHEN 'MH' THEN 'BEHAVIORAL'
-        ELSE 'ERROR'
-    END AS 'LOS'
+  , dep.STATE
+  , dep.CITY
+  , dep.SITE
+  , dep.SERVICE_TYPE
+  , dep.SERVICE_LINE AS 'LOS'
+  , dep.SUB_SERVICE_LINE
 INTO
     #Attribution1
 FROM
     CLARITY.dbo.PAT_ENC_VIEW pev
-    INNER JOIN CLARITY.dbo.CLARITY_DEP_VIEW dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
+    INNER JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
 WHERE
     pev.CONTACT_DATE > DATEADD (MONTH, -12, GETDATE ())
     AND pev.APPT_STATUS_C IN ( 2, 6 )
@@ -66,14 +33,16 @@ SELECT
   , a1.STATE
   , a1.CITY
   , a1.SITE
+  , a1.SERVICE_TYPE
   , a1.LOS
+  , a1.SUB_SERVICE_LINE
   , ROW_NUMBER () OVER (PARTITION BY a1.PAT_ID ORDER BY a1.LAST_OFFICE_VISIT DESC) AS ROW_NUM_DESC
 INTO
     #Attribution2
 FROM
     #Attribution1 a1
 WHERE
-    a1.LOS = 'DENTAL'
+    UPPER(a1.LOS) = 'DENTAL'
 ;
 
 IF OBJECT_ID ('tempdb..#Attribution3') IS NOT NULL
@@ -81,9 +50,11 @@ IF OBJECT_ID ('tempdb..#Attribution3') IS NOT NULL
 ;
 SELECT
     a2.PAT_ID
-  , a2.LOS
   , a2.CITY
   , a2.STATE
+  , a2.SERVICE_TYPE
+  , a2.LOS
+  , a2.SUB_SERVICE_LINE
   , ROW_NUMBER () OVER (PARTITION BY a2.PAT_ID ORDER BY PAT_ENC.CONTACT_DATE DESC) AS ROW_NUM_DESC
 INTO
     #Attribution3
@@ -159,7 +130,7 @@ AS (SELECT
       , ROW_NUMBER () OVER (PARTITION BY pev.PAT_ID ORDER BY pev.CONTACT_DATE ASC) AS ROW_NUM_ASC
     FROM
         CLARITY.dbo.PAT_ENC_VIEW pev
-        INNER JOIN CLARITY.dbo.CLARITY_DEP_VIEW dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
+        INNER JOIN ANALYTICS.TRANSFORM.DepartmentMapping dep ON dep.DEPARTMENT_ID = pev.DEPARTMENT_ID
         INNER JOIN CLARITY.dbo.CLARITY_SER_VIEW ser ON pev.VISIT_PROV_ID = ser.PROV_ID
     WHERE
         pev.APPT_STATUS_C = 1 -- Scheduled
@@ -178,6 +149,9 @@ SELECT
 
   , #Attribution3.CITY
   , #Attribution3.STATE
+  , #Attribution3.SERVICE_TYPE
+  , #Attribution3.LOS
+  , #Attribution3.SUB_SERVICE_LINE
   , CAST (svis.[Next Any Appt] AS DATE) AS 'Next Any Appt'
   , svis.[Next Appt Prov]
   , CAST (spvis.[Next Dental Appt] AS DATE) AS 'Next Dental Appt'

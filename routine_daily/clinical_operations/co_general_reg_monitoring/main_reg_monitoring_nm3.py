@@ -16,7 +16,7 @@
 # )
 
 # directory = context.get_context(os.path.abspath(__file__))
-# sql_file = f"{directory}/co_general_reg_monitoring/sql/reg_monitoring.sql"
+# sql_file = f"{directory}/co_general_reg_monitoring/sql/reg_monitoring_nm3.sql"
 # reg_monitoring_logger = logger.setup_logger(
 #     "reg_monitoring_logger",
 #     f"{directory}/logs/main.log"
@@ -217,7 +217,7 @@ from utils import (
 )
 
 directory = context.get_context(os.path.abspath(__file__))
-sql_file = f"{directory}/co_general_reg_monitoring/sql/reg_monitoring.sql"
+sql_file = f"{directory}/co_general_reg_monitoring/sql/reg_monitoring_nm3.sql"
 reg_monitoring_logger = logger.setup_logger(
     "reg_monitoring_logger",
     f"{directory}/logs/main.log"
